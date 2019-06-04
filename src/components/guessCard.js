@@ -52,7 +52,7 @@ const GuessCard = () => {
         </div>
         <div className="details">
           <p className="details2">
-            Guessing-Game!!! Guess a number between 1 & 100!
+            Guessing-Game! Guess a number between 1 & 100!
           </p>
         </div>
         <div className="details">

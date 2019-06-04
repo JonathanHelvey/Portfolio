@@ -1,5 +1,5 @@
 import React from "react"
-//import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 const MyInfo = () => {
   return (
@@ -11,7 +11,9 @@ const MyInfo = () => {
           applications. Interested in learning new technologies. Currently
           seeking new opportunities for work in the tech industry.
         </p>
-        <button>Hire Me</button>
+        <Link className="hire-me-button" to="/contact/">
+          <button className="hire-me-button">Hire Me</button>
+        </Link>
       </div>
     </div>
   )

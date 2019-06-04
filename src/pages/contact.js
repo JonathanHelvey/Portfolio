@@ -7,10 +7,9 @@ import SEO from "../components/seo"
 const Contact = () => (
   <Layout>
     <SEO title="Contact" />
-    <h1 style={{ float: "right" }}>Hi from the CONTACT page</h1>
-    <p>Welcome to page 3</p>
+    <h1 style={{ float: "right" }}>Hi, Still Working on. Come back later!</h1>
+    <p>Resume is on the Way!</p>
     <Link to="/">Go back to the homepage</Link>
-    <Link to="/contact/">CONTACT</Link>
   </Layout>
 )
 
