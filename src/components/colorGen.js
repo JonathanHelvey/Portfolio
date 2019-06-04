@@ -48,7 +48,7 @@ const ColorGen = () => {
           </p>
         </div>
         <div className="details">
-          <h4 className="project-title">Background Radiant Color Generator</h4>
+          <h4 className="project-title">Color Generator</h4>
           <a href="https://jonathanhelvey.github.io/Background-Color-Generator/">
             <img
               className="pop-image"
