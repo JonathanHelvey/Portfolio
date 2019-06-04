@@ -728,7 +728,7 @@ pre tt:after {
 }
 
 .project-title {
-  padding: 10px;
+  padding-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1069,6 +1069,7 @@ pre tt:after {
 .techs-card {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 600px) {
   .techs-card {

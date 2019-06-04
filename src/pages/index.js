@@ -42,13 +42,6 @@ const IndexPage = () => (
           />
         </a>
       </div>
-      {/* <video loop autoPlay>
-        <img
-          src={require("../images/videohive-10976683-chicago-evening.mov")}
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video> */}
       <div className="index-con2">
         <div id="projects">
           <h1 className="project-title">Projects</h1>
