@@ -62,7 +62,7 @@ const IndexPage = () => (
           <ColorGen />{" "}
         </div>
       </div>
-      <div className="index-con3">
+      <div id="tech" className="index-con3">
         <div className="inside-index-con3">
           <img
             className="headshot"
@@ -97,7 +97,7 @@ const IndexPage = () => (
           />
         </a>
       </div>
-      <div id="tech">
+      <div>
         <TechStack />
       </div>
     </div>

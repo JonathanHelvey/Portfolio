@@ -603,10 +603,6 @@ pre tt:after {
   }
 }
 
-.tech-con {
-  padding-top: 100px;
-}
-
 .tech-img {
   height: 60px;
   width: 60px;
@@ -651,7 +647,6 @@ pre tt:after {
   align-items: center;
   margin: 0 auto;
   max-width: 1560;
-  padding: 0px 3rem 1.45rem;
   padding-top: 120px;
 }
 .inside-index-con3 {
@@ -717,8 +712,8 @@ pre tt:after {
 
 @media (max-width: 600px) {
   .headshot {
-    width: 150px;
-    height: 150px;
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -1112,4 +1107,13 @@ pre tt:after {
 .hire-me-button:hover {
   background-color: gainsboro;
   color: #333;
+}
+
+@media (max-width: 600px) {
+  .hire-me-button {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
 }
