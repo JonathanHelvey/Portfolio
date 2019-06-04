@@ -70,6 +70,7 @@ const tourCard = () => {
         <div>
           <h6 className="project-title2">Built With</h6>
         </div>
+        <h6>Source Code</h6>
         <div className="hvrbox2">
           <a href="https://github.com/JonathanHelvey/Tour">
             <img
@@ -78,7 +79,7 @@ const tourCard = () => {
               alt="tech"
             />
             <div className="hvrbox-layer_top">
-              <h4 className="hvrbox-text">Code Source</h4>
+              <h4 className="hvrbox-text">Source Code</h4>
             </div>
           </a>
         </div>

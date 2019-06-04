@@ -70,6 +70,7 @@ const edCard = () => {
         <div>
           <h6 className="project-title2">Built With</h6>
         </div>
+        <h6>Source Code</h6>
         <div className="hvrbox2">
           <a href="https://github.com/gs-team-edwin/edmazon">
             <img

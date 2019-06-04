@@ -40,6 +40,7 @@ const GuessCard = () => {
         <div>
           <h6 className="project-title2">Built With</h6>
         </div>
+        <h6>Source code</h6>
         <div className="hvrbox2">
           <img
             className="hvrbox-layer_bottom"
@@ -47,7 +48,7 @@ const GuessCard = () => {
             alt="tech"
           />
           <div className="hvrbox-layer_top">
-            <h4 className="hvrbox-text">Code Source</h4>
+            <h4 className="hvrbox-text">Source Code</h4>
           </div>
         </div>
         <div className="details">
