@@ -9,6 +9,16 @@ const ColorGen = () => {
           <div className="hvrbox2">
             <img
               className="hvrbox-layer_bottom"
+              src={require("../images/JavaScript-logo.png")}
+              alt="tech"
+            />
+            <div className="hvrbox-layer_top">
+              <h4 className="hvrbox-text">ES6</h4>
+            </div>
+          </div>
+          <div className="hvrbox2">
+            <img
+              className="hvrbox-layer_bottom"
               src={require("../images/css3.jpg")}
               alt="tech"
             />
@@ -32,15 +42,17 @@ const ColorGen = () => {
         </div>
         <h6>Source Code</h6>
         <div className="hvrbox2">
-          <img
-            className="hvrbox-layer_bottom"
-            src={require("../images/github.png")}
-            alt="tech"
-          />
+          <a href="https://github.com/JonathanHelvey/Background-Color-Generator">
+            <img
+              className="hvrbox-layer_bottom"
+              src={require("../images/github.png")}
+              alt="tech"
+            />
 
-          <div className="hvrbox-layer_top">
-            <h4 className="hvrbox-text">Source Code</h4>
-          </div>
+            <div className="hvrbox-layer_top">
+              <h4 className="hvrbox-text">Source Code</h4>
+            </div>
+          </a>
         </div>
         <div className="details">
           <p className="details2">

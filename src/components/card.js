@@ -94,7 +94,7 @@ const Card = () => {
           <a href="https://bluebubbles-998d5.firebaseapp.com/">
             <img
               className="pop-image"
-              src={require("../images/popnspots.png")}
+              src={require("../images/popnspots.jpeg")}
               alt="Pop'N Spots Title"
             />
           </a>

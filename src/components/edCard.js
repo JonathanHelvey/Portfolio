@@ -79,7 +79,7 @@ const edCard = () => {
               alt="tech"
             />
             <div className="hvrbox-layer_top">
-              <h4 className="hvrbox-text">Code Source</h4>
+              <h4 className="hvrbox-text">Source Code</h4>
             </div>
           </a>
         </div>
