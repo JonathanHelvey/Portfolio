@@ -101,6 +101,7 @@ const TechStack = () => {
             <img
               className="hvrbox-layer_bottom"
               src={require("../images/sequelize.png")}
+              alt="tech"
             />
             <div className="hvrbox-layer_top">
               <h4 className="hvrbox-text">Sequelize</h4>
