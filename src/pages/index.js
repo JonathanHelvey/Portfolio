@@ -1,6 +1,5 @@
 import React from "react"
 
-//import { Link } from "gatsby"
 import Layout from "../components/layout"
 //import Image from "../components/image"
 import SEO from "../components/seo"
@@ -11,14 +10,11 @@ import MyInfo from "../components/myinfo"
 import TechStack from "../components/techStack"
 import IntroCard from "../components/introCard"
 import ColorGen from "../components/colorGen"
-import TourCard from "../components/tourCard.js"
-import { useSpring, animated } from "react-spring"
+import TourCard from "../components/tourCard"
+
+//import { useSpring, animated } from "react-spring"
 
 const IndexPage = () => {
-  const props = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-  })
   return (
     <Layout>
       <SEO title="Projects" />
@@ -49,9 +45,7 @@ const IndexPage = () => {
         </div>
         <div className="index-con2">
           <div id="projects">
-            <h1 style={props} className="project-title">
-              Projects
-            </h1>
+            <h1 className="project-title">Projects</h1>
           </div>
 
           <div className="the-cards">

@@ -1,4 +1,5 @@
 import React from "react"
+import Gretting from "../components/greeting"
 import { useSpring, animated } from "react-spring"
 
 const Intro = () => {
@@ -8,10 +9,9 @@ const Intro = () => {
   })
   return (
     <div className="intro">
-      <div className="intro-container">
+      <div>
         <animated.h2 className="i-build-websites">
-          {" "}
-          Hello, I build websites!
+          <Gretting />
         </animated.h2>
 
         <div>
