@@ -24,66 +24,57 @@ class Header extends React.Component {
     return (
       <header>
         <div className="navbar">
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "flex-start",
-              alignContent: "center",
-              color: "white",
-            }}
-          >
-            <ul className="ul-list">
-              <li className="links">
-                <Link className="links" to="/">
-                  <button className="button-links-nav">HOME</button>
-                </Link>
-              </li>
-              <li className="links">
-                <Link className="links" to="/#projects">
-                  <button className="button-links-nav"> PROJECTS</button>
-                </Link>
-              </li>
-              <li className="links">
-                <Link className="links" to="/#tech">
-                  <button className="button-links-nav">ABOUT</button>
-                </Link>
-              </li>
-              <li className="links">
-                <Link className="links" to="/contact/">
-                  <button className="button-links-nav">HIRE</button>
-                </Link>
-              </li>
-            </ul>
-            <div className="nav-flex-burger">
-              <a className="icon" onClick={this.showMenu}>
-                <i className="fa fa-bars" />
-              </a>
-              <div>
-                {this.state.showMenu ? (
-                  <div className="menu">
-                    <div>
-                      <Link to="/">
-                        <button className="button-links">Home</button>
-                      </Link>
-                    </div>
-                    <div className="links">
-                      <Link className="links" to="/#projects">
-                        <button className="button-links">Projects</button>
-                      </Link>
-                    </div>
-                    <div>
-                      <Link to="/#tech">
-                        <button className="button-links">About</button>
-                      </Link>
-                    </div>
-                    <div>
-                      <Link to="/contact/">
-                        <button className="button-links">Hire</button>
-                      </Link>
-                    </div>
+          <ul className="ul-list">
+            <li className="links">
+              <Link className="links" to="/">
+                <button className="button-links-nav">HOME</button>
+              </Link>
+            </li>
+            <li className="links">
+              <Link className="links" to="/#projects">
+                <button className="button-links-nav"> PROJECTS</button>
+              </Link>
+            </li>
+            <li className="links">
+              <Link className="links" to="/#tech">
+                <button className="button-links-nav">ABOUT</button>
+              </Link>
+            </li>
+            <li className="links">
+              <Link className="links" to="/contact/">
+                <button className="button-links-nav">HIRE</button>
+              </Link>
+            </li>
+          </ul>
+          <div className="nav-flex-burger">
+            <a className="icon" onClick={this.showMenu}>
+              <i className="fa fa-bars" />
+            </a>
+            <div>
+              {this.state.showMenu ? (
+                <div className="menu">
+                  <div>
+                    <Link to="/">
+                      <button className="button-links">Home</button>
+                    </Link>
                   </div>
-                ) : null}
-              </div>
+                  <div>
+                    <Link to="/#projects">
+                      <button className="button-links">Projects</button>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link to="/#tech">
+                      <button className="button-links">About</button>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link to="/contact/">
+                      <button className="button-links">Hire</button>
+                    </Link>
+                  </div>
+                </div>
+              ) : null}
             </div>
           </div>
         </div>

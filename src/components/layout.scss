@@ -825,7 +825,7 @@ pre tt:after {
 
 .ul-list {
   display: inline-flex;
-  // margin-top: 16px;
+  margin: 0;
 }
 .button-links-nav {
   display: inline-flex;
@@ -835,7 +835,7 @@ pre tt:after {
   cursor: pointer;
   margin-right: 5px;
   border: none;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .navbar {
@@ -875,7 +875,7 @@ pre tt:after {
   outline: none;
   position: relative;
   margin-right: 80px;
-  margin-top: 22px;
+  margin-bottom: 22px;
 }
 @media (max-width: 600px) {
   .nav-flex-burger {
