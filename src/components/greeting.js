@@ -14,7 +14,7 @@ function generateGreeting() {
 
 class MainHeader extends Component {
   render() {
-    const greeting = generateGreeting()
+    //const greeting = generateGreeting()
     return (
       <div>
         <h3>

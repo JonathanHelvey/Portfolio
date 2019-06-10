@@ -1,18 +1,18 @@
 import React from "react"
 import Gretting from "../components/greeting"
-import { useSpring, animated } from "react-spring"
+// import { useSpring, animated } from "react-spring"
 
 const Intro = () => {
-  const props = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-  })
+  // const props = useSpring({
+  //   opacity: 1,
+  //   from: { opacity: 0 },
+  // })
   return (
     <div className="intro">
       <div>
-        <animated.h2 className="i-build-websites">
+        <h2 className="i-build-websites">
           <Gretting />
-        </animated.h2>
+        </h2>
 
         <div>
           <h1 className="jonathan">Jonathan Helvey </h1>

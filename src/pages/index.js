@@ -17,9 +17,10 @@ import TourCard from "../components/tourCard"
 const IndexPage = () => {
   return (
     <Layout>
+      {" "}
+      <IntroCard />
       <SEO title="Projects" />
       <div>
-        <IntroCard />
         <div className="index-con4">
           <a href="https://www.linkedin.com/in/jonathanhelvey/">
             <img
