@@ -57,22 +57,19 @@ const IndexPage = () => {
         </div>
         <Spring
           className="intro"
-          from={{ height: 100, opacity: 0 }}
-          to={{ height: 405, opacity: 1 }}
+          from={{ height: 200, opacity: 0 }}
+          to={{ height: 1700, opacity: 1 }}
           delay="3000"
           config={config.molasses}
         >
           {props => (
             <div style={props}>
-              <img
-                style={{ height: 400, width: "100%" }}
-                src={require("../images/code.jpg")}
-              />
+              <img style={{}} src={require("../images/code.jpg")} />
             </div>
           )}
         </Spring>
-        <div className="index-con2">
-          <div id="projects">
+        <div id="projects" className="index-con2">
+          <div>
             <h1 className="project-title">Projects</h1>
           </div>
 
@@ -81,7 +78,7 @@ const IndexPage = () => {
             <EdCard />
             <TourCard />
             <GuessCard />
-            <ColorGen />{" "}
+            <ColorGen />
           </div>
         </div>
         <div id="tech" className="index-con3">
