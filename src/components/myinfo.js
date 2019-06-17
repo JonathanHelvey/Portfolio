@@ -5,7 +5,7 @@ const MyInfo = () => {
   return (
     <div className="my-info">
       <div className="my-info-container">
-        <h2>About Me</h2>
+        <h2 className="project-title">About Me</h2>
         <p className="my-details">
           Full Stack Developer skilled at creating polished, user-friendly web
           applications. Interested in learning new technologies. Currently

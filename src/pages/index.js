@@ -57,14 +57,14 @@ const IndexPage = () => {
         </div>
         <Spring
           className="intro"
-          from={{ height: 200, opacity: 0 }}
-          to={{ height: 1700, opacity: 1 }}
+          from={{ height: 100, opacity: 0 }}
+          to={{ height: 1605, width: "100%", opacity: 1 }}
           delay="3000"
           config={config.molasses}
         >
           {props => (
             <div style={props}>
-              <img style={{}} src={require("../images/code.jpg")} />
+              <img style={props} src={require("../images/code.jpg")} />
             </div>
           )}
         </Spring>
