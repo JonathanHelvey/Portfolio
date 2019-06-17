@@ -11,14 +11,27 @@ import TechStack from "../components/techStack"
 import IntroCard from "../components/introCard"
 import ColorGen from "../components/colorGen"
 import TourCard from "../components/tourCard"
+import { Spring, config } from "react-spring/renderprops"
 
 //import { useSpring, animated } from "react-spring"
 
 const IndexPage = () => {
   return (
     <Layout>
-      {" "}
-      <IntroCard />
+      <Spring
+        className="intro"
+        from={{ height: 100, opacity: 0 }}
+        to={{ height: 475, opacity: 1 }}
+        delay={500}
+        //config={config.molasses}
+      >
+        {props => (
+          <div style={props}>
+            <IntroCard />
+          </div>
+        )}
+      </Spring>
+      {/* <IntroCard /> */}
       <SEO title="Projects" />
       <div>
         <div className="index-con4">
