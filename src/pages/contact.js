@@ -10,11 +10,10 @@ import SEO from "../components/seo"
 const Contact = ({ data }) => (
   <Layout>
     <SEO title="Contact" />
-    <div>
-      <p>Contact Me!</p>
-      <h3>jonathanhelvey27@gmail.com</h3>
-      <br />
+    <div className="form">
+      <p className="jonathan">Contact Me!</p>
       <form
+        className="form"
         name="contact"
         method="POST"
         data-netlify="true"
@@ -26,20 +25,38 @@ const Contact = ({ data }) => (
         </p>
         <p>
           <label>
-            Name <input type="text" name="name" />
+            Name: <input type="text" name="name" />
           </label>
         </p>
         <p>
           <label>
-            Email <input type="email" name="email" />
+            Email: <input type="email" name="email" />
           </label>
         </p>
         <p>
-          <button type="submit">Send</button>
+          <label>
+            <input
+              className="your-company"
+              type="text"
+              placeholder="Your Company?"
+              name="company"
+            />
+          </label>
+        </p>
+        <p>
+          <button className="form-button" type="submit">
+            Send
+          </button>
         </p>
       </form>
+      <div>
+        <h3 style={{ fontSize: "20px" }}>jonathanhelvey27@gmail.com</h3>
+      </div>
     </div>
-     <Link to="/">Go back to the homepage</Link>
+    <br /> 
+    <Link className="your-company" to="/">
+      Go back to the homepage
+    </Link>
   </Layout>
 )
 

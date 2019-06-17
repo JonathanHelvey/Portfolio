@@ -19,7 +19,6 @@ const IndexPage = () => {
   return (
     <Layout>
       <Spring
-        className="intro"
         from={{ height: 100, opacity: 0 }}
         to={{ height: 275, opacity: 1 }}
         delay={500}

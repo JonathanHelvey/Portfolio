@@ -1092,3 +1092,43 @@ pre tt:after {
     padding-top: 10px;
   }
 }
+
+.form-button {
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  text-shadow: -1px 0 white, 0 3px white, 3px 0 white, 0 -1px white;
+  font-family: "Playfair Display", serif;
+}
+
+.form-button:hover {
+  background-color: gainsboro;
+  color: #333;
+}
+
+.form {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  text-shadow: -1px 0 white, 0 3px white, 3px 0 white, 0 -1px white;
+  font-family: "Playfair Display", serif;
+}
+
+.your-company {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  text-shadow: -1px 0 white, 0 3px white, 3px 0 white, 0 -1px white;
+  font-family: "Playfair Display", serif;
+}
