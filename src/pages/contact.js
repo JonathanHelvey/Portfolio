@@ -20,17 +20,18 @@ const Contact = ({ data }) => (
         data-netlify-honeypot="bot-field"
         action="/success"
       >
+        <button type="hidden" disabled />
         <p>
           <input type="hidden" name="form-name" value="contact" />
         </p>
         <p>
           <label>
-            Name: <input type="text" name="name" />
+            <input required type="text" name="name" placeholder="Name" />
           </label>
         </p>
         <p>
           <label>
-            Email: <input type="email" name="email" />
+            <input required type="email" name="email" placeholder="Email" />
           </label>
         </p>
         <p>
@@ -44,19 +45,28 @@ const Contact = ({ data }) => (
           </label>
         </p>
         <p>
+          <label>
+            <input
+              className="form-message"
+              type="text"
+              placeholder="Message"
+              name="message"
+            />
+          </label>
+        </p>
+        <p>
           <button className="form-button" type="submit">
             Send
           </button>
         </p>
       </form>
-      <div>
-        <h3 style={{ fontSize: "20px" }}>jonathanhelvey27@gmail.com</h3>
-      </div>
     </div>
-    <br /> 
+    <br />
+     
     <Link className="your-company" to="/">
       Go back to the homepage
     </Link>
+    <br />
   </Layout>
 )
 

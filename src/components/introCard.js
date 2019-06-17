@@ -13,13 +13,11 @@ const Intro = () => {
         </h2>
         <div>
           <h1 className="jonathan">Jonathan Helvey </h1>
-
-          <h1 className="jonathan" />
           <Spring
             className="jonathan"
             from={{ opacity: 0 }}
             to={{ opacity: 1 }}
-            delay="1000"
+            delay="1500"
             config={config.molasses}
           >
             {props => (

@@ -22,7 +22,7 @@ const IndexPage = () => {
         from={{ height: 100, opacity: 0 }}
         to={{ height: 275, opacity: 1 }}
         delay={500}
-        //config={config.molasses}
+        config={config.molasses}
       >
         {props => (
           <div style={props}>
@@ -30,7 +30,6 @@ const IndexPage = () => {
           </div>
         )}
       </Spring>
-      {/* <IntroCard /> */}
       <SEO title="Projects" />
       <div>
         <div className="index-con4">
@@ -60,8 +59,8 @@ const IndexPage = () => {
           className="intro"
           from={{ height: 100, opacity: 0 }}
           to={{ height: 405, opacity: 1 }}
-          delay="2000"
-          //config={config.molasses}
+          delay="3000"
+          config={config.molasses}
         >
           {props => (
             <div style={props}>
