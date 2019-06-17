@@ -21,7 +21,7 @@ const IndexPage = () => {
       <Spring
         className="intro"
         from={{ height: 100, opacity: 0 }}
-        to={{ height: 475, opacity: 1 }}
+        to={{ height: 275, opacity: 1 }}
         delay={500}
         //config={config.molasses}
       >
@@ -57,6 +57,22 @@ const IndexPage = () => {
             />
           </a>
         </div>
+        <Spring
+          className="intro"
+          from={{ height: 100, opacity: 0 }}
+          to={{ height: 405, opacity: 1 }}
+          delay="1000"
+          //config={config.molasses}
+        >
+          {props => (
+            <div style={props}>
+              <img
+                style={{ height: 400, width: "100%" }}
+                src={require("../images/code.jpg")}
+              />
+            </div>
+          )}
+        </Spring>
         <div className="index-con2">
           <div id="projects">
             <h1 className="project-title">Projects</h1>
