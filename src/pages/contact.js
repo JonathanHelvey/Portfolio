@@ -19,7 +19,6 @@ const Contact = ({ data }) => (
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        netlify
       >
         <p>
           <label>
