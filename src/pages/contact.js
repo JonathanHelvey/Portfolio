@@ -10,7 +10,33 @@ import SEO from "../components/seo"
 const Contact = ({ data }) => (
   <Layout>
     <SEO title="Contact" />
-    <p>Resume is on the way!</p> <Link to="/">Go back to the homepage</Link>
+    <div>
+      <p>Contact Me!</p>
+      <h3>jonathanhelvey27@gmail.com</h3>
+      <br />
+      <form
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        netlify
+      >
+        <p>
+          <label>
+            Name <input type="text" name="name" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Email <input type="email" name="email" />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </div>
+     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

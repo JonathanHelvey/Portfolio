@@ -61,7 +61,7 @@ const IndexPage = () => {
           className="intro"
           from={{ height: 100, opacity: 0 }}
           to={{ height: 405, opacity: 1 }}
-          delay="1000"
+          delay="2000"
           //config={config.molasses}
         >
           {props => (
