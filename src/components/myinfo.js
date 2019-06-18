@@ -27,7 +27,7 @@ const MyInfo = () => {
             <strong>
               Node, Express, React, Redux, PostgresSQL, and Sequelize.
             </strong>
-            Interested in expanding my knowledge in new technologies.
+            Interested in expanding my knowledge and learning new technologies.
           </p>
           <p className="my-details">
             <strong>
