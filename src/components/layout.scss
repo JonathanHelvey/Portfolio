@@ -869,14 +869,14 @@ pre tt:after {
 .nav-flex-burger a {
   display: block;
   color: white;
-  padding: 18px 1px 1px 10px;
+  padding: 12px 1px 1px 10px;
   text-decoration: none;
   font-size: 16px;
   border-radius: 9px;
   outline: none;
   position: relative;
   margin-right: 80px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 @media (max-width: 600px) {
   .nav-flex-burger {
@@ -907,17 +907,52 @@ pre tt:after {
   margin: 20px;
   cursor: pointer;
 }
-.hvrbox {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  height: 60px;
-  width: 60px;
-  margin: 20px;
-  cursor: pointer;
-}
 .hvrbox img {
   max-width: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  /* Apply animation to this element */
+  -moz-animation: example1 8s linear infinite;
+  -webkit-animation: example1 8s linear infinite;
+  animation: example1 8s linear infinite;
+  animation-iteration-count: 2.5;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes example1 {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes example1 {
+  0% {
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
 }
 .hvrbox .hvrbox-layer_bottom {
   display: block;
@@ -1059,19 +1094,41 @@ pre tt:after {
   cursor: pointer;
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hire-me-button {
   cursor: pointer;
   border-radius: 8px;
   color: white;
   background: black;
   border: none;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-bottom: 10px;
   padding-top: 10px;
   font-family: "Playfair Display", serif;
   font-display: black;
-  font-size: 32px;
+  font-size: 28px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  margin: 2%;
+  display: flex;
+  text-decoration: none;
+  position: relative;
+}
+.hire-me-button a {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 20px;
+  color: white;
+  background: black;
+  border: none;
+  font-family: "Playfair Display", serif;
+  font-display: black;
+  font-size: 26px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
   margin: 2%;
   display: flex;
@@ -1091,6 +1148,46 @@ pre tt:after {
     padding-bottom: 10px;
     padding-top: 10px;
   }
+}
+.resume-button {
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+  background: black;
+  border: none;
+  font-family: "Playfair Display", serif;
+  font-display: black;
+  font-size: 26px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  padding-right: 20px;
+  padding-left: 20px;
+  // width: 500px;
+}
+.resume-button a {
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+  background: black;
+  border: none;
+  font-family: "Playfair Display", serif;
+  font-display: black;
+  font-size: 26px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+}
+
+.resume-button:hover {
+  background-color: gainsboro;
+  color: #333;
 }
 
 .form-button {

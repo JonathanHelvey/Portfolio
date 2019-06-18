@@ -60,13 +60,17 @@ const Contact = ({ data }) => (
           </button>
         </p>
       </form>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <button className="resume-button">
+          <a href={require("../templates/JonathanHelveyResume.pdf")} download>
+            Jonathan Helvey Technical Resume PDF
+          </a>
+        </button>
+      </div>
     </div>
-    <br />
-     
     <Link className="your-company" to="/">
       Go back to the homepage
     </Link>
-    <br />
   </Layout>
 )
 
