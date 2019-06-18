@@ -1,6 +1,5 @@
 import React from "react"
 import Gretting from "../components/greeting"
-import Counter from "../components/counter"
 import { Spring, config } from "react-spring/renderprops"
 
 const Intro = () => {
@@ -26,7 +25,6 @@ const Intro = () => {
               </div>
             )}
           </Spring>
-          <Counter />
         </div>
       </div>
     </div>

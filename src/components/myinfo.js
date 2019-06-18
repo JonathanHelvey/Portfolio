@@ -40,7 +40,7 @@ const MyInfo = () => {
         <Link className="hire-me-button" to="/contact/">
           <button className="hire-me-button">Hire Me</button>
         </Link>
-        <button className="resume-button">
+        <button className="hire-me-button">
           <a href={require("../templates/JonathanHelveyResume.pdf")} download>
             Resume PDF
           </a>
