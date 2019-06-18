@@ -100,7 +100,10 @@ const IndexPage = () => {
               </div>
             </div>
             <div class="col" ontouchstart="this.classList.toggle('hover')">
-              <a href="https://edmazon.herokuapp.com/products/offset/0">
+              <a
+                className="pop-image-ed"
+                href="https://edmazon.herokuapp.com/products/offset/0"
+              >
                 <img
                   className="pop-image"
                   src={require("../images/edmazon.jpg")}
@@ -126,13 +129,18 @@ const IndexPage = () => {
               </div>
             </div>
             <div class="col" ontouchstart="this.classList.toggle('hover')">
-              <a href="https://expo.io/@jhelvey/Tour">
-                <img
-                  className="pop-image"
-                  src={require("../images/tourScan.png")}
-                  alt="Pop'N Spots Title"
-                />
-              </a>
+              <div>
+                <a
+                  className="pop-image-tour"
+                  href="https://expo.io/@jhelvey/Tour"
+                >
+                  <img
+                    className="pop-image"
+                    src={require("../images/tourScan.png")}
+                    alt="Pop'N Spots Title"
+                  />
+                </a>
+              </div>
               <div className="container">
                 <div className="front">
                   <div className="inner">

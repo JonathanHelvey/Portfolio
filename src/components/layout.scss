@@ -754,12 +754,20 @@ pre tt:after {
   text-shadow: -1px 0 white, 0 3px white, 3px 0 white, 0 -1px white;
   font-family: "Playfair Display", serif;
 }
+.pop-image-tour {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+}
+.pop-image-ed {
+  display: flex;
+  background-color: rgb(29, 25, 25);
+  justify-content: center;
+}
 
 .pop-image {
-  box-shadow: 0px 22px 65px 4px rgba(0, 0, 0, 0.14);
-  height: 250px;
+  height: 240px;
   cursor: pointer;
-  // width: 400px;
   display: flex;
 }
 @media (max-width: 600px) {
@@ -1250,7 +1258,7 @@ pre tt:after {
 }
 
 .col {
-  width: calc(50% - 2rem);
+  width: calc(39% - 2rem);
   margin: 0.5rem;
   cursor: pointer;
 }
@@ -1277,7 +1285,7 @@ pre tt:after {
   text-align: center;
   min-height: 280px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 2px;
   color: #fff;
   font-size: 1.5rem;
 }
@@ -1302,16 +1310,16 @@ pre tt:after {
   background-color: #000;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 .container:hover .front,
 .container:hover .back {
-  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
-    -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1),
+    -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
 .back {
