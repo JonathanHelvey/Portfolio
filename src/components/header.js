@@ -42,7 +42,7 @@ class Header extends React.Component {
             </li>
             <li className="links">
               <Link className="links" to="/contact/">
-                <button className="button-links-nav">HIRE</button>
+                <button className="button-links-nav">CONTACT</button>
               </Link>
             </li>
           </ul>
@@ -70,7 +70,7 @@ class Header extends React.Component {
                   </div>
                   <div>
                     <Link to="/contact/">
-                      <button className="button-links">Hire</button>
+                      <button className="button-links">Contact</button>
                     </Link>
                   </div>
                 </div>

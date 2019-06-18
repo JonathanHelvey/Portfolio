@@ -3,7 +3,7 @@ import React from "react"
 
 const edCard = () => {
   return (
-    <div className="card">
+    <div>
       <div className="card-inside">
         <div className="techs-card">
           <div className="hvrbox2">
@@ -83,21 +83,9 @@ const edCard = () => {
             </div>
           </a>
         </div>
+
         <div className="details">
-          <p className="details2">
-            Grace Shopper E-Commerce Site. Buy online Coding Courses from the
-            best Teaching Fellow at Full Stack Academy.
-          </p>
-        </div>
-        <div className="details">
-          <h4 className="project-title">Edmazon</h4>
-          <a href="https://edmazon.herokuapp.com/products/offset/0">
-            <img
-              className="pop-image"
-              src={require("../images/edmazon.jpg")}
-              alt="Pop'N Spots Title"
-            />
-          </a>
+          <h4 className="project-title2">Edmazon</h4>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import React from "react"
 
 const GuessCard = () => {
   return (
-    <div className="card">
+    <div>
       <div className="card-inside">
         <div className="techs-card">
           <div className="hvrbox2">
@@ -54,19 +54,7 @@ const GuessCard = () => {
           </a>
         </div>
         <div className="details">
-          <p className="details2">
-            Guessing-Game! Guess a number between 1 & 100!
-          </p>
-        </div>
-        <div className="details">
-          <h4 className="project-title">Guessing-Game</h4>
-          <a href="https://jonathanhelvey.github.io/guessing-game/">
-            <img
-              className="pop-image"
-              src={require("../images/guessing-game.png")}
-              alt="Pop'N Spots Title"
-            />
-          </a>
+          <h4 className="project-title2">Guessing-Game</h4>
         </div>
       </div>
     </div>

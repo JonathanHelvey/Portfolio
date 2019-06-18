@@ -68,17 +68,140 @@ const IndexPage = () => {
             </div>
           )}
         </Spring>
-        <div id="projects" className="index-con2">
-          <div>
-            <h1 className="project-title">Projects</h1>
-          </div>
-
-          <div className="the-cards">
-            <Card />
-            <EdCard />
-            <TourCard />
-            <GuessCard />
-            <ColorGen />
+        <div className="wrapper">
+          <h1 id="projects" className="project-title">
+            Projects
+          </h1>
+          <div className="cols">
+            <div class="col" ontouchstart="this.classList.toggle('hover')">
+              <a href="https://bluebubbles-998d5.firebaseapp.com/">
+                <img
+                  className="pop-image"
+                  src={require("../images/popnspots.jpeg")}
+                  alt="Pop'N Spots Title"
+                />
+              </a>
+              <div className="container">
+                <div className="front">
+                  <div className="inner">
+                    <div className="details">
+                      <p className="details2">
+                        Let Pop'N Spots help you find Popular spots by showing
+                        you the business of a place through data visualizations.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="back">
+                  <div className="inner">
+                    <Card />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover')">
+              <a href="https://edmazon.herokuapp.com/products/offset/0">
+                <img
+                  className="pop-image"
+                  src={require("../images/edmazon.jpg")}
+                  alt="Pop'N Spots Title"
+                />
+              </a>
+              <div className="container">
+                <div className="front">
+                  <div className="inner">
+                    <div className="details">
+                      <p className="details2">
+                        Grace Shopper E-Commerce Site. Buy online Coding Courses
+                        from the best Teaching Fellow at Full Stack Academy.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="back">
+                  <div className="inner">
+                    <EdCard />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover')">
+              <a href="https://expo.io/@jhelvey/Tour">
+                <img
+                  className="pop-image"
+                  src={require("../images/tourScan.png")}
+                  alt="Pop'N Spots Title"
+                />
+              </a>
+              <div className="container">
+                <div className="front">
+                  <div className="inner">
+                    <div className="details">
+                      <p className="details2">
+                        Android mobile application showing the most obsure
+                        places around Chicago. Built with React-Native and Expo
+                        CLI
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="back">
+                  <div className="inner">
+                    <TourCard />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover')">
+              <a href="https://jonathanhelvey.github.io/guessing-game/">
+                <img
+                  className="pop-image"
+                  src={require("../images/guessing-game.png")}
+                  alt="Pop'N Spots Title"
+                />
+              </a>
+              <div className="container">
+                <div className="front">
+                  <div className="inner">
+                    <div className="details">
+                      <p className="details2">
+                        Guessing-Game! Guess a number between 1 & 100!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="back">
+                  <div className="inner">
+                    <GuessCard />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover')">
+              <a href="https://jonathanhelvey.github.io/Background-Color-Generator/">
+                <img
+                  className="pop-image"
+                  src={require("../images/colorGenerator.png")}
+                  alt="Pop'N Spots Title"
+                />
+              </a>
+              <div className="container">
+                <div className="front">
+                  <div className="inner">
+                    <div className="details">
+                      <p className="details2">
+                        Pick the right Gradiant Colors for your website!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="back">
+                  <div className="inner">
+                    <ColorGen />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div id="tech" className="index-con3">

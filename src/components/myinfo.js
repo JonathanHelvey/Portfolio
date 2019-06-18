@@ -31,7 +31,7 @@ const MyInfo = () => {
           </p>
           <p className="my-details">
             <strong>
-              I am currently seeking new opportunities for work as a Full Stack
+              *I am currently seeking new opportunities for work as a Full Stack
               Developer.
             </strong>
           </p>{" "}

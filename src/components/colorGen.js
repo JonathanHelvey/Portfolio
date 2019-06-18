@@ -3,7 +3,7 @@ import React from "react"
 
 const ColorGen = () => {
   return (
-    <div className="card">
+    <div>
       <div className="card-inside">
         <div className="techs-card">
           <div className="hvrbox2">
@@ -55,19 +55,7 @@ const ColorGen = () => {
           </a>
         </div>
         <div className="details">
-          <p className="details2">
-            Pick the right Gradiant Colors for your website!
-          </p>
-        </div>
-        <div className="details">
-          <h4 className="project-title">Color Generator</h4>
-          <a href="https://jonathanhelvey.github.io/Background-Color-Generator/">
-            <img
-              className="pop-image"
-              src={require("../images/colorGenerator.png")}
-              alt="Pop'N Spots Title"
-            />
-          </a>
+          <h4 className="project-title2">Color Generator</h4>
         </div>
       </div>
     </div>

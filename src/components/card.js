@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 const Card = ({ data }) => {
   return (
-    <div className="card">
+    <div>
       <div className="card-inside">
         <div className="techs-card">
           <div className="hvrbox2">
@@ -84,21 +84,9 @@ const Card = ({ data }) => {
             </div>
           </a>
         </div>
+
         <div className="details">
-          <p className="details2">
-            Let Pop'N Spots help you find Popular spots by showing you the
-            business of a place through data visualizations.
-          </p>
-        </div>
-        <div className="details">
-          <h4 className="project-title">Pop'N Spots</h4>
-          <a href="https://bluebubbles-998d5.firebaseapp.com/">
-            <img
-              className="pop-image"
-              src={require("../images/popnspots.jpeg")}
-              alt="Pop'N Spots Title"
-            />
-          </a>
+          <h4 className="project-title2">Pop'N Spots</h4>
         </div>
       </div>
     </div>

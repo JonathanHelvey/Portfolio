@@ -2,7 +2,7 @@ import React from "react"
 
 const tourCard = () => {
   return (
-    <div className="card">
+    <div>
       <div className="card-inside">
         <div className="techs-card">
           <div className="hvrbox2">
@@ -82,21 +82,9 @@ const tourCard = () => {
             </div>
           </a>
         </div>
+
         <div className="details">
-          <p className="details2">
-            Android mobile application showing the most obsure places around
-            Chicago. Built with React-Native and Expo CLI
-          </p>
-        </div>
-        <div className="details">
-          <h4 className="project-title">Tour</h4>
-          <a href="https://expo.io/@jhelvey/Tour">
-            <img
-              className="pop-image"
-              src={require("../images/tourScan.png")}
-              alt="Pop'N Spots Title"
-            />
-          </a>
+          <h4 className="project-title2">Tour</h4>
         </div>
       </div>
     </div>
