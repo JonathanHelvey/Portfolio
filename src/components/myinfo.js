@@ -11,18 +11,23 @@ const MyInfo = () => {
             Hi, I'm <strong>Joantahn Helvey.</strong> I am a
             <strong style={{ color: "red" }}> Full Stack Developer</strong> who
             loves building interactive, animated, responsive websites. I have a
-            bacground in the arts and have decided to bring that creativity to
-            web development. I love to create web-designs that interact with the
-            user in a fun and enjoyable way. The browser is my canvas and I
-            enjoy manipulating the dom into an interactive portrait.
+            background in the <strong style={{ color: "blue" }}>a</strong>
+            <strong style={{ color: "red" }}>r</strong>
+            <strong style={{ color: "green" }}>t</strong>
+            <strong style={{ color: "purple" }}>s</strong> and have decided to
+            bring that creativity to web development. I love to create
+            web-designs that interact with the user in a fun and enjoyable way.
+            The browser is my canvas and I enjoy manipulating the dom into an
+            interactive portrait.
           </p>
           <p className="my-details">
             I am a recent graduate of FullStack Academy of Code. An intensive 19
             week coding bootcamp that helped me become proficient in a
-            Javascript-based stack:{" "}
+            Javascript-based stack:
             <strong>
               Node, Express, React, Redux, PostgresSQL, and Sequelize.
             </strong>
+            Interested in expanding my knowledge in new technologies.
           </p>
           <p className="my-details">
             <strong>
