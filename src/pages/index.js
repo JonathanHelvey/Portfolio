@@ -74,7 +74,10 @@ const IndexPage = () => {
           </h1>
           <div className="cols">
             <div class="col" ontouchstart="this.classList.toggle('hover')">
-              <a href="https://bluebubbles-998d5.firebaseapp.com/">
+              <a
+                className="pop-image-tour"
+                href="https://bluebubbles-998d5.firebaseapp.com/"
+              >
                 <img
                   className="pop-image"
                   src={require("../images/popnspots.jpeg")}
@@ -161,7 +164,10 @@ const IndexPage = () => {
               </div>
             </div>
             <div class="col" ontouchstart="this.classList.toggle('hover')">
-              <a href="https://jonathanhelvey.github.io/guessing-game/">
+              <a
+                className="pop-image-tour"
+                href="https://jonathanhelvey.github.io/guessing-game/"
+              >
                 <img
                   className="pop-image"
                   src={require("../images/guessing-game.png")}
@@ -186,7 +192,10 @@ const IndexPage = () => {
               </div>
             </div>
             <div class="col" ontouchstart="this.classList.toggle('hover')">
-              <a href="https://jonathanhelvey.github.io/Background-Color-Generator/">
+              <a
+                className="pop-image-tour"
+                href="https://jonathanhelvey.github.io/Background-Color-Generator/"
+              >
                 <img
                   className="pop-image"
                   src={require("../images/colorGenerator.png")}
