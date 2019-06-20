@@ -8,7 +8,7 @@ const MyInfo = () => {
         <h2 className="project-title">About Me</h2>
         <div>
           <p className="my-details">
-            Hi, I'm <strong>Joantahn Helvey.</strong> I am a
+            Hi, I'm <strong>Jonathan Helvey.</strong> I am a
             <strong style={{ color: "red" }}> Full Stack Developer</strong> who
             loves building interactive, animated, responsive websites. I have a
             background in the <strong style={{ color: "blue" }}>a</strong>
