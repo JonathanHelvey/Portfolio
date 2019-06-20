@@ -55,7 +55,7 @@ const IndexPage = () => {
             />
           </a>
         </div>
-        <Spring
+        {/* <Spring
           className="intro"
           from={{ height: 100, opacity: 0 }}
           to={{ height: 1605, width: "100%", opacity: 1 }}
@@ -63,11 +63,11 @@ const IndexPage = () => {
           config={config.molasses}
         >
           {props => (
-            <div style={props}>
+            <div >
               <img style={props} src={require("../images/code.jpg")} />
             </div>
           )}
-        </Spring>
+        </Spring> */}
         <div className="wrapper">
           <h1 id="projects" className="project-title">
             Projects
@@ -106,7 +106,7 @@ const IndexPage = () => {
             </div>
             <div class="col" ontouchstart="this.classList.toggle('hover')">
               <a
-                className="pop-image-ed"
+                className="pop-image-tour"
                 href="https://edmazon.herokuapp.com/products/offset/0"
               >
                 <img
