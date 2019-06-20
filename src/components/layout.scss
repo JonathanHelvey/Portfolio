@@ -607,6 +607,7 @@ pre tt:after {
 .inside-index-con3 {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   max-width: 1560;
   padding: 0px 1.0875rem 0px;
   padding-top: 20px;
@@ -768,6 +769,9 @@ pre tt:after {
   height: 300px;
   cursor: pointer;
   display: flex;
+  padding: 1px;
+  border: 1px solid #021a40;
+  background-color: white;
 }
 @media (max-width: 600px) {
   .pop-image a {
@@ -796,7 +800,7 @@ pre tt:after {
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 26px;
   font-family: "Playfair Display", serif;
 }
 

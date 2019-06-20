@@ -80,7 +80,7 @@ const IndexPage = () => {
               >
                 <img
                   className="pop-image"
-                  src={require("../images/popnspots.jpeg")}
+                  src={require("../images/popnspotsmap.png")}
                   alt="Pop'N Spots Title"
                 />
               </a>
@@ -89,8 +89,10 @@ const IndexPage = () => {
                   <div className="inner">
                     <div className="details">
                       <p className="details2">
-                        Let Pop'N Spots help you find Popular spots by showing
-                        you the business of a place through data visualizations.
+                        Pop'n Spots puts the city in your pocket. Finding your
+                        next spot has never been easier, with our streamlined
+                        and intuitive user interface. Desktop and mobile city
+                        guide with data visualizations.
                       </p>
                     </div>
                   </div>
@@ -109,7 +111,7 @@ const IndexPage = () => {
               >
                 <img
                   className="pop-image"
-                  src={require("../images/edmazon.jpg")}
+                  src={require("../images/Edmazon.png")}
                   alt="Pop'N Spots Title"
                 />
               </a>
@@ -118,8 +120,9 @@ const IndexPage = () => {
                   <div className="inner">
                     <div className="details">
                       <p className="details2">
-                        Grace Shopper E-Commerce Site. Buy online Coding Courses
-                        from the best Teaching Fellow at Full Stack Academy.
+                        A full-featured RESTful e-commerce store built as a
+                        bootcamp learning project for the NERDS stack. Desktop
+                        only.
                       </p>
                     </div>
                   </div>
@@ -131,38 +134,7 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover')">
-              <div>
-                <a
-                  className="pop-image-tour"
-                  href="https://expo.io/@jhelvey/Tour"
-                >
-                  <img
-                    className="pop-image"
-                    src={require("../images/tourScan.png")}
-                    alt="Pop'N Spots Title"
-                  />
-                </a>
-              </div>
-              <div className="container">
-                <div className="front">
-                  <div className="inner">
-                    <div className="details">
-                      <p className="details2">
-                        Android mobile application showing the most obsure
-                        places around Chicago. Built with React-Native and Expo
-                        CLI
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="back">
-                  <div className="inner">
-                    <TourCard />
-                  </div>
-                </div>
-              </div>
-            </div>
+
             <div class="col" ontouchstart="this.classList.toggle('hover')">
               <a
                 className="pop-image-tour"
@@ -215,6 +187,38 @@ const IndexPage = () => {
                 <div className="back">
                   <div className="inner">
                     <ColorGen />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover')">
+              <div>
+                <a
+                  className="pop-image-tour"
+                  href="https://expo.io/@jhelvey/Tour"
+                >
+                  <img
+                    className="pop-image"
+                    src={require("../images/tourScan.png")}
+                    alt="Pop'N Spots Title"
+                  />
+                </a>
+              </div>
+              <div className="container">
+                <div className="front">
+                  <div className="inner">
+                    <div className="details">
+                      <p className="details2">
+                        Android mobile application showing the most obsure
+                        places around Chicago. Built with React-Native and Expo
+                        CLI
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="back">
+                  <div className="inner">
+                    <TourCard />
                   </div>
                 </div>
               </div>
