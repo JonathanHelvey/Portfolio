@@ -695,34 +695,12 @@ pre tt:after {
   font-family: "Playfair Display", serif;
 }
 .project-title2 {
-  padding: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Playfair Display", serif;
 }
-@media (max-width: 600px) {
-  .project-title2 {
-    display: none;
-  }
-}
-
-// .card {
-//   background-color: white;
-//   width: 30%;
-//   margin: 10px;
-//   border-radius: 1em;
-//   box-shadow: 0px 22px 65px 4px rgba(0, 0, 0, 0.14);
-// }
-
-// .card:hover {
-//   box-shadow: 0px 22px 65px 4px rgba(0, 0, 0, 0.14);
-//   background-color: black;
-//   color: rgb(214, 186, 186);
-//   z-index: 2;
-//   // font-size: 20px;
-// }
 
 .card-inside {
   list-style: none;
@@ -732,6 +710,7 @@ pre tt:after {
 }
 
 .jonathan {
+  padding-top: 10px;
   font-size: 50px;
   display: flex;
   justify-content: center;
@@ -1070,8 +1049,8 @@ pre tt:after {
   font-size: 15px;
   border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
   border-top: 1px solid rgba(179, 179, 179, 0.7);
-  margin-top: 5px;
-  padding-top: 2px;
+  margin-top: 2px;
+  padding-top: 1px;
   display: none;
 }
 .hvrbox.active .hvrbox-text_mobile {
@@ -1292,7 +1271,7 @@ pre tt:after {
   height: auto;
   border-radius: 2px;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .back {
