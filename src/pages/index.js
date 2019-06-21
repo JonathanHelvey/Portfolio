@@ -64,7 +64,11 @@ const IndexPage = () => {
         >
           {props => (
             <div>
-              <img style={props} src={require("../images/code.jpg")} />
+              <img
+                style={props}
+                src={require("../images/code.jpg")}
+                alt="social-sites"
+              />
             </div>
           )}
         </Spring>

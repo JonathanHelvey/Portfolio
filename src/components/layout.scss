@@ -600,6 +600,9 @@ pre tt:after {
 .index-con3 {
   display: flex;
   padding-top: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+  align-items: center;
 }
 
 .index-con4 {
@@ -689,6 +692,7 @@ pre tt:after {
   align-items: center;
   justify-content: center;
   font-family: "Playfair Display", serif;
+  text-decoration: underline;
 }
 .project-title2 {
   margin-top: 5px;

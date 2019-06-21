@@ -1,5 +1,5 @@
 import React from "react"
-import Img from "gatsby-image"
+//import Img from "gatsby-image"
 //import { Link } from "gatsby"
 
 const Card = ({ data }) => {
