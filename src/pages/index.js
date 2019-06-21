@@ -30,8 +30,8 @@ const IndexPage = () => {
           </div>
         )}
       </Spring>
-
-      <div title="Projects">
+      <div title="Projects" />
+      <div>
         <div className="index-con4">
           <a href="https://www.linkedin.com/in/jonathanhelvey/">
             <img
@@ -230,6 +230,9 @@ const IndexPage = () => {
           </div>
         </div>
         <div id="tech">
+          <TechStack />
+        </div>
+        <div>
           <div>
             <div className="info2">
               <MyInfo />
@@ -258,9 +261,6 @@ const IndexPage = () => {
               alt="social-sites"
             />
           </a>
-        </div>
-        <div>
-          <TechStack />
         </div>
       </div>
     </Layout>

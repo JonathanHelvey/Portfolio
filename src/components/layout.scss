@@ -588,6 +588,8 @@ pre tt:after {
   justify-content: center;
   font-family: "Playfair Display", serif;
   text-decoration: underline;
+  padding-top: 70px;
+  margin-top: 20px;
 }
 
 .index-container {
@@ -630,12 +632,13 @@ pre tt:after {
   height: 260px;
   margin-right: 40px;
   margin-left: 40px;
+  margin-top: 20px;
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 1em;
-  box-shadow: 0px 22px 65px 4px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 12px 45px 4px rgba(0, 0, 0, 0.14);
 }
 
 @media (max-width: 600px) {
@@ -686,7 +689,7 @@ pre tt:after {
 }
 
 .project-title {
-  padding-top: 60px;
+  padding-top: 65px;
   margin: 40px;
   display: flex;
   align-items: center;
@@ -1213,6 +1216,7 @@ pre tt:after {
   text-align: center;
   text-shadow: -1px 0 white, 0 3px white, 3px 0 white, 0 -1px white;
   font-family: "Playfair Display", serif;
+  cursor: pointer;
 }
 
 .form-button:hover {
