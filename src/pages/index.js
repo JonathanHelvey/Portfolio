@@ -1,5 +1,4 @@
 import React from "react"
-
 import Layout from "../components/layout"
 //import Image from "../components/image"
 import SEO from "../components/seo"
@@ -18,6 +17,7 @@ import { Spring, config } from "react-spring/renderprops"
 const IndexPage = () => {
   return (
     <Layout>
+      <SEO title="Home" />
       <Spring
         from={{ height: 100, opacity: 0 }}
         to={{ height: 275, opacity: 1 }}
@@ -30,8 +30,8 @@ const IndexPage = () => {
           </div>
         )}
       </Spring>
-      <SEO title="Projects" />
-      <div>
+
+      <div title="Projects">
         <div className="index-con4">
           <a href="https://www.linkedin.com/in/jonathanhelvey/">
             <img

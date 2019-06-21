@@ -8,6 +8,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
+import favicon32 from "../images/favicon_io/favicon-32x32.png"
+import favicon16 from "../images/favicon_io/favicon-16x16.png"
+import favicon512 from "../images/favicon_io/android-chrome-512x512.png"
+import favicon192 from "../images/favicon_io/android-chrome-192x192.png"
+
 import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
@@ -37,15 +42,15 @@ function SEO({ description, lang, meta, title }) {
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: "Jonathan Helvey - Full Stack Web Developer",
         },
         {
           property: `og:title`,
-          content: title,
+          content: "Jonathan Helvey - Full Stack Web Developer",
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: "fullstack, developer",
         },
         {
           property: `og:type`,
@@ -68,6 +73,33 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
+      link={[
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "16x16",
+          href: `${favicon16}`,
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "32x32",
+          href: `${favicon32}`,
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "32x32",
+          href: `${favicon512}`,
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "32x32",
+          href: `${favicon192}`,
+        },
+        { rel: "shortcut icon", type: "image/png", href: `${favicon32}` },
+      ]}
     />
   )
 }
