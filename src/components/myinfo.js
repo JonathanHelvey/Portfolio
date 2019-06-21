@@ -34,14 +34,11 @@ const MyInfo = () => {
               <strong>
                 Node, Express, React, Redux, PostgresSQL, and Sequelize.
               </strong>
-              Interested in expanding my knowledge and learning new
-              technologies.
             </p>
             <p className="my-details">
-              <strong>
-                *I am Interested in expanding my knowledge of development best
-                practices and learning new technologies. Let's work together!
-              </strong>
+              <strong>*</strong>I am Interested in expanding my knowledge of
+              development best practices and learning new technologies.{" "}
+              <strong> Let's work together!</strong>
             </p>{" "}
           </ul>
         </div>
