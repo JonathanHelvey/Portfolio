@@ -42,7 +42,7 @@ function SEO({ description, lang, meta, title }) {
       meta={[
         {
           name: `description`,
-          content: "Jonathan Helvey - Full Stack Web Developer",
+          content: metaDescription,
         },
         {
           property: `og:title`,
