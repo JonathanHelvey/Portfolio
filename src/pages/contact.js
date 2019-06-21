@@ -11,7 +11,7 @@ const Contact = ({ data }) => (
   <Layout>
     <SEO title="Contact" />
     <div className="form">
-      <p className="jonathan">Contact Me!</p>
+      <p className="contact-title">Contact Me!</p>
       <form
         className="form"
         name="contact"
