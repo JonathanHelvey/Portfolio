@@ -208,7 +208,7 @@ const IndexPage = () => {
                       <p className="details2">
                         A responsive static portfolio site built as a learning
                         project for the JAMstack. Builds from Markdown files
-                        queried through Gatsby's GraphQL data layer!
+                        queried through Gatsby's GraphQL data layer.
                       </p>
                     </div>
                   </div>
@@ -240,7 +240,7 @@ const IndexPage = () => {
                       <p className="details2">
                         Android mobile application showing the most obsure
                         places around Chicago. Built with React-Native and Expo
-                        CLI
+                        CLI.
                       </p>
                     </div>
                   </div>
