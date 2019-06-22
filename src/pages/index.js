@@ -30,7 +30,6 @@ const IndexPage = () => {
           </div>
         )}
       </Spring>
-      <div title="Projects" />
       <div>
         <div className="index-con4">
           <a href="https://www.linkedin.com/in/jonathanhelvey/">
@@ -72,10 +71,9 @@ const IndexPage = () => {
             </div>
           )}
         </Spring> */}
+        <div id="projects" />
         <div className="wrapper">
-          <h1 id="projects" className="project-title">
-            Projects
-          </h1>
+          <h1 className="project-title">Projects</h1>
           <div className="cols">
             <div class="col" ontouchstart="this.classList.toggle('hover')">
               <a
@@ -232,7 +230,7 @@ const IndexPage = () => {
         <div>
           <TechStack />
         </div>
-        <div id="tech">
+        <div>
           <div>
             <div className="info2">
               <MyInfo />

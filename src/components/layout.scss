@@ -589,6 +589,7 @@ pre tt:after {
   font-family: "Playfair Display", serif;
   text-decoration: underline;
   padding: 20px;
+  margin-top: 50px;
 }
 .tech-container {
   margin: 0px;
@@ -621,6 +622,8 @@ pre tt:after {
   align-items: center;
   justify-content: center;
   background-image: require("../images/code.jpg");
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .my-buttons-container {
@@ -685,7 +688,18 @@ pre tt:after {
   font-family: "Playfair Display", serif;
   text-decoration: underline;
   padding: 20px;
+  margin-top: 70px;
 }
+
+.about-me-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  text-decoration: underline;
+  padding: 20px;
+}
+
 .project-title2 {
   margin-top: 5px;
   display: flex;

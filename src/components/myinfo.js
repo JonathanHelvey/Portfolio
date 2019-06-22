@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 
 const MyInfo = () => {
   return (
-    <div className="my-info">
+    <div id="tech" className="my-info">
       <div className="my-info-container">
-        <h2 className="project-title">About Me</h2>
+        <h2 className="about-me-title">About Me</h2>
         <div className="index-con3">
           <img
             className="headshot"
