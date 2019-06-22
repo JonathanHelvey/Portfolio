@@ -194,7 +194,10 @@ const IndexPage = () => {
               </div>
             </div>{" "}
             <div class="col" ontouchstart="this.classList.toggle('hover')">
-              <a className="pop-image-tour" href="www.jonathanhelvey.com">
+              <a
+                className="pop-image-tour"
+                href="https://www.jonathanhelvey.com/"
+              >
                 <img
                   className="pop-image"
                   src={require("../images/Portfolio.png")}
