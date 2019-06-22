@@ -10,6 +10,7 @@ import TechStack from "../components/techStack"
 import IntroCard from "../components/introCard"
 import ColorGen from "../components/colorGen"
 import TourCard from "../components/tourCard"
+import Portfolio from "../components/portfolio"
 import { Spring, config } from "react-spring/renderprops"
 
 //import { useSpring, animated } from "react-spring"
@@ -136,7 +137,6 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-
             <div class="col" ontouchstart="this.classList.toggle('hover')">
               <a
                 className="pop-image-tour"
@@ -189,6 +189,33 @@ const IndexPage = () => {
                 <div className="back">
                   <div className="inner">
                     <ColorGen />
+                  </div>
+                </div>
+              </div>
+            </div>{" "}
+            <div class="col" ontouchstart="this.classList.toggle('hover')">
+              <a className="pop-image-tour" href="www.jonathanhelvey.com">
+                <img
+                  className="pop-image"
+                  src={require("../images/Portfolio.png")}
+                  alt="Pop'N Spots Title"
+                />
+              </a>
+              <div className="container">
+                <div className="front">
+                  <div className="inner">
+                    <div className="details">
+                      <p className="details2">
+                        A responsive static portfolio site built as a learning
+                        project for the JAMstack. Builds from Markdown files
+                        queried through Gatsby's GraphQL data layer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="back">
+                  <div className="inner">
+                    <Portfolio />
                   </div>
                 </div>
               </div>

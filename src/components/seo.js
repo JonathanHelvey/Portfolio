@@ -8,10 +8,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
-import favicon32 from "../images/favicon_io/favicon-32x32.png"
-import favicon16 from "../images/favicon_io/favicon-16x16.png"
-import favicon512 from "../images/favicon_io/android-chrome-512x512.png"
-import favicon192 from "../images/favicon_io/android-chrome-192x192.png"
+import favicon32 from "../favicon_io/favicon-32x32.png"
+import favicon16 from "../favicon_io/favicon-16x16.png"
+import favicon512 from "../favicon_io/android-chrome-512x512.png"
+import favicon192 from "../favicon_io/android-chrome-192x192.png"
 
 import { useStaticQuery, graphql } from "gatsby"
 

@@ -19,6 +19,16 @@ const TechStack = () => {
           <div className="hvrbox">
             <img
               className="hvrbox-layer_bottom"
+              src={require("../images/Sass.svg")}
+              alt="tech"
+            />
+            <div className="hvrbox-layer_top">
+              <h4 className="hvrbox-text">SASS</h4>
+            </div>
+          </div>
+          <div className="hvrbox">
+            <img
+              className="hvrbox-layer_bottom"
               src={require("../images/JavaScript-logo.png")}
               alt="tech"
             />
