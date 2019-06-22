@@ -2,9 +2,9 @@ import React from "react"
 
 const TechStack = () => {
   return (
-    <div>
+    <div className="tech-container">
       <h2 className="tech-title">Tech That I know</h2>
-      <div className="my-info-card">
+      <div>
         <div className="index-container">
           <div className="hvrbox">
             <img

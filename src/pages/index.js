@@ -55,7 +55,7 @@ const IndexPage = () => {
             />
           </a>
         </div>
-        <Spring
+        {/* <Spring
           className="intro"
           from={{ height: 100, opacity: 0 }}
           to={{ height: 1605, width: "100%", opacity: 1 }}
@@ -71,7 +71,7 @@ const IndexPage = () => {
               />
             </div>
           )}
-        </Spring>
+        </Spring> */}
         <div className="wrapper">
           <h1 id="projects" className="project-title">
             Projects
@@ -229,10 +229,10 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        <div id="tech">
+        <div>
           <TechStack />
         </div>
-        <div>
+        <div id="tech">
           <div>
             <div className="info2">
               <MyInfo />
