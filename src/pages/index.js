@@ -91,11 +91,10 @@ const IndexPage = () => {
                 <div className="front">
                   <div className="inner">
                     <div className="details">
+                      <h2 className="titles">Pop'n Spots</h2>
                       <p className="details2">
-                        Finding your next spot has never been easier, with our
-                        streamlined and intuitive user interface. Desktop and
-                        mobile city guide that uses Google Maps API to show
-                        current occupancy.
+                        Desktop and mobile city guide that uses Google Maps API
+                        to show current occupancy data.
                       </p>
                     </div>
                   </div>
@@ -122,6 +121,9 @@ const IndexPage = () => {
                 <div className="front">
                   <div className="inner">
                     <div className="details">
+                      <div>
+                        <h2 className="titles">Edmazon</h2>
+                      </div>
                       <p className="details2">
                         A full-featured RESTful e-commerce store built as a
                         bootcamp learning project for the NERDS stack. Desktop
@@ -152,6 +154,7 @@ const IndexPage = () => {
                 <div className="front">
                   <div className="inner">
                     <div className="details">
+                      <h2 className="titles">Guessing Game</h2>
                       <p className="details2">
                         Guessing-Game! Guess a number between 1 & 100! Built
                         with vanailla JavaScript and CSS3.
@@ -181,6 +184,7 @@ const IndexPage = () => {
                 <div className="front">
                   <div className="inner">
                     <div className="details">
+                      <h2 className="titles">Background Color Generator</h2>
                       <p className="details2">
                         Pick the right Gradiant Colors for your website! Built
                         with vanailla JavaScript and CSS3.
@@ -210,6 +214,7 @@ const IndexPage = () => {
                 <div className="front">
                   <div className="inner">
                     <div className="details">
+                      <h2 className="titles">Portfolio</h2>
                       <p className="details2">
                         A responsive static portfolio site built as a learning
                         project for the JAMstack. Builds from Markdown files
@@ -242,6 +247,7 @@ const IndexPage = () => {
                 <div className="front">
                   <div className="inner">
                     <div className="details">
+                      <h2 className="titles">Tour</h2>
                       <p className="details2">
                         Android mobile application showing the most obsure
                         places around Chicago. Built with React-Native and Expo

@@ -594,6 +594,14 @@ pre tt:after {
 .tech-container {
   margin: 0px;
 }
+.titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  margin: 10px;
+  font-size: 20px;
+}
 
 .index-container {
   display: flex;
@@ -851,7 +859,7 @@ pre tt:after {
   height: 6%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .navbar {
     display: flex;
     justify-content: center;
@@ -877,7 +885,7 @@ pre tt:after {
   margin-right: 80px;
   margin-bottom: 14px;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .nav-flex-burger {
     display: none;
   }
@@ -1426,7 +1434,7 @@ pre tt:after {
   font-weight: 300;
 }
 
-@media screen and (max-width: 84rem) {
+@media screen and (max-width: 550px) {
   .col {
     width: calc(33.333333% - 2rem);
   }
