@@ -92,10 +92,10 @@ const IndexPage = () => {
                   <div className="inner">
                     <div className="details">
                       <p className="details2">
-                        Pop'n Spots puts the city in your pocket. Finding your
-                        next spot has never been easier, with our streamlined
-                        and intuitive user interface. Desktop and mobile city
-                        guide with data visualizations.
+                        Finding your next spot has never been easier, with our
+                        streamlined and intuitive user interface. Desktop and
+                        mobile city guide that uses Google Maps API to show
+                        current occupancy of a location.
                       </p>
                     </div>
                   </div>
@@ -153,7 +153,8 @@ const IndexPage = () => {
                   <div className="inner">
                     <div className="details">
                       <p className="details2">
-                        Guessing-Game! Guess a number between 1 & 100!
+                        Guessing-Game! Guess a number between 1 & 100! Built
+                        with vanailla JavaScript and CSS3.
                       </p>
                     </div>
                   </div>
@@ -181,7 +182,8 @@ const IndexPage = () => {
                   <div className="inner">
                     <div className="details">
                       <p className="details2">
-                        Pick the right Gradiant Colors for your website!
+                        Pick the right Gradiant Colors for your website! Built
+                        with vanailla JavaScript and CSS3.
                       </p>
                     </div>
                   </div>
