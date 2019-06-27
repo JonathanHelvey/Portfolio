@@ -95,7 +95,7 @@ const IndexPage = () => {
                         Finding your next spot has never been easier, with our
                         streamlined and intuitive user interface. Desktop and
                         mobile city guide that uses Google Maps API to show
-                        current occupancy of a location.
+                        current occupancy.
                       </p>
                     </div>
                   </div>
