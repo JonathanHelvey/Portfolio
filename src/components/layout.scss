@@ -612,7 +612,7 @@ pre tt:after {
 
 .index-con3 {
   display: flex;
-  padding-top: 10px;
+
   margin-left: 20px;
   margin-right: 20px;
   align-items: center;
@@ -808,6 +808,12 @@ pre tt:after {
   align-items: center;
   font-size: 26px;
   font-family: "Playfair Display", serif;
+}
+
+@media (max-width: 600px) {
+  .my-details {
+    font-size: 12px;
+  }
 }
 
 .links {
@@ -1127,6 +1133,14 @@ pre tt:after {
   color: #333;
 }
 
+@media (max-width: 600px) {
+  .resume-button2 {
+    font-size: 18px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
 .hire-me-button {
   cursor: pointer;
   border-radius: 8px;
@@ -1170,10 +1184,10 @@ pre tt:after {
 
 @media (max-width: 600px) {
   .hire-me-button {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    font-size: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+    margin: 0;
   }
 }
 .resume-button {
