@@ -39,7 +39,7 @@ const Contact = ({ data }) => (
             <input
               className="your-company"
               type="text"
-              placeholder="Your Company?"
+              placeholder="Company Name"
               name="company"
             />
           </label>
