@@ -19,7 +19,7 @@ const GuessImage = () => (
       query {
         guessingGame: file(relativePath: { eq: "guessing-game.png" }) {
           childImageSharp {
-            fluid(maxHeight: 700) {
+            fluid(maxWidth: 800, maxHeight: 440) {
               ...GatsbyImageSharpFluid
             }
           }

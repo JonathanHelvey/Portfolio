@@ -121,8 +121,7 @@ const IndexPage = () => {
                       </div>
                       <p className="details2">
                         A full-featured RESTful e-commerce store built as a
-                        bootcamp learning project for the NERDS stack. Desktop
-                        only.
+                        learning project for the NERDS stack.
                       </p>
                     </div>
                   </div>
@@ -196,9 +195,9 @@ const IndexPage = () => {
                     <div className="details">
                       <h2 className="titles">Portfolio</h2>
                       <p className="details2">
-                        A responsive static portfolio site built as a learning
-                        project for the JAMstack. Builds from Markdown files
-                        queried through Gatsby's GraphQL data layer!
+                        A responsive static portfolio site built in the
+                        JAMstack. Builds from Markdown files queried through
+                        Gatsby's GraphQL data layer!
                       </p>
                     </div>
                   </div>

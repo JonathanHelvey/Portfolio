@@ -19,7 +19,7 @@ const PopImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "popnspotsmap.png" }) {
           childImageSharp {
-            fluid(maxHeight: 700) {
+            fluid(maxWidth: 800, maxHeight: 440) {
               ...GatsbyImageSharpFluid
             }
           }

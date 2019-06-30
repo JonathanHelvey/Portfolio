@@ -692,7 +692,8 @@ pre tt:after {
 }
 
 .project-title2 {
-  margin-top: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1345,7 +1346,7 @@ pre tt:after {
   position: absolute;
   left: 0;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: 1px solid transparent;
@@ -1390,7 +1391,7 @@ pre tt:after {
 .front .inner p:after {
   content: "";
   width: 4rem;
-  height: 2px;
+  height: 0px;
   position: absolute;
   background: #c6d4df;
   display: block;
