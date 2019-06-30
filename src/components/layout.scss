@@ -65,14 +65,7 @@ progress {
 template {
   display: none;
 }
-// a {
-//   background-color: transparent;
-//   -webkit-text-decoration-skip: objects;
-// }
-// a:active,
-// a:hover {
-//   outline-width: 0;
-// }
+
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
@@ -234,17 +227,7 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
-img {
-  max-width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 0;
-}
+
 h1 {
   margin-left: 0;
   margin-right: 0;
@@ -561,7 +544,7 @@ pre tt:after {
     font-size: 100%;
   }
 }
-
+///////////////////////////////////////////////////////////
 .tech-img {
   height: 60px;
   width: 60px;
@@ -760,32 +743,12 @@ pre tt:after {
   text-shadow: -1px 0 white, 0 3px white, 3px 0 white, 0 -1px white;
   font-family: "Playfair Display", serif;
 }
-.pop-image-tour {
-  display: flex;
-  background-color: #ffffff;
-  justify-content: center;
-}
-.pop-image-ed {
-  display: flex;
-  background-color: rgb(29, 25, 25);
-  justify-content: center;
-}
 
 .pop-image {
-  height: 300px;
+  // height: 300px;
   cursor: pointer;
-  display: flex;
   padding: 1px;
   border: 1px solid #021a40;
-  background-color: white;
-}
-@media (max-width: 600px) {
-  .pop-image a {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-  }
 }
 
 .pop-image:hover {
@@ -933,11 +896,6 @@ pre tt:after {
   -moz-transform: translateX(0%);
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
-  /* Apply animation to this element */
-  // -moz-animation: example1 8s linear infinite;
-  // -webkit-animation: example1 8s linear infinite;
-  // animation: example1 8s linear infinite;
-  // animation-iteration-count: 1.5;
 }
 /* Move it (define the animation) */
 @-moz-keyframes example1 {
@@ -1425,7 +1383,6 @@ pre tt:after {
 }
 
 .front .inner p {
-  //font-size: 2rem;
   margin-bottom: 1;
   position: relative;
 }

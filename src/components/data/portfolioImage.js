@@ -19,7 +19,7 @@ const PortImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "Portfolio.png" }) {
           childImageSharp {
-            fluid {
+            fluid(maxHeight: 240) {
               ...GatsbyImageSharpFluid
             }
           }

@@ -81,18 +81,12 @@ const IndexPage = () => {
         <div className="wrapper">
           <h1 className="project-title">Projects</h1>
           <div className="cols">
-            <div class="col" ontouchstart="this.classList.toggle('hover')">
-              {/* <a
-                className="pop-image-tour"
-                href="https://bluebubbles-998d5.firebaseapp.com/"
-              >
-                <img
-                  className="pop-image"
-                  src={require("../images/popnspotsmap.png")}
-                  alt="Pop'N Spots Title"
-                />
-              </a> */}
-              <PopImage />
+            <div className="col" ontouchstart="this.classList.toggle('hover')">
+              <div className="pop-image">
+                <a href="https://bluebubbles-998d5.firebaseapp.com/">
+                  <PopImage />{" "}
+                </a>
+              </div>
               <div className="container">
                 <div className="front">
                   <div className="inner">
@@ -112,18 +106,12 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover')">
-              {/* <a
-                className="pop-image-tour"
-                href="https://edmazon.herokuapp.com/products/offset/0"
-              >
-                <img
-                  className="pop-image"
-                  src={require("../images/Edmazon.png")}
-                  alt="Pop'N Spots Title"
-                />
-              </a> */}
-              <EdImage />
+            <div className="col" ontouchstart="this.classList.toggle('hover')">
+              <div className="pop-image">
+                <a href="https://edmazon.herokuapp.com/products/offset/0">
+                  <EdImage />
+                </a>
+              </div>
               <div className="container">
                 <div className="front">
                   <div className="inner">
@@ -146,18 +134,12 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover')">
-              {/* <a
-                className="pop-image-tour"
-                href="https://jonathanhelvey.github.io/guessing-game/"
-              >
-                <img
-                  className="pop-image"
-                  src={require("../images/guessing-game.png")}
-                  alt="Pop'N Spots Title"
-                />
-              </a> */}
-              <GuessImage />
+            <div className="col" ontouchstart="this.classList.toggle('hover')">
+              <div className="pop-image">
+                <a href="https://jonathanhelvey.github.io/guessing-game/">
+                  <GuessImage />
+                </a>
+              </div>
               <div className="container">
                 <div className="front">
                   <div className="inner">
@@ -177,18 +159,12 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover')">
-              {/* <a
-                className="pop-image-tour"
-                href="https://jonathanhelvey.github.io/Background-Color-Generator/"
-              >
-                <img
-                  className="pop-image"
-                  src={require("../images/colorGenerator.png")}
-                  alt="Pop'N Spots Title"
-                />
-              </a> */}
-              <ColorGenImage />
+            <div className="col" ontouchstart="this.classList.toggle('hover')">
+              <div className="pop-image">
+                <a href="https://jonathanhelvey.github.io/Background-Color-Generator/">
+                  <ColorGenImage />
+                </a>
+              </div>
               <div className="container">
                 <div className="front">
                   <div className="inner">
@@ -208,18 +184,12 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover')">
-              {/* <a
-                className="pop-image-tour"
-                href="https://www.jonathanhelvey.com/"
-              >
-                <img
-                  className="pop-image"
-                  src={require("../images/Portfolio.png")}
-                  alt="Pop'N Spots Title"
-                />
-              </a> */}
-              <PortfolioImage />
+            <div className="col" ontouchstart="this.classList.toggle('hover')">
+              <div className="pop-image">
+                <a href="https://www.jonathanhelvey.com/">
+                  <PortfolioImage />
+                </a>
+              </div>
               <div className="container">
                 <div className="front">
                   <div className="inner">
@@ -240,19 +210,11 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover')">
-              <div>
-                {/* <a
-                  className="pop-image-tour"
-                  href="https://expo.io/@jhelvey/Tour"
-                >
-                  <img
-                    className="pop-image"
-                    src={require("../images/tourScan.png")}
-                    alt="Pop'N Spots Title"
-                  />
-                </a> */}
-                <TourImage />
+            <div className="col" ontouchstart="this.classList.toggle('hover')">
+              <div className="pop-image">
+                <a href="https://expo.io/@jhelvey/Tour">
+                  <TourImage />
+                </a>
               </div>
               <div className="container">
                 <div className="front">
