@@ -40,7 +40,6 @@ const ColorGen = () => {
         <div>
           <h6 className="project-title2">Built With</h6>
         </div>
-        <h6>Source Code</h6>
         <div className="hvrbox2">
           <a href="https://github.com/JonathanHelvey/Background-Color-Generator">
             <img
@@ -48,12 +47,12 @@ const ColorGen = () => {
               src={require("../images/github.png")}
               alt="tech"
             />
-
             <div className="hvrbox-layer_top">
               <h4 className="hvrbox-text">Source Code</h4>
             </div>
           </a>
         </div>
+        <h6 className="project-title2">Source Code</h6>
         <div className="details">
           <h4 className="project-title2">Color Generator</h4>
         </div>

@@ -71,7 +71,7 @@ const Card = ({ data }) => {
         <div>
           <h6 className="project-title2">Built With</h6>
         </div>
-        <h6>Source Code</h6>
+
         <div className="hvrbox2">
           <a href="https://github.com/capstone-bluebubbles/Pop-n-Spots">
             <img
@@ -84,7 +84,7 @@ const Card = ({ data }) => {
             </div>
           </a>
         </div>
-
+        <h6 className="project-title2">Source Code</h6>
         <div className="details">
           <h4 className="project-title2">Pop'N Spots</h4>
         </div>

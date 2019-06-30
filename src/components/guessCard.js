@@ -40,7 +40,6 @@ const GuessCard = () => {
         <div>
           <h6 className="project-title2">Built With</h6>
         </div>
-        <h6>Source code</h6>
         <div className="hvrbox2">
           <a href="https://github.com/JonathanHelvey/guessing-game">
             <img
@@ -53,6 +52,7 @@ const GuessCard = () => {
             </div>
           </a>
         </div>
+        <h6 className="project-title2">Source code</h6>
         <div className="details">
           <h4 className="project-title2">Guessing-Game</h4>
         </div>
