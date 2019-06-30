@@ -1,6 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
-//import Image from "../components/image"
+import PopImage from "../components/data/PopImage"
+import EdImage from "../components/data/EdImage"
+import GuessImage from "../components/data/GuessImage"
+import PortfolioImage from "../components/data/portfolioImage"
+import TourImage from "../components/data/tourImage"
+import ColorGenImage from "../components/data/ColorGenImage"
 import SEO from "../components/seo"
 import Card from "../components/card"
 import EdCard from "../components/edCard"
@@ -77,7 +82,7 @@ const IndexPage = () => {
           <h1 className="project-title">Projects</h1>
           <div className="cols">
             <div class="col" ontouchstart="this.classList.toggle('hover')">
-              <a
+              {/* <a
                 className="pop-image-tour"
                 href="https://bluebubbles-998d5.firebaseapp.com/"
               >
@@ -86,7 +91,8 @@ const IndexPage = () => {
                   src={require("../images/popnspotsmap.png")}
                   alt="Pop'N Spots Title"
                 />
-              </a>
+              </a> */}
+              <PopImage />
               <div className="container">
                 <div className="front">
                   <div className="inner">
@@ -107,7 +113,7 @@ const IndexPage = () => {
               </div>
             </div>
             <div class="col" ontouchstart="this.classList.toggle('hover')">
-              <a
+              {/* <a
                 className="pop-image-tour"
                 href="https://edmazon.herokuapp.com/products/offset/0"
               >
@@ -116,7 +122,8 @@ const IndexPage = () => {
                   src={require("../images/Edmazon.png")}
                   alt="Pop'N Spots Title"
                 />
-              </a>
+              </a> */}
+              <EdImage />
               <div className="container">
                 <div className="front">
                   <div className="inner">
@@ -140,7 +147,7 @@ const IndexPage = () => {
               </div>
             </div>
             <div class="col" ontouchstart="this.classList.toggle('hover')">
-              <a
+              {/* <a
                 className="pop-image-tour"
                 href="https://jonathanhelvey.github.io/guessing-game/"
               >
@@ -149,7 +156,8 @@ const IndexPage = () => {
                   src={require("../images/guessing-game.png")}
                   alt="Pop'N Spots Title"
                 />
-              </a>
+              </a> */}
+              <GuessImage />
               <div className="container">
                 <div className="front">
                   <div className="inner">
@@ -170,7 +178,7 @@ const IndexPage = () => {
               </div>
             </div>
             <div class="col" ontouchstart="this.classList.toggle('hover')">
-              <a
+              {/* <a
                 className="pop-image-tour"
                 href="https://jonathanhelvey.github.io/Background-Color-Generator/"
               >
@@ -179,7 +187,8 @@ const IndexPage = () => {
                   src={require("../images/colorGenerator.png")}
                   alt="Pop'N Spots Title"
                 />
-              </a>
+              </a> */}
+              <ColorGenImage />
               <div className="container">
                 <div className="front">
                   <div className="inner">
@@ -198,9 +207,9 @@ const IndexPage = () => {
                   </div>
                 </div>
               </div>
-            </div>{" "}
+            </div>
             <div class="col" ontouchstart="this.classList.toggle('hover')">
-              <a
+              {/* <a
                 className="pop-image-tour"
                 href="https://www.jonathanhelvey.com/"
               >
@@ -209,7 +218,8 @@ const IndexPage = () => {
                   src={require("../images/Portfolio.png")}
                   alt="Pop'N Spots Title"
                 />
-              </a>
+              </a> */}
+              <PortfolioImage />
               <div className="container">
                 <div className="front">
                   <div className="inner">
@@ -232,7 +242,7 @@ const IndexPage = () => {
             </div>
             <div class="col" ontouchstart="this.classList.toggle('hover')">
               <div>
-                <a
+                {/* <a
                   className="pop-image-tour"
                   href="https://expo.io/@jhelvey/Tour"
                 >
@@ -241,7 +251,8 @@ const IndexPage = () => {
                     src={require("../images/tourScan.png")}
                     alt="Pop'N Spots Title"
                   />
-                </a>
+                </a> */}
+                <TourImage />
               </div>
               <div className="container">
                 <div className="front">
