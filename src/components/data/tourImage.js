@@ -19,7 +19,7 @@ const TourImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "tourScan.png" }) {
           childImageSharp {
-            fluid(maxWidth: 820, maxHeight: 440) {
+            fluid(maxWidth: 860, maxHeight: 445) {
               ...GatsbyImageSharpFluid
             }
           }

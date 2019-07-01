@@ -19,7 +19,7 @@ const EdImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "Edmazon.png" }) {
           childImageSharp {
-            fluid(maxWidth: 820, maxHeight: 440) {
+            fluid(maxWidth: 860, maxHeight: 445) {
               ...GatsbyImageSharpFluid
             }
           }

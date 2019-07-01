@@ -19,7 +19,7 @@ const ColorGenImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "colorGenerator.png" }) {
           childImageSharp {
-            fluid(maxWidth: 820, maxHeight: 440) {
+            fluid(maxWidth: 860, maxHeight: 445) {
               ...GatsbyImageSharpFluid
             }
           }
