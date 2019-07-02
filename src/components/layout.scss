@@ -572,7 +572,8 @@ pre tt:after {
   font-family: "Playfair Display", serif;
   text-decoration: underline;
   padding: 20px;
-  margin-top: 50px;
+  margin: 30px;
+  margin-top: 60px;
 }
 .tech-container {
   margin: 0px;
@@ -688,6 +689,7 @@ pre tt:after {
   font-family: "Playfair Display", serif;
   text-decoration: underline;
   padding: 20px;
+  margin: 40px;
 }
 
 .project-title2 {
@@ -796,8 +798,7 @@ pre tt:after {
 }
 
 .button-links:hover {
-  text-decoration: none;
-  color: rgb(0, 17, 255);
+  text-decoration: underline;
 }
 
 .ul-list {
@@ -813,6 +814,9 @@ pre tt:after {
   margin-right: 5px;
   border: none;
   margin-top: 10px;
+}
+.button-links-nav:hover {
+  text-decoration: underline;
 }
 
 .navbar {
@@ -854,6 +858,7 @@ pre tt:after {
   margin-right: 80px;
   margin-bottom: 14px;
 }
+
 @media (max-width: 800px) {
   .nav-flex-burger {
     display: none;

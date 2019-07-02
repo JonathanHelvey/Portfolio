@@ -3,7 +3,7 @@ import React from "react"
 const TechStack = () => {
   return (
     <div className="tech-container">
-      <h2 className="tech-title">Tech That I know</h2>
+      <h2 className="tech-title">Experience</h2>
       <div>
         <div className="index-container">
           <div className="hvrbox">
