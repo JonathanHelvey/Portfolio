@@ -406,7 +406,6 @@ form {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 noscript {
   margin-left: 0;
@@ -543,6 +542,10 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+p {
+  margin: 5px;
 }
 ///////////////////////////////////////////////////////////
 .tech-img {
@@ -719,15 +722,22 @@ pre tt:after {
 }
 
 .contact-title {
-  padding-top: 10px;
-  font-size: 50px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 60px;
   display: flex;
   justify-content: center;
   color: black;
   text-align: center;
-  text-shadow: -1px 0 white, 0 3px white, 3px 0 white, 0 -1px white;
+  text-decoration: underline;
   font-family: "Playfair Display", serif;
 }
+@media (max-width: 600px) {
+  .contact-title {
+    font-size: 38px;
+  }
+}
+
 .i-build-websites {
   display: flex;
   justify-content: center;
@@ -746,7 +756,6 @@ pre tt:after {
 }
 
 .pop-image {
-  // height: 300px;
   cursor: pointer;
   padding: 1px;
   border: 1px solid #021a40;
@@ -1116,8 +1125,6 @@ pre tt:after {
   padding-right: 10px;
   font-family: "Playfair Display", serif;
   font-display: black;
-  font-size: 28px;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
   margin: 2%;
   display: flex;
   text-decoration: none;
@@ -1132,8 +1139,7 @@ pre tt:after {
   border: none;
   font-family: "Playfair Display", serif;
   font-display: black;
-  font-size: 26px;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  font-size: 20px;
   margin: 2%;
   display: flex;
   text-decoration: none;
@@ -1162,7 +1168,6 @@ pre tt:after {
   font-family: "Playfair Display", serif;
   font-display: black;
   font-size: 26px;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
   margin: 2%;
   display: flex;
   justify-content: center;
@@ -1181,7 +1186,6 @@ pre tt:after {
   font-family: "Playfair Display", serif;
   font-display: black;
   font-size: 26px;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
   margin: 2%;
   display: flex;
   justify-content: center;
@@ -1195,16 +1199,17 @@ pre tt:after {
 }
 
 .form-button {
+  cursor: pointer;
+  border-radius: 8px;
   font-size: 20px;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 90px;
+  padding-left: 90px;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: black;
+  color: white;
   text-align: center;
-  text-shadow: -1px 0 white, 0 3px white, 3px 0 white, 0 -1px white;
+  background-color: black;
   font-family: "Playfair Display", serif;
-  cursor: pointer;
 }
 
 .form-button:hover {
@@ -1218,33 +1223,58 @@ pre tt:after {
   flex-direction: column;
   color: black;
   text-align: center;
-  text-shadow: -1px 0 white, 0 3px white, 3px 0 white, 0 -1px white;
   font-family: "Playfair Display", serif;
 }
-
-.your-company {
-  font-size: 30px;
-  color: black;
-  text-align: center;
-  text-shadow: -1px 0 white, 0 3px white, 3px 0 white, 0 -1px white;
-  font-family: "Playfair Display", serif;
+@media (max-width: 600px) {
+  .form {
+    font-size: 16px;
+  }
 }
 
 .form-message {
   font-size: 20px;
-  padding-left: 0;
+  border: 2px solid black;
+  padding-left: 1em;
   padding-top: 0;
   padding-bottom: 12em;
-  padding-right: 0.4em;
+  padding-right: 0.5em;
   width: 600px;
   height: 300px;
   display: table-column;
   color: black;
-  // text-align: center;
-  text-shadow: -1px 0 white, 0 3px white, 3px 0 white, 0 -1px white;
+  border-radius: 1em;
   font-family: "Playfair Display", serif;
 }
 
+@media (max-width: 600px) {
+  .form-message {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 8em;
+    padding-right: 0.4em;
+    width: 300px;
+    height: 100px;
+  }
+}
+.form-input {
+  font-size: 20px;
+  padding-left: 1em;
+  border: 2px solid black;
+  display: table-column;
+  color: black;
+  width: 500px;
+  height: 40px;
+  border-radius: 1em;
+  font-family: "Playfair Display", serif;
+}
+
+@media (max-width: 600px) {
+  .form-input {
+    font-size: 16px;
+    width: 250px;
+    height: 40px;
+  }
+}
 .the-cards {
   display: flex;
   justify-content: center;
@@ -1426,5 +1456,20 @@ pre tt:after {
   .col {
     width: 100%;
     margin: 0 0 2rem 0;
+  }
+}
+
+.myfooter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .myfooter {
+    height: 50px;
   }
 }

@@ -22,22 +22,39 @@ const Contact = ({ data }) => (
       >
         <button type="hidden" disabled />
         <p>
-          <input type="hidden" name="form-name" value="contact" />
+          <input
+            className="form-input"
+            type="hidden"
+            name="form-name"
+            value="contact"
+          />
         </p>
         <p>
           <label>
-            <input required type="text" name="name" placeholder="Name" />
-          </label>
-        </p>
-        <p>
-          <label>
-            <input required type="email" name="email" placeholder="Email" />
+            <input
+              className="form-input"
+              required
+              type="text"
+              name="name"
+              placeholder="Name"
+            />
           </label>
         </p>
         <p>
           <label>
             <input
-              className="your-company"
+              className="form-input"
+              required
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            <input
+              className="form-input"
               type="text"
               placeholder="Company Name"
               name="company"
@@ -46,7 +63,7 @@ const Contact = ({ data }) => (
         </p>
         <p>
           <label>
-            <input
+            <textarea
               className="form-message"
               type="text"
               placeholder="Message"
@@ -60,10 +77,10 @@ const Contact = ({ data }) => (
           </button>
         </p>
       </form>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: "flex", justifyContent: "center", margin: "0px" }}>
         <button className="resume-button">
           <a href={require("../templates/JonathanHelveyResume.pdf")} download>
-            Jonathan Helvey Technical Resume PDF
+            Resume PDF ⬇️
           </a>
         </button>
       </div>
@@ -92,9 +109,6 @@ const Contact = ({ data }) => (
         </a>
       </div>
     </div>
-    <Link className="your-company" to="/">
-      Go back to the homepage
-    </Link>
   </Layout>
 )
 
