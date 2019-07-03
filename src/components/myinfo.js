@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-// import HeadShot from "../components/data/headShot"
+import HeadShot from "../components/data/headShot"
 
 const MyInfo = () => {
   return (
@@ -9,12 +9,14 @@ const MyInfo = () => {
         <h2 className="about-me-title">About Me</h2>
 
         <div className="index-con3">
-          <img
+          {/* <img
             className="headshot"
             src={require("../images/jon.jpg")}
             alt="social-sites"
-          />
-          {/* <HeadShot /> */}
+          /> */}
+          <div className="headshot">
+            <HeadShot />
+          </div>
           <ul>
             <p className="my-details">
               Hi, I'm <strong>Jonathan Helvey,</strong> a
