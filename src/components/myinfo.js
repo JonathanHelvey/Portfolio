@@ -7,13 +7,7 @@ const MyInfo = () => {
     <div id="tech">
       <div className="my-info-container">
         <h2 className="about-me-title">About Me</h2>
-
         <div className="index-con3">
-          {/* <img
-            className="headshot"
-            src={require("../images/jon.jpg")}
-            alt="social-sites"
-          /> */}
           <div className="headshot">
             <HeadShot />
           </div>
@@ -33,6 +27,7 @@ const MyInfo = () => {
               my canvas and I enjoy manipulating the dom into an interactive
               portrait.
             </p>
+            <br />
             <p className="my-details">
               I am a recent graduate of FullStack Academy of Code. An intensive
               19 week coding bootcamp that helped me become proficient in a
@@ -41,6 +36,7 @@ const MyInfo = () => {
                 Node, Express, React, Redux, PostgresSQL, and Sequelize.
               </strong>
             </p>
+            <br />
             <p className="my-details">
               <strong>*</strong>I am Interested in expanding my knowledge of
               development best practices and learning new technologies.{" "}
