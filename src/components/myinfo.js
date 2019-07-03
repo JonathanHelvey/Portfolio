@@ -25,10 +25,11 @@ const MyInfo = () => {
               <strong style={{ color: "red" }}>r</strong>
               <strong style={{ color: "green" }}>t</strong>
               <strong style={{ color: "purple" }}>s</strong> and have decided to
-              bring that creativity to web development. I love to create
-              web-designs that interact with the user in a fun and enjoyable
-              way. The browser is my canvas and I enjoy manipulating the dom
-              into an interactive portrait.
+              bring that creativity to web development.
+              <b>Strong problem solver.</b> I love to create web-designs that
+              interact with the user in a fun and enjoyable way. The browser is
+              my canvas and I enjoy manipulating the dom into an interactive
+              portrait.
             </p>
             <p className="my-details">
               I am a recent graduate of FullStack Academy of Code. An intensive

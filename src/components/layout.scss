@@ -608,6 +608,8 @@ p {
   .index-con3 {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -691,10 +693,15 @@ p {
   justify-content: center;
   font-family: "Playfair Display", serif;
   text-decoration: underline;
-  padding: 20px;
+  padding: 30px;
   margin: 40px;
 }
-
+@media (max-width: 800px) {
+  .about-me-title {
+    padding: 0px;
+    margin: 10px;
+  }
+}
 .project-title2 {
   margin-top: 10px;
   display: flex;
@@ -1127,6 +1134,7 @@ p {
   font-display: black;
   margin: 2%;
   display: flex;
+  font-size: 26px;
   text-decoration: none;
   position: relative;
 }
@@ -1139,7 +1147,7 @@ p {
   border: none;
   font-family: "Playfair Display", serif;
   font-display: black;
-  font-size: 20px;
+  font-size: 26px;
   margin: 2%;
   display: flex;
   text-decoration: none;
@@ -1152,10 +1160,20 @@ p {
 }
 
 @media (max-width: 600px) {
+  .hire-me-button a {
+    //font-size: 16px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
   .hire-me-button {
-    font-size: 16px;
-    padding-right: 32px;
-    padding-left: 32px;
+    //font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     margin: 0;
   }
 }
