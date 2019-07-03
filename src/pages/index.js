@@ -23,48 +23,75 @@ import { Spring, config } from "react-spring/renderprops"
 const particlesOptions = {
   particles: {
     number: {
-      value: 160,
+      value: 5,
       density: {
         enable: true,
-        value_area: 800,
+        value_area: 1025.8919341219544,
       },
     },
     color: {
-      value: "#2f2c2c",
+      value: "#1b1e34",
     },
     shape: {
-      type: "circle",
+      type: "polygon",
       stroke: {
         width: 0,
-        color: "#000000",
+        color: "#000",
       },
       polygon: {
-        nb_sides: 5,
+        nb_sides: 6,
+      },
+      image: {
+        src: "img/github.svg",
+        width: 100,
+        height: 100,
       },
     },
     opacity: {
-      value: 1,
+      value: 0.1736124811591,
       random: true,
       anim: {
-        enable: true,
-        speed: 1,
-        opacity_min: 0,
+        enable: false,
+        speed: 0,
+        opacity_min: 0.03196803196803197,
         sync: false,
       },
     },
     size: {
-      value: 3,
+      value: 98.64345520403408,
       random: true,
       anim: {
-        enable: false,
-        speed: 4,
-        size_min: 0.3,
+        enable: true,
+        speed: 10,
+        size_min: 40,
         sync: false,
+      },
+    },
+    line_linked: {
+      enable: false,
+      distance: 200,
+      color: "#ffffff",
+      opacity: 1,
+      width: 2,
+    },
+    move: {
+      enable: true,
+      speed: 8,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: {
+        enable: false,
+        rotateX: 600,
+        rotateY: 1200,
       },
     },
   },
   retina_detect: true,
 }
+
 const IndexPage = () => {
   return (
     <Layout>
@@ -83,7 +110,7 @@ const IndexPage = () => {
         )}
       </Spring>
       <div>
-        <div className="index-con4">
+        <div className="index-con5">
           <a href="https://www.linkedin.com/in/jonathanhelvey/">
             <img
               className="social-logos-img"

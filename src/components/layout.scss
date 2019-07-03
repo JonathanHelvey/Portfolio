@@ -618,10 +618,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: require("../images/code.jpg");
-  // padding: 20px;
-  // margin-top: 20px;
   background: white;
+}
+
+.index-con5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .my-buttons-container {
@@ -1307,8 +1310,8 @@ p {
 }
 
 .col {
-  width: calc(39% - 2rem);
-  margin: 0.5rem;
+  width: calc(35% - 2rem);
+  margin: 0.3rem;
   cursor: pointer;
 }
 
