@@ -16,13 +16,59 @@ import IntroCard from "../components/introCard"
 import ColorGen from "../components/colorGen"
 import TourCard from "../components/tourCard"
 import Portfolio from "../components/portfolio"
+import Particles from "react-particles-js"
 import { Spring, config } from "react-spring/renderprops"
 
 //import { useSpring, animated } from "react-spring"
-
+const particlesOptions = {
+  particles: {
+    number: {
+      value: 160,
+      density: {
+        enable: true,
+        value_area: 800,
+      },
+    },
+    color: {
+      value: "#2f2c2c",
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000000",
+      },
+      polygon: {
+        nb_sides: 5,
+      },
+    },
+    opacity: {
+      value: 1,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 1,
+        opacity_min: 0,
+        sync: false,
+      },
+    },
+    size: {
+      value: 3,
+      random: true,
+      anim: {
+        enable: false,
+        speed: 4,
+        size_min: 0.3,
+        sync: false,
+      },
+    },
+  },
+  retina_detect: true,
+}
 const IndexPage = () => {
   return (
     <Layout>
+      <Particles className="particles" params={particlesOptions} />
       <SEO title="Home" />
       <Spring
         from={{ height: 100, opacity: 0 }}

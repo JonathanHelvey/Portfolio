@@ -580,6 +580,7 @@ p {
 }
 .tech-container {
   margin: 0px;
+  background: white;
 }
 .titles {
   display: flex;
@@ -618,8 +619,9 @@ p {
   align-items: center;
   justify-content: center;
   background-image: require("../images/code.jpg");
-  padding: 20px;
-  margin-top: 20px;
+  // padding: 20px;
+  // margin-top: 20px;
+  background: white;
 }
 
 .my-buttons-container {
@@ -627,6 +629,8 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background: white;
+  margin-top: 5px;
 }
 
 .my-info-container {
@@ -634,6 +638,7 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background: gainsboro;
 }
 
 .info2 {
@@ -1474,4 +1479,12 @@ p {
   .myfooter {
     height: 50px;
   }
+}
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
