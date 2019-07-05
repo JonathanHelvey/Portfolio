@@ -208,6 +208,32 @@ const IndexPage = () => {
             </div>
             <div className="col" ontouchstart="this.classList.toggle('hover')">
               <div className="pop-image">
+                <a href="https://expo.io/@jhelvey/Tour">
+                  <TourImage />
+                </a>
+              </div>
+              <div className="container">
+                <div className="front">
+                  <div className="inner">
+                    <div className="details">
+                      <h2 className="titles">Tour</h2>
+                      <p className="details2">
+                        Android mobile application showing the most obsure
+                        places around Chicago. Built with React-Native and Expo
+                        CLI.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="back">
+                  <div className="inner">
+                    <TourCard />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col" ontouchstart="this.classList.toggle('hover')">
+              <div className="pop-image">
                 <a href="https://jonathanhelvey.github.io/guessing-game/">
                   <GuessImage />
                 </a>
@@ -278,32 +304,6 @@ const IndexPage = () => {
                 <div className="back">
                   <div className="inner">
                     <Portfolio />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col" ontouchstart="this.classList.toggle('hover')">
-              <div className="pop-image">
-                <a href="https://expo.io/@jhelvey/Tour">
-                  <TourImage />
-                </a>
-              </div>
-              <div className="container">
-                <div className="front">
-                  <div className="inner">
-                    <div className="details">
-                      <h2 className="titles">Tour</h2>
-                      <p className="details2">
-                        Android mobile application showing the most obsure
-                        places around Chicago. Built with React-Native and Expo
-                        CLI.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="back">
-                  <div className="inner">
-                    <TourCard />
                   </div>
                 </div>
               </div>
