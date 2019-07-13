@@ -40,6 +40,11 @@ class Header extends React.Component {
                 <button className="button-links-nav">ABOUT</button>
               </Link>
             </li>
+            {/* <li className="links">
+              <Link className="links" to="/writings/">
+                <button className="button-links-nav">WRITINGS</button>
+              </Link>
+            </li> */}
             <li className="links">
               <Link className="links" to="/contact/">
                 <button className="button-links-nav">CONTACT</button>
@@ -66,6 +71,11 @@ class Header extends React.Component {
                   <div>
                     <Link to="/#tech">
                       <button className="button-links">About</button>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link to="/writings/">
+                      <button className="button-links">Writings</button>
                     </Link>
                   </div>
                   <div>
