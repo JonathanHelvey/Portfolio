@@ -576,7 +576,7 @@ p {
 }
 .titles {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   font-family: "Playfair Display", serif;
   margin: 10px;
@@ -607,10 +607,8 @@ p {
 }
 
 .index-con4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: white;
+  padding: 20px;
 }
 
 .index-con5 {
@@ -651,8 +649,8 @@ p {
 }
 
 .social-logos-img {
-  width: 75px; /* Set a small width */
-  height: 75px;
+  width: 50px; /* Set a small width */
+  height: 50px;
   margin: 25px;
 }
 
@@ -830,7 +828,8 @@ p {
 
 .navbar {
   display: flex;
-  position: relative;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
   justify-content: flex-end;
   align-items: center;
   background: black;

@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import PopImage from "../components/data/PopImage"
+import FaceImage from "../components/data/faceImage"
 import EdImage from "../components/data/EdImage"
 import GuessImage from "../components/data/GuessImage"
 import PortfolioImage from "../components/data/portfolioImage"
@@ -16,6 +17,8 @@ import IntroCard from "../components/introCard"
 import ColorGen from "../components/colorGen"
 import TourCard from "../components/tourCard"
 import Portfolio from "../components/portfolio"
+import FaceRec from "../components/faceRec"
+import SocialMedia from "../components/socialMedia"
 import Particles from "react-particles-js"
 import { Spring, config } from "react-spring/renderprops"
 
@@ -110,46 +113,7 @@ const IndexPage = () => {
         )}
       </Spring>
       <div>
-        <div className="index-con5">
-          <a href="https://www.linkedin.com/in/jonathanhelvey/">
-            <img
-              className="social-logos-img"
-              src={require("../images/linkedin-logo.png")}
-              alt="social-sites"
-            />
-          </a>
-          <a href="https://github.com/JonathanHelvey">
-            <img
-              className="social-logos-img"
-              src={require("../images/github.png")}
-              alt="social-sites"
-            />
-          </a>
-          <a href="https://twitter.com/JonathanHelvey">
-            <img
-              className="social-logos-img"
-              src={require("../images/twitter.png")}
-              alt="social-sites"
-            />
-          </a>
-        </div>
-        {/* <Spring
-          className="intro"
-          from={{ height: 100, opacity: 0 }}
-          to={{ height: 1605, width: "100%", opacity: 1 }}
-          delay="3000"
-          config={config.molasses}
-        >
-          {props => (
-            <div>
-              <img
-                style={props}
-                src={require("../images/code.jpg")}
-                alt="social-sites"
-              />
-            </div>
-          )}
-        </Spring> */}
+        <SocialMedia />
         <div id="projects" />
         <div className="wrapper">
           <h1 className="project-title">Projects</h1>
@@ -166,8 +130,8 @@ const IndexPage = () => {
                     <div className="details">
                       <h2 className="titles">Pop'n Spots</h2>
                       <p className="details2">
-                        Desktop and mobile city guide that uses Google Maps API
-                        to show current occupancy data.
+                        Desktop and mobile city guide. See how populated a
+                        location currently is before you go out.
                       </p>
                     </div>
                   </div>
@@ -202,6 +166,32 @@ const IndexPage = () => {
                 <div className="back">
                   <div className="inner">
                     <EdCard />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col" ontouchstart="this.classList.toggle('hover')">
+              <div className="pop-image">
+                <a href="https://smarts-brain-face-recognition.herokuapp.com/">
+                  <FaceImage />
+                </a>
+              </div>
+              <div className="container">
+                <div className="front">
+                  <div className="inner">
+                    <div className="details">
+                      <h2 className="titles">Face Recognition App</h2>
+                      <p className="details2">
+                        Full stack application that uses Clarifai API. Built in
+                        a React Front End framework with PostgreSQL as the
+                        database.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="back">
+                  <div className="inner">
+                    <FaceRec />
                   </div>
                 </div>
               </div>
@@ -321,27 +311,7 @@ const IndexPage = () => {
           </div>
         </div>
         <div className="index-con4">
-          <a href="https://www.linkedin.com/in/jonathanhelvey/">
-            <img
-              className="social-logos-img"
-              src={require("../images/linkedin-logo.png")}
-              alt="social-sites"
-            />
-          </a>
-          <a href="https://github.com/JonathanHelvey">
-            <img
-              className="social-logos-img"
-              src={require("../images/github.png")}
-              alt="social-sites"
-            />
-          </a>
-          <a href="https://twitter.com/JonathanHelvey">
-            <img
-              className="social-logos-img"
-              src={require("../images/twitter.png")}
-              alt="social-sites"
-            />
-          </a>
+          <SocialMedia />
         </div>
       </div>
     </Layout>

@@ -13,7 +13,7 @@ const TechStack = () => {
               alt="tech"
             />
             <div className="hvrbox-layer_top">
-              <h4 className="hvrbox-text">Postgres</h4>
+              <h4 className="hvrbox-text">Postgre</h4>
             </div>
           </div>
           <div className="hvrbox">
