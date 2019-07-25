@@ -121,7 +121,7 @@ const IndexPage = () => {
             <div className="col" ontouchstart="this.classList.toggle('hover')">
               <div className="pop-image">
                 <a href="https://bluebubbles-998d5.firebaseapp.com/">
-                  <PopImage />{" "}
+                  <PopImage />
                 </a>
               </div>
               <div className="container">
