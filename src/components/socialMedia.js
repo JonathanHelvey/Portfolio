@@ -31,6 +31,13 @@ const SocialMedia = () => {
           alt="social-sites"
         />
       </a>
+      {/* <a href="https://dev.to/jonathanhelvey">
+        <img
+          className="social-logos-img"
+          src={require("../images/dev.svg")}
+          alt="social-sites"
+        />
+      </a> */}
     </div>
   )
 }
