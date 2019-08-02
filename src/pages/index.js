@@ -131,7 +131,7 @@ const IndexPage = () => {
                       <h2 className="titles">Pop'n Spots</h2>
                       <p className="details2">
                         Desktop and mobile city guide. See how populated a
-                        location currently is before you go out.
+                        location currently is before you go out!
                       </p>
                     </div>
                   </div>
