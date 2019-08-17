@@ -3,35 +3,35 @@ import React from "react"
 const SocialMedia = () => {
   return (
     <div className="index-con5">
-      <a href="https://www.linkedin.com/in/jonathanhelvey/">
+      <a href="https://www.linkedin.com/in/jonathanhelvey/" target="_blank">
         <img
           className="social-logos-img"
           src={require("../images/linkedin-logo.png")}
           alt="social-sites"
         />
       </a>
-      <a href="https://github.com/JonathanHelvey">
+      <a href="https://github.com/JonathanHelvey" target="_blank">
         <img
           className="social-logos-img"
           src={require("../images/github.png")}
           alt="social-sites"
         />
       </a>
-      <a href="https://twitter.com/JonathanHelvey">
+      <a href="https://twitter.com/JonathanHelvey" target="_blank">
         <img
           className="social-logos-img"
           src={require("../images/twitter.png")}
           alt="social-sites"
         />
       </a>
-      <a href="https://medium.com/@jonathanhelvey">
+      <a href="https://medium.com/@jonathanhelvey" target="_blank">
         <img
           className="social-logos-img"
           src={require("../images/medium.png")}
           alt="social-sites"
         />
       </a>
-      {/* <a href="https://dev.to/jonathanhelvey">
+      {/* <a href="https://dev.to/jonathanhelvey" target="_blank">
         <img
           className="social-logos-img"
           src={require("../images/dev.svg")}

@@ -120,7 +120,10 @@ const IndexPage = () => {
           <div className="cols">
             <div className="col" ontouchstart="this.classList.toggle('hover')">
               <div className="pop-image">
-                <a href="https://bluebubbles-998d5.firebaseapp.com/">
+                <a
+                  href="https://bluebubbles-998d5.firebaseapp.com/"
+                  target="_blank"
+                >
                   <PopImage />
                 </a>
               </div>
@@ -145,7 +148,10 @@ const IndexPage = () => {
             </div>
             <div className="col" ontouchstart="this.classList.toggle('hover')">
               <div className="pop-image">
-                <a href="https://edmazon.herokuapp.com/products/offset/0">
+                <a
+                  href="https://edmazon.herokuapp.com/products/offset/0"
+                  target="_blank"
+                >
                   <EdImage />
                 </a>
               </div>
@@ -172,7 +178,10 @@ const IndexPage = () => {
             </div>
             <div className="col" ontouchstart="this.classList.toggle('hover')">
               <div className="pop-image">
-                <a href="https://smarts-brain-face-recognition.herokuapp.com/">
+                <a
+                  href="https://smarts-brain-face-recognition.herokuapp.com/"
+                  target="_blank"
+                >
                   <FaceImage />
                 </a>
               </div>
@@ -198,7 +207,7 @@ const IndexPage = () => {
             </div>
             <div className="col" ontouchstart="this.classList.toggle('hover')">
               <div className="pop-image">
-                <a href="https://expo.io/@jhelvey/Tour">
+                <a href="https://expo.io/@jhelvey/Tour" target="_blank">
                   <TourImage />
                 </a>
               </div>
@@ -224,7 +233,10 @@ const IndexPage = () => {
             </div>
             <div className="col" ontouchstart="this.classList.toggle('hover')">
               <div className="pop-image">
-                <a href="https://jonathanhelvey.github.io/guessing-game/">
+                <a
+                  href="https://jonathanhelvey.github.io/guessing-game/"
+                  target="_blank"
+                >
                   <GuessImage />
                 </a>
               </div>
@@ -249,7 +261,10 @@ const IndexPage = () => {
             </div>
             <div className="col" ontouchstart="this.classList.toggle('hover')">
               <div className="pop-image">
-                <a href="https://jonathanhelvey.github.io/Background-Color-Generator/">
+                <a
+                  href="https://jonathanhelvey.github.io/Background-Color-Generator/"
+                  target="_blank"
+                >
                   <ColorGenImage />
                 </a>
               </div>
@@ -274,7 +289,7 @@ const IndexPage = () => {
             </div>
             <div className="col" ontouchstart="this.classList.toggle('hover')">
               <div className="pop-image">
-                <a href="https://www.jonathanhelvey.com/">
+                <a href="https://www.jonathanhelvey.com/" target="_blank">
                   <PortfolioImage />
                 </a>
               </div>
