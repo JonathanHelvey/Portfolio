@@ -52,7 +52,7 @@ class Header extends Component {
             </li>
           </ul>
           <div className="nav-flex-burger">
-            <a href="" className="icon" onClick={this.showMenu}>
+            <a className="icon" onClick={this.showMenu}>
               <i className="fa fa-bars" />
             </a>
             <div>
