@@ -42,7 +42,7 @@ class Header extends React.Component {
             </li>
             {/* <li className="links">
               <Link className="links" to="/writings/">
-                <button className="button-links-nav">WRITINGS</button>
+                <button className="button-links-nav">BLOG</button>
               </Link>
             </li> */}
             <li className="links">
@@ -75,7 +75,7 @@ class Header extends React.Component {
                   </div>
                   <div>
                     <Link to="/writings/">
-                      <button className="button-links">Writings</button>
+                      <button className="button-links">Blog</button>
                     </Link>
                   </div>
                   <div>

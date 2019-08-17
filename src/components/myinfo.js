@@ -22,7 +22,7 @@ const MyInfo = () => {
               <strong style={{ color: "green" }}>t</strong>
               <strong style={{ color: "purple" }}>s</strong> and have decided to
               bring that creativity to web development. I am a
-              <b>Strong problem solver.</b> I love to create web-designs that
+              <b> Strong problem solver. </b> I love to create web-designs that
               interact with the user in a fun and gratifying way. The browser is
               my canvas and I enjoy manipulating the dom into an interactive
               portrait.
@@ -33,15 +33,16 @@ const MyInfo = () => {
               19 week coding bootcamp that helped me become proficient in a
               Javascript-based stack:
               <strong>
-                Node, Express, React, Redux, PostgresSQL, and Sequelize.
+                Node.js, Express.js, React.js, Redux, PostgresSQL, and
+                Sequelize.
               </strong>
             </p>
             <br />
             <p className="my-details">
-              <strong>*</strong>I am Interested in expanding my knowledge of
-              development best practices and learning new technologies.{" "}
-              <strong> Let's work together!</strong>
-            </p>{" "}
+              I am Interested in expanding my knowledge of development best
+              practices and learning new technologies.
+              <strong> *Let's work together!</strong>
+            </p>
           </ul>
         </div>
         <br />

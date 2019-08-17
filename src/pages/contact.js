@@ -76,11 +76,10 @@ const Contact = ({ data }) => (
       <div style={{ display: "flex", justifyContent: "center", margin: "0px" }}>
         <button className="resume-button">
           <a href={require("../templates/JonathanHelveyResume.pdf")} download>
-            Resume PDF ⬇️
+            Resume PDF
           </a>
         </button>
       </div>
-      {/* SOcial Stack Could Make this into a component! */}
       <div className="index-con4">
         <SocialMedia />
       </div>
