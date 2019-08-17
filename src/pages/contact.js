@@ -76,7 +76,7 @@ const Contact = ({ data }) => (
       <div style={{ display: "flex", justifyContent: "center", margin: "0px" }}>
         <button className="resume-button">
           <a href={require("../templates/JonathanHelveyResume.pdf")} download>
-            Resume PDF
+            Resume
           </a>
         </button>
       </div>

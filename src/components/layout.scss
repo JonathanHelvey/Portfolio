@@ -1194,30 +1194,20 @@ p {
   border: none;
   font-family: "Playfair Display", serif;
   font-display: black;
-  font-size: 26px;
+  font-size: 20px;
   margin: 2%;
   display: flex;
   justify-content: center;
   text-decoration: none;
   position: relative;
-  padding-right: 20px;
-  padding-left: 20px;
-  // width: 500px;
+  padding-right: 75px;
+  padding-left: 75px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .resume-button a {
-  cursor: pointer;
-  border-radius: 8px;
   color: white;
-  background: black;
-  border: none;
-  font-family: "Playfair Display", serif;
-  font-display: black;
-  font-size: 26px;
-  margin: 2%;
-  display: flex;
-  justify-content: center;
   text-decoration: none;
-  position: relative;
 }
 
 .resume-button:hover {
