@@ -123,6 +123,7 @@ const IndexPage = () => {
                 <a
                   href="https://bluebubbles-998d5.firebaseapp.com/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <PopImage />
                 </a>
@@ -151,6 +152,7 @@ const IndexPage = () => {
                 <a
                   href="https://edmazon.herokuapp.com/products/offset/0"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <EdImage />
                 </a>
@@ -181,6 +183,7 @@ const IndexPage = () => {
                 <a
                   href="https://smarts-brain-face-recognition.herokuapp.com/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FaceImage />
                 </a>
@@ -207,7 +210,11 @@ const IndexPage = () => {
             </div>
             <div className="col" ontouchstart="this.classList.toggle('hover')">
               <div className="pop-image">
-                <a href="https://expo.io/@jhelvey/Tour" target="_blank">
+                <a
+                  href="https://expo.io/@jhelvey/Tour"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <TourImage />
                 </a>
               </div>
@@ -236,6 +243,7 @@ const IndexPage = () => {
                 <a
                   href="https://jonathanhelvey.github.io/guessing-game/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <GuessImage />
                 </a>
@@ -264,6 +272,7 @@ const IndexPage = () => {
                 <a
                   href="https://jonathanhelvey.github.io/Background-Color-Generator/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <ColorGenImage />
                 </a>
@@ -289,7 +298,11 @@ const IndexPage = () => {
             </div>
             <div className="col" ontouchstart="this.classList.toggle('hover')">
               <div className="pop-image">
-                <a href="https://www.jonathanhelvey.com/" target="_blank">
+                <a
+                  href="https://www.jonathanhelvey.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <PortfolioImage />
                 </a>
               </div>
