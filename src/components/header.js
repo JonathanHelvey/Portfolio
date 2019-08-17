@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { Component } from "react"
 
-class Header extends React.Component {
+class Header extends Component {
   constructor() {
     super()
     this.state = { showMenu: false }
@@ -52,7 +52,7 @@ class Header extends React.Component {
             </li>
           </ul>
           <div className="nav-flex-burger">
-            <a className="icon" onClick={this.showMenu}>
+            <a href="" className="icon" onClick={this.showMenu}>
               <i className="fa fa-bars" />
             </a>
             <div>
