@@ -134,7 +134,7 @@ const IndexPage = () => {
                     <div className="details">
                       <h2 className="titles">Pop'n Spots</h2>
                       <p className="details2">
-                        Desktop and mobile city guide. See how populated a
+                        Desktop and mobile city guide. See how occupied a
                         location currently is before you go out!
                       </p>
                     </div>
@@ -195,8 +195,7 @@ const IndexPage = () => {
                       <h2 className="titles">Face Recognition App</h2>
                       <p className="details2">
                         Full stack application that uses Clarifai API. Built in
-                        a React Front End framework with PostgreSQL as the
-                        database.
+                        React.JS with PostgreSQL as the database.
                       </p>
                     </div>
                   </div>
