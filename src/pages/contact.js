@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SocialMedia from "../components/socialMedia"
 import SEO from "../components/seo"
+import Resume from "../components/resume"
 
 const Contact = ({ data }) => (
   <Layout>
@@ -17,6 +18,9 @@ const Contact = ({ data }) => (
         action="/success"
       >
         <button type="hidden" disabled />
+        <div>
+          <SocialMedia />
+        </div>
         <p>
           <input
             className="form-input"
@@ -73,6 +77,7 @@ const Contact = ({ data }) => (
           </button>
         </p>
       </form>
+
       <div style={{ display: "flex", justifyContent: "center", margin: "0px" }}>
         <button className="resume-button">
           <a href={require("../templates/JonathanHelveyResume.pdf")} download>
@@ -80,8 +85,8 @@ const Contact = ({ data }) => (
           </a>
         </button>
       </div>
-      <div className="index-con4">
-        <SocialMedia />
+      <div>
+        <Resume />
       </div>
     </div>
   </Layout>

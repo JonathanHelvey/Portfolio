@@ -1107,7 +1107,7 @@ p {
   padding-right: 60px;
   font-family: "Playfair Display", serif;
   font-display: black;
-  font-size: 28px;
+  font-size: 22px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
   margin: 2%;
   display: flex;
@@ -1143,7 +1143,7 @@ p {
   font-display: black;
   margin: 2%;
   display: flex;
-  font-size: 26px;
+  font-size: 22px;
   text-decoration: none;
   position: relative;
 }
@@ -1156,7 +1156,7 @@ p {
   border: none;
   font-family: "Playfair Display", serif;
   font-display: black;
-  font-size: 26px;
+  font-size: 22px;
   margin: 2%;
   display: flex;
   text-decoration: none;
@@ -1486,9 +1486,6 @@ p {
   width: 100%;
   background-color: black;
   color: white;
-  // bottom: 0;
-  // left: 0;
-  //margin-top: -1px;
 }
 
 @media (max-width: 600px) {
@@ -1503,4 +1500,26 @@ p {
   bottom: 0;
   left: 0;
   z-index: -1;
+}
+
+.resume {
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+.resume object {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper2 {
+  text-align: center;
+  min-width: 450px;
+  margin: 0 auto;
+  width: 60%;
+  padding: 1em;
+  line-height: 2;
+  color: black;
+  position: relative;
+  background: white;
 }
