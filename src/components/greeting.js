@@ -5,11 +5,11 @@ function generateGreeting() {
   let today = new Date()
   let curHr = today.getHours()
   if (curHr < 12) {
-    return <h3 className="full-stack-dev">Good Morning</h3>
+    return <h3 className="full-stack-dev">Good Morning!</h3>
   } else if (curHr < 18) {
-    return <h3 className="full-stack-dev">Good Afternoon</h3>
+    return <h3 className="full-stack-dev">Good Afternoon!</h3>
   } else {
-    return <h3 className="full-stack-dev">Good Evening</h3>
+    return <h3 className="full-stack-dev">Good Evening!</h3>
   }
 }
 
