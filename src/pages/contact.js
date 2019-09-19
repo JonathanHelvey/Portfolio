@@ -20,6 +20,11 @@ const Contact = ({ data }) => (
         <button type="hidden" disabled />
         <div>
           <SocialMedia />
+        </div>{" "}
+        <div className="my-buttons-container">
+          <Link className="resume-button" to="/resume/">
+            <button className="resume-button">Resume!</button>
+          </Link>
         </div>
         <p>
           <input
@@ -77,11 +82,6 @@ const Contact = ({ data }) => (
           </button>
         </p>
       </form>
-      <div className="my-buttons-container">
-        <Link className="resume-button" to="/resume/">
-          <button className="resume-button">Resume!</button>
-        </Link>
-      </div>
     </div>
   </Layout>
 )
