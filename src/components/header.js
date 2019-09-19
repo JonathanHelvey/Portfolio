@@ -83,6 +83,11 @@ class Header extends Component {
                       <button className="button-links">Contact</button>
                     </Link>
                   </div>
+                  <div>
+                    <Link to="/resume/">
+                      <button className="button-links">Resume</button>
+                    </Link>
+                  </div>
                 </div>
               ) : null}
             </div>
