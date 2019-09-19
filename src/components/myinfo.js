@@ -51,13 +51,6 @@ const MyInfo = () => {
         <Link className="hire-me-button" to="/contact/">
           <button className="hire-me-button">Let's Work Together!</button>
         </Link>
-        {/* <a
-          className="resume-button2"
-          href={require("../templates/JonathanHelveyResume.pdf")}
-          download
-        >
-          Resume PDF
-        </a> */}
       </div>
     </div>
   )

@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SocialMedia from "../components/socialMedia"
 import SEO from "../components/seo"
-import Resume from "../components/resume"
+import { Link } from "gatsby"
 
 const Contact = ({ data }) => (
   <Layout>
@@ -77,16 +77,10 @@ const Contact = ({ data }) => (
           </button>
         </p>
       </form>
-
-      <div style={{ display: "flex", justifyContent: "center", margin: "0px" }}>
-        <button className="resume-button">
-          <a href={require("../templates/JonathanHelveyResume.pdf")} download>
-            Resume
-          </a>
-        </button>
-      </div>
-      <div>
-        <Resume />
+      <div className="my-buttons-container">
+        <Link className="resume-button" to="/resume/">
+          <button className="resume-button">Resume!</button>
+        </Link>
       </div>
     </div>
   </Layout>
