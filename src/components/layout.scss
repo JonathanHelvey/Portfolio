@@ -573,6 +573,7 @@ p {
 .tech-container {
   margin: 0px;
   background: white;
+  border-top: gainsboro solid;
 }
 .titles {
   display: flex;
@@ -631,6 +632,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   background: white;
+  border-bottom: gainsboro solid;
 }
 
 .info2 {
