@@ -3,7 +3,7 @@
 www.jonathanhelvey.com
 
 ## Created With
-HTML5, CSS3, SASS, React-Spring, React Smooth Scrool, React Particles, React, Gatsby.js and GraphQL.
+HTML5, CSS3, SASS, React-Spring, React Smooth Scroll, React Particles, React, Gatsby.js and GraphQL.
 
 ## 💫 Deploy
 
