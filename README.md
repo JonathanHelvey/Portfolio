@@ -1,10 +1,9 @@
-Visit www.jonathanhelvey.com
+## Portfolio
+
+www.jonathanhelvey.com
 
 ## Created With
--HTML5, CSS3, SASS, React-Spring, React Smooth Scrool, React Particles, React, Gatsby.js and GraphQL.
-
-Thomas Pollick 12:38 PM
-Nice thanks man! I have a portfolio but I used a template and I want to redo it from scratch to make it more personalized
+HTML5, CSS3, SASS, React-Spring, React Smooth Scrool, React Particles, React, Gatsby.js and GraphQL.
 
 ## 💫 Deploy
 
