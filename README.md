@@ -1,6 +1,6 @@
 ### Portfolio
 
-(www.jonathanhelvey.dev)
+www.jonathanhelvey.dev
 
 # Demo
 <img src="portfolio.gif" data-canonical-src="portfolio.gif" width="800" height="600" />
