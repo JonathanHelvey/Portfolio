@@ -1,12 +1,17 @@
-## Portfolio
+### Portfolio
 
 www.jonathanhelvey.com
 
-## Created With
+# Demo
+<img src="portfolio.gif" data-canonical-src="portfolio.gif" width="800" height="600" />
+
+# Created With
 HTML5, CSS3, SASS, React-Spring, React Smooth Scroll, React Particles, React, Gatsby.js and GraphQL.
 
+## Created by
+Jonathan Helvey
 
-# Setup
+## Setup
 
 Commands to get this repo set up for development:
 
