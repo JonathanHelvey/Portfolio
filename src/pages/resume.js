@@ -1,6 +1,5 @@
 import React from "react"
 import resume from "../templates/JonathanHelveyResume.pdf"
-import { Link } from "gatsby"
 import Header from "../components/header"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
