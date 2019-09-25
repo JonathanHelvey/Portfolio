@@ -52,13 +52,6 @@ const Layout = ({ children }) => (
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           />
-          {/* <div>
-            <div>
-              <footer className="myfooter">
-                <h4> © {new Date().getFullYear()}-Jonathan Helvey</h4>
-              </footer>
-            </div>
-          </div> */}
         </div>
       </>
     )}
