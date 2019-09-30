@@ -70,7 +70,11 @@ const tourCard = () => {
           <h6 className="project-title2">Built With</h6>
         </div>
         <div className="hvrbox2">
-          <a href="https://github.com/JonathanHelvey/Tour">
+          <a
+            href="https://github.com/JonathanHelvey/Tour"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className="hvrbox-layer_bottom"
               src={require("../images/github.png")}

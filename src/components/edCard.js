@@ -72,7 +72,11 @@ const edCard = () => {
         </div>
 
         <div className="hvrbox2">
-          <a href="https://github.com/gs-team-edwin/edmazon">
+          <a
+            href="https://github.com/gs-team-edwin/edmazon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className="hvrbox-layer_bottom"
               src={require("../images/github.png")}
