@@ -56,11 +56,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Jonathan Helvey`,
+        short_name: `Helvey Dev Portfolio`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#120221`,
+        theme_color: `#120221`,
         display: `minimal-ui`,
         icon: `src/favicon_io/favicon-32x32.png`, // This path is relative to the root of the site.
       },
