@@ -73,11 +73,11 @@ class Header extends Component {
                       <button className="button-links">About</button>
                     </Link>
                   </div>
-                  <div>
+                  {/* <div>
                     <Link to="/writings/">
                       <button className="button-links">Blog</button>
                     </Link>
-                  </div>
+                  </div> */}
                   <div>
                     <Link to="/contact/">
                       <button className="button-links">Contact</button>
