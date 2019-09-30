@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React, { Component } from "react"
 import { Spring, config } from "react-spring/renderprops"
 

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from "react"
 import Layout from "../components/layout"
 import PopImage from "../components/data/PopImage"
@@ -117,7 +118,10 @@ const IndexPage = () => {
         <div className="wrapper">
           <h1 className="project-title">Projects</h1>
           <div className="cols">
-            <div className="col" ontouchstart="this.classList.toggle('hover')">
+            <div
+              className="col"
+              onTouchStart={() => "this.classList.toggle('hover')"}
+            >
               <div className="pop-image">
                 <a
                   href="https://bluebubbles-998d5.firebaseapp.com/"
@@ -146,7 +150,10 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <div className="col" ontouchstart="this.classList.toggle('hover')">
+            <div
+              className="col"
+              onTouchStart={() => "this.classList.toggle('hover')"}
+            >
               <div className="pop-image">
                 <a
                   href="https://edmazon.herokuapp.com/products/offset/0"
@@ -177,7 +184,10 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <div className="col" ontouchstart="this.classList.toggle('hover')">
+            <div
+              className="col"
+              onTouchStart={() => "this.classList.toggle('hover')"}
+            >
               <div className="pop-image">
                 <a
                   href="https://smarts-brain-face-recognition.herokuapp.com/"
@@ -206,7 +216,10 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <div className="col" ontouchstart="this.classList.toggle('hover')">
+            <div
+              className="col"
+              onTouchStart={() => "this.classList.toggle('hover')"}
+            >
               <div className="pop-image">
                 <a
                   href="https://expo.io/@jhelvey/Tour"
@@ -236,7 +249,10 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <div className="col" ontouchstart="this.classList.toggle('hover')">
+            <div
+              className="col"
+              onTouchStart={() => "this.classList.toggle('hover')"}
+            >
               <div className="pop-image">
                 <a
                   href="https://jonathanhelvey.github.io/guessing-game/"
@@ -265,7 +281,10 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <div className="col" ontouchstart="this.classList.toggle('hover')">
+            <div
+              className="col"
+              onTouchStart={() => "this.classList.toggle('hover')"}
+            >
               <div className="pop-image">
                 <a
                   href="https://jonathanhelvey.github.io/Background-Color-Generator/"
@@ -294,7 +313,10 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <div className="col" ontouchstart="this.classList.toggle('hover')">
+            <div
+              className="col"
+              onTouchStart={() => "this.classList.toggle('hover')"}
+            >
               <div className="pop-image">
                 <a
                   href="https://www.jonathanhelvey.com/"
