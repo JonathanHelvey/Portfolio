@@ -6,39 +6,45 @@ function generateGreeting() {
   let curHr = today.getHours()
   if (curHr < 12) {
     return (
-      <h3 className="full-stack-dev">
-        <span role="img" aria-label="sunset">
-          🌅
-        </span>
-        Good Morning!
-        <span role="img" aria-label="sunset">
-          🌅
-        </span>
-      </h3>
+      <div>
+        <h3 className="full-stack-dev">
+          <span role="img" aria-label="sunset">
+            🌅
+          </span>
+          Good Morning!
+          <span role="img" aria-label="sunset">
+            🌅
+          </span>
+        </h3>
+      </div>
     )
   } else if (curHr < 18) {
     return (
-      <h3 className="full-stack-dev">
-        <span role="img" aria-label="sun">
-          ☀️
-        </span>
-        Good Afternoon!
-        <span role="img" aria-label="sun">
-          ☀️
-        </span>
-      </h3>
+      <div>
+        <h3 className="full-stack-dev">
+          <span role="img" aria-label="sun">
+            ☀️
+          </span>
+          Good Afternoon!
+          <span role="img" aria-label="sun">
+            ☀️
+          </span>
+        </h3>
+      </div>
     )
   } else {
     return (
-      <h3 className="full-stack-dev">
-        <span role="img" aria-label="moon">
-          🌙
-        </span>
-        Good Evening!
-        <span role="img" aria-label="moon">
-          🌙
-        </span>
-      </h3>
+      <div>
+        <h3 className="full-stack-dev">
+          <span role="img" aria-label="moon">
+            🌙
+          </span>
+          Good Evening!
+          <span role="img" aria-label="moon">
+            🌙
+          </span>
+        </h3>
+      </div>
     )
   }
 }
@@ -53,7 +59,11 @@ class MainHeader extends Component {
         delay="2000"
         config={config.molasses}
       >
-        {props => <h3 style={props}>{generateGreeting()}</h3>}
+        {props => (
+          <div>
+            <h3 style={props}>{generateGreeting()}</h3>
+          </div>
+        )}
       </Spring>
     )
   }
