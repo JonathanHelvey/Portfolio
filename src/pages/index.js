@@ -22,7 +22,6 @@ import SocialMedia from "../components/socialMedia"
 import Particles from "react-particles-js"
 import { Spring, config } from "react-spring/renderprops"
 
-//import { useSpring, animated } from "react-spring"
 const particlesOptions = {
   particles: {
     number: {
