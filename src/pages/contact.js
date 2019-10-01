@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from "react"
 import Layout from "../components/layout"
 import SocialMedia from "../components/socialMedia"

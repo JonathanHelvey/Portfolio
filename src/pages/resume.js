@@ -1,5 +1,6 @@
+/* eslint-disable react/no-array-index-key */
 import React from "react"
-import resume from "../templates/JonathanHelveyResume.pdf"
+// import resume from "../templates/JonathanHelveyResume.pdf"
 import Header from "../components/header"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
@@ -10,7 +11,11 @@ const Resume = () => {
       <Header />
       <SEO title="Home" />
       <div className="resume wrapper2">
-        <div
+        <p>
+          Looking for a resume. Send me an email through contact form. Thank
+          you!
+        </p>
+        {/* <div
           style={{ display: "flex", justifyContent: "center", margin: "0px" }}
         >
           <button className="resume-button">
@@ -22,7 +27,7 @@ const Resume = () => {
         <object type="application/pdf" data={resume} title="resume">
           This browser does not support PDFs.
           <iframe title="Jonathan-Helvey-Resume" src={Resume} />
-        </object>
+        </object> */}
       </div>
     </Layout>
   )
