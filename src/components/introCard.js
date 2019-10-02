@@ -4,7 +4,6 @@ import { Spring, config } from "react-spring/renderprops"
 
 const Intro = () => {
   return (
-    // className='intro'
     <div>
       <div>
         <h2 className="i-build-websites">
