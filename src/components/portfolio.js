@@ -1,6 +1,4 @@
 import React from "react"
-//import Img from "gatsby-image"
-//import { Link } from "gatsby"
 
 const Card = ({ data }) => {
   return (
@@ -98,15 +96,3 @@ const Card = ({ data }) => {
 }
 
 export default Card
-
-export const query = graphql`
-  query {
-    fileName: file(relativePath: { eq: "../images/popnspots.jpeg" }) {
-      childImageSharp {
-        fluid(maxWidth: 400, maxHeight: 250) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`

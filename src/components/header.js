@@ -11,7 +11,6 @@ class Header extends Component {
     this.closeMenu = this.closeMenu.bind(this)
   }
   showMenu() {
-    // event.preventDefault();
     this.setState({ showMenu: true }, () => {
       document.addEventListener("click", this.closeMenu)
     })
@@ -41,11 +40,6 @@ class Header extends Component {
                 <button className="button-links-nav">ABOUT</button>
               </Link>
             </li>
-            {/* <li className="links">
-              <Link className="links" to="/writings/">
-                <button className="button-links-nav">BLOG</button>
-              </Link>
-            </li> */}
             <li className="links">
               <Link className="links" to="/contact/">
                 <button className="button-links-nav">CONTACT</button>
