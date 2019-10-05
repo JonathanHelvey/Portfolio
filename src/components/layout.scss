@@ -1540,6 +1540,17 @@ p {
   padding: 1em;
   line-height: 2;
   color: black;
-  position: relative;
-  background: white;
+  font-family: "Playfair Display", serif;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper2 {
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .resume object {
+    display: none;
+  }
 }
