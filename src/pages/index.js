@@ -171,8 +171,8 @@ const IndexPage = () => {
                         <h2 className="titles">Edmazon</h2>
                       </div>
                       <p className="details2">
-                        A full-featured RESTful e-commerce store built as a
-                        learning project for the NERDS stack.
+                        A full-featured RESTful e-commerce store built in the
+                        NERDS stack. Selling educational coding videos.
                       </p>
                     </div>
                   </div>
