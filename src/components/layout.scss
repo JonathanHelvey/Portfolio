@@ -713,6 +713,7 @@ p {
   text-align: center;
   text-shadow: -3px 0 white, 0 6px white, 6px 0 white, 0 -3px white;
   font-family: "Playfair Display", serif;
+  will-change: transform;
 }
 
 .contact-title {
@@ -747,6 +748,7 @@ p {
   text-align: center;
   text-shadow: -1px 0 white, 0 3px white, 3px 0 white, 0 -1px white;
   font-family: "Playfair Display", serif;
+  will-change: transform;
 }
 
 .pop-image {
@@ -841,6 +843,7 @@ p {
 .navbar {
   display: flex;
   position: sticky;
+  will-change: transform;
   position: -webkit-sticky; /* Safari */
   justify-content: flex-end;
   align-items: center;
@@ -945,6 +948,7 @@ p {
   -moz-transform: translateX(0%);
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
+  will-change: transform;
 }
 /* Move it (define the animation) */
 @-moz-keyframes example1 {
@@ -994,6 +998,7 @@ p {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
+  will-change: transform;
 }
 .hvrbox:hover .hvrbox-layer_top,
 .hvrbox.active .hvrbox-layer_top {
@@ -1010,6 +1015,7 @@ p {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  will-change: transform;
 }
 .hvrbox .hvrbox-text_mobile {
   font-size: 15px;
