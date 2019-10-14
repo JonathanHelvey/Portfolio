@@ -30,8 +30,9 @@ const MyInfo = () => {
             <br />
             <p className="my-details">
               Currently I am working as a Freelance Web Developer in the Chicago
-              land area. Creating web sites for actors in the JAM stack
-              (JavaScript, API's, Markup) in Gatsby.js and GraphQL!
+              land area. Creating web sites for actors and small businesses in
+              the JAM stack (JavaScript, API's, Markup) in Gatsby.js and
+              GraphQL!
             </p>
             <br />
             <p className="my-details">
