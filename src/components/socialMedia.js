@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from "react"
 
 const SocialMedia = () => {
@@ -47,13 +48,17 @@ const SocialMedia = () => {
           alt="social-sites"
         />
       </a>
-      {/* <a href="https://dev.to/jonathanhelvey" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://dev.to/jonathanhelvey"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img
           className="social-logos-img"
           src={require("../images/dev.svg")}
           alt="social-sites"
         />
-      </a> */}
+      </a>
     </div>
   )
 }
