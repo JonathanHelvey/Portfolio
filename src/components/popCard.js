@@ -1,17 +1,17 @@
 import React from 'react';
 
-const FaceCard = () => (
+const Card = () => (
   <div>
     <div className="card-inside">
       <div className="techs-card">
         <div className="hvrbox2">
           <img
             className="hvrbox-layer_bottom"
-            src={require('../images/postgres.png')}
+            src={require('../images/firebase.png')}
             alt="tech"
           />
           <div className="hvrbox-layer_top">
-            <h4 className="hvrbox-text">Postgre</h4>
+            <h4 className="hvrbox-text">Firebase</h4>
           </div>
         </div>
         <div className="hvrbox2">
@@ -27,11 +27,11 @@ const FaceCard = () => (
         <div className="hvrbox2">
           <img
             className="hvrbox-layer_bottom"
-            src={require('../images/knex.png')}
+            src={require('../images/redux.png')}
             alt="tech"
           />
           <div className="hvrbox-layer_top">
-            <h4 className="hvrbox-text">Knex</h4>
+            <h4 className="hvrbox-text">Redux</h4>
           </div>
         </div>
         <div className="hvrbox2">
@@ -68,9 +68,10 @@ const FaceCard = () => (
       <div>
         <h6 className="project-title2">Built With</h6>
       </div>
+
       <div className="hvrbox2">
         <a
-          href="https://github.com/JonathanHelvey/Face-Recognition-App"
+          href="https://github.com/capstone-bluebubbles/Pop-n-Spots"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -84,12 +85,12 @@ const FaceCard = () => (
           </div>
         </a>
       </div>
-      <h6 className="project-title2"> Source Code</h6>
+      <h6 className="project-title2">Source Code</h6>
       <div className="details">
-        <h4 className="project-title2">Tour</h4>
+        <h4 className="project-title2">Pop'N Spots</h4>
       </div>
     </div>
   </div>
 );
 
-export default FaceCard;
+export default Card;

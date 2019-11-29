@@ -1,11 +1,11 @@
 /* eslint-disable react/no-array-index-key */
-import React from "react"
-import Layout from "../components/layout"
-import SocialMedia from "../components/socialMedia"
-import SEO from "../components/seo"
-import { Link } from "gatsby"
+import React from 'react';
 
-const Contact = ({ data }) => (
+import Layout from '../components/layout';
+import SocialMedia from '../components/socialMedia';
+import SEO from '../components/seo';
+
+const Contact = () => (
   <Layout>
     <SEO title="Contact" />
     <div className="form">
@@ -18,15 +18,14 @@ const Contact = ({ data }) => (
         data-netlify-honeypot="bot-field"
         action="/success"
       >
-        <button type="hidden" disabled />
         <div>
           <SocialMedia />
         </div>
-        <div className="my-buttons-container">
+        {/* <div className="my-buttons-container">
           <Link className="resume-button" to="/resume/">
-            <button className="resume-button">Resume!</button>
+            <button type="button" className="resume-button">Resume!</button>
           </Link>
-        </div>
+        </div> */}
         <p>
           <input
             className="form-input"
@@ -36,46 +35,38 @@ const Contact = ({ data }) => (
           />
         </p>
         <p>
-          <label>
-            <input
-              className="form-input"
-              required
-              type="text"
-              name="name"
-              placeholder="Name"
-            />
-          </label>
+          <input
+            className="form-input"
+            required
+            type="text"
+            name="name"
+            placeholder="Name"
+          />
         </p>
         <p>
-          <label>
-            <input
-              className="form-input"
-              required
-              type="email"
-              name="email"
-              placeholder="Email"
-            />
-          </label>
+          <input
+            className="form-input"
+            required
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
         </p>
         <p>
-          <label>
-            <input
-              className="form-input"
-              type="text"
-              placeholder="Company Name"
-              name="company"
-            />
-          </label>
+          <input
+            className="form-input"
+            type="text"
+            placeholder="Company Name"
+            name="company"
+          />
         </p>
         <p>
-          <label>
-            <textarea
-              className="form-message"
-              type="text"
-              placeholder="Message"
-              name="message"
-            />
-          </label>
+          <textarea
+            className="form-message"
+            type="text"
+            placeholder="Message"
+            name="message"
+          />
         </p>
         <p>
           <button className="form-button" type="submit">
@@ -85,6 +76,6 @@ const Contact = ({ data }) => (
       </form>
     </div>
   </Layout>
-)
+);
 
-export default Contact
+export default Contact;

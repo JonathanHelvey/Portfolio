@@ -1,6 +1,6 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -26,7 +26,7 @@ const HeadShotImage = () => (
         }
       }
     `}
-    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} />}
+    render={(data) => <Img fixed={data.placeholderImage.childImageSharp.fixed} />}
   />
-)
-export default HeadShotImage
+);
+export default HeadShotImage;

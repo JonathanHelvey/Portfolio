@@ -11,7 +11,8 @@
     "react/no-unescaped-entities": 0,
     "react/prop-types": 0,
     "react/no-array-index-key": 0,
-    "strict": 0
+    "strict": 0,
+    "global-require": 0  
   },
   "env": {
     "browser": true,
