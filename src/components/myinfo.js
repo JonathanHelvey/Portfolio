@@ -36,7 +36,7 @@ const MyInfo = () => (
             Our company built and designed an omni-channel plugin application for the Zendesk e-commerce platform.
             There I helped design and create our marketing website,
             constructed business dashboard management tools to help our company keep track of customer statistics,
-            and assisted in development and maintenance of new APIs for integration on Our Zendesk Plugin.
+            and assisted in development and maintenance of new APIs for integration on our Zendesk application plugin.
             Technologies used:
             <strong> React-Hooks, Node.js, Serverless, AWS, Firebase, and various javaScript libraries.</strong>
             <br />
