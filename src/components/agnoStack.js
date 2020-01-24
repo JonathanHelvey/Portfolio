@@ -70,7 +70,7 @@ const agnoStackCard = () => (
       </div>
       <div className="hvrbox2">
         <a
-          href="https://github.com/gs-team-edwin/edmazon"
+          href="https://github.com"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -80,7 +80,7 @@ const agnoStackCard = () => (
             alt="tech"
           />
           <div className="hvrbox-layer_top">
-            <h4 className="hvrbox-text">Source Code</h4>
+            <h4 className="hvrbox-text">PRIVATE Confidential</h4>
           </div>
         </a>
       </div>
