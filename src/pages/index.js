@@ -23,6 +23,8 @@ import TourCard from '../components/tourCard';
 import Portfolio from '../components/portfolio';
 import FaceRec from '../components/faceRec';
 import SocialMedia from '../components/socialMedia';
+import AgnoStackImage from '../components/data/agnoStackImage';
+import AgnoStackCard from '../components/agnoStack';
 
 
 const particlesOptions = {
@@ -213,6 +215,39 @@ const IndexPage = () => (
               <div className="back">
                 <div className="inner">
                   <FaceRec />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="col"
+            onTouchStart={() => "this.classList.toggle('hover')"}
+          >
+            <div className="pop-image">
+              <a
+                href="https://agnostack.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AgnoStackImage />
+              </a>
+            </div>
+            <div className="container">
+              <div className="front">
+                <div className="inner">
+                  <div className="details">
+                    <div>
+                      <h2 className="titles">agnoStack Marketing Website</h2>
+                    </div>
+                    <p className="details2">
+                      Company marketing website built with Gatsby.js, Styled-Components, Zendesk Garden.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="back">
+                <div className="inner">
+                  <AgnoStackCard />
                 </div>
               </div>
             </div>

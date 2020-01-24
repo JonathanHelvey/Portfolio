@@ -13,7 +13,7 @@ const MyInfo = () => (
         <ul>
           <p className="my-details">
             Hi, I'm
-            <strong>Jonathan Helvey,</strong>
+            <strong> Jonathan Helvey, </strong>
             a
             <strong style={{ color: 'red' }}> Full Stack Developer </strong>
             who loves building interactive, animated, responsive websites. I
@@ -21,21 +21,30 @@ const MyInfo = () => (
             <strong style={{ color: 'blue' }}> a</strong>
             <strong style={{ color: 'red' }}>r</strong>
             <strong style={{ color: 'green' }}>t</strong>
-            <strong style={{ color: 'purple' }}>s</strong>
+            <strong style={{ color: 'purple' }}>s </strong>
              and have decided to
             bring that creativity to software development. I am a
-            <b> Strong problem solver</b>
-            who enjoys creating web designs that
+            <b> Strong problem solver </b>
+             who enjoys creating web designs that
             interact with the user in a fun and satisfying way. The browser is
             my canvas and I enjoy manipulating the dom into a beautiful
             interactive portrait.
           </p>
           <br />
           <p className="my-details">
-            Currently I am working as a Freelance Web Developer in the Chicago
-            land area. Creating web sites for actors and small businesses in
-            the JAM stack (JavaScript, API's, Markup) in Gatsby.js and
-            GraphQL!
+            Recently, I worked at a start-up company called agnoStack for several months.
+            Our company built and designed an omni-channel plugin application for the Zendesk e-commerce platform.
+            There I helped design and create our marketing website,
+            constructed business dashboard management tools to help our company keep track of customer statistics,
+            and assisted in development and maintenance of new APIs for integration on Our Zendesk Plugin.
+            Technologies used:
+            <strong> React-Hooks, Node.js, Serverless, AWS, Firebase, and various javaScript libraries.</strong>
+            <br />
+            <br />
+            Currently I do freelance work in the Chicago land area.
+            Creating web sites for actors and small businesses in
+            the
+            <strong> JAM stack (JavaScript, API's, Markup) in Gatsby.js and GraphQL!</strong>
           </p>
           <br />
           <p className="my-details">
