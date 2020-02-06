@@ -75,21 +75,21 @@ class Header extends Component {
                       <button type="button" className="button-links">About</button>
                     </Link>
                   </div>
-                  {/* <div>
+                  <div>
                     <Link to="/writings/">
                       <button type="button" className="button-links">Writings</button>
                     </Link>
-                  </div> */}
+                  </div>
                   <div>
                     <Link to="/contact/">
                       <button type="button" className="button-links">Contact</button>
                     </Link>
                   </div>
-                  {/* <div>
+                  <div>
                     <Link to="/resume/">
                       <button type="button" className="button-links">Resume</button>
                     </Link>
-                  </div> */}
+                  </div>
                 </div>
               ) : null}
             </div>

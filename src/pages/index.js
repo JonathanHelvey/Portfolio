@@ -7,6 +7,7 @@ import Layout from '../components/layout';
 import PopImage from '../components/data/PopImage';
 import FaceImage from '../components/data/faceImage';
 import EdImage from '../components/data/EdImage';
+import EricRyanSwansonImage from '../components/data/ericRyanSwansonImage';
 import GuessImage from '../components/data/GuessImage';
 import PortfolioImage from '../components/data/portfolioImage';
 import TourImage from '../components/data/tourImage';
@@ -25,6 +26,7 @@ import FaceRec from '../components/faceRec';
 import SocialMedia from '../components/socialMedia';
 import AgnoStackImage from '../components/data/agnoStackImage';
 import AgnoStackCard from '../components/agnoStack';
+import EricRyanSwanson from '../components/ericRyanSwanson';
 
 
 const particlesOptions = {
@@ -121,6 +123,39 @@ const IndexPage = () => (
       <div className="wrapper">
         <h1 className="project-title">Projects</h1>
         <div className="cols">
+          <div
+            className="col"
+            onTouchStart={() => "this.classList.toggle('hover')"}
+          >
+            <div className="pop-image">
+              <a
+                href="https://goofy-varahamihira-566118.netlify.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <EricRyanSwansonImage />
+              </a>
+            </div>
+            <div className="container">
+              <div className="front">
+                <div className="inner">
+                  <div className="details">
+                    <div>
+                      <h2 className="titles">Actors Portfolio Site</h2>
+                    </div>
+                    <p className="details2">
+                      Actors Portfolio Site. Built in the JAMstack.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="back">
+                <div className="inner">
+                  <EricRyanSwanson />
+                </div>
+              </div>
+            </div>
+          </div>
           <div
             className="col"
             onTouchStart={() => "this.classList.toggle('hover')"}

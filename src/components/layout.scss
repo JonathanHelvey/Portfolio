@@ -846,6 +846,7 @@ p {
   will-change: transform;
   position: -webkit-sticky; /* Safari */
   justify-content: flex-end;
+  padding-right: 6vw;  // Changed because of Hamburger Menu.
   align-items: center;
   background: black;
   position: absolute;
@@ -866,11 +867,13 @@ p {
     justify-content: center;
     align-items: center;
     height: 10%;
+    padding-right: 0;
   }
 }
 
 .nav-flex-burger {
   overflow: hidden;
+  display: none; // CHANGE BACK TO SEE HAMBURGER MENU
   cursor: pointer;
 }
 
