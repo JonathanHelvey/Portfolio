@@ -22,9 +22,9 @@ open http://localhost:8080/
 open http://localhost:8000/___graphql
 ```
 
-## 💫 Deploy
+## 💫 Deployed with Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a47eb81d-17f0-40f3-bcbb-1c080e8a8b8e/deploy-status)](https://app.netlify.com/sites/flamboyant-kalam-eec45d/deploys)
 
 
 A responsive static portfolio site built in the JAMstack. Builds from Markdown files queried through Gatsby's GraphQL data layer!
