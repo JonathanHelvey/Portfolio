@@ -5,9 +5,9 @@
  */
 
 // You can delete this file if you're not using it
-const path = require(`path`)
+const path = require('path');
 
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const { createFilePath } = require('gatsby-source-filesystem');
 // exports.onCreateNode = ({ node, getNode, actions }) => {
 //   const { createNodeField } = actions
 //   if (node.internal.type === `MarkdownRemark`) {
@@ -23,8 +23,8 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = ({ graphql, actions }) => {
   // **Note:** The graphql function call returns a Promise
   // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise for more info
-  const { createPage } = actions
-  const postTemplate = path.resolve("src/templates/post.js")
+  const { createPage } = actions;
+  const postTemplate = path.resolve('src/templates/post.js');
 
   return graphql(`
     {
@@ -41,9 +41,9 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
-      return Promise.reject(result.errors)
+      return Promise.reject(result.errors);
     }
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
@@ -54,7 +54,7 @@ exports.createPages = ({ graphql, actions }) => {
         //   // in page queries as GraphQL variables.
         //   slug: node.fields.slug,
         // },
-      })
-    })
-  })
-}
+      });
+    });
+  });
+};
