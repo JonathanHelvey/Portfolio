@@ -46,12 +46,13 @@ const Layout = ({ children }) => (
             href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
             rel="stylesheet"
           />
-
           {/* <!-- Load an icon library to show a hamburger menu (bars) on small screens --> */}
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           />
+          {/* <!-- Google-Anaylitcs Verification --> */}
+          <meta name="google-site-verification" content="sdJN_v7Gk8CQmhS93tEUrGXCAOGVJlHe8jF67MEbnTE" />
         </div>
       </>
     )}
