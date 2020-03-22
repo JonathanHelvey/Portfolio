@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 module.exports = {
   siteMetadata: {
     title: `Jonathan Helvey Portfolio`,
@@ -9,6 +10,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -79,4 +81,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
