@@ -5,6 +5,7 @@ module.exports = {
     description: `Jonathan Helvey Full Stack Developer.`,
     author: `@Jonathan Helvey`,
     siteUrl: `https://www.jonathanhelvey.com`,
+    twitterUsername: "@jonathanhelvey",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -68,6 +69,8 @@ module.exports = {
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
         trackingId: "UA-152847627-1",
+        head: false,
+        cookieDomain: "jonathanhelvey.com",
       },
     },
     "gatsby-plugin-offline",
