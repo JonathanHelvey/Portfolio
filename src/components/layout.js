@@ -30,11 +30,7 @@ const Layout = ({ children }) => (
     `}
     render={(data) => (
       <>
-        <header>
-          <Header siteTitle={data.site.siteMetadata.title} />
-          {/* <!-- Google-Anaylitcs Verification --> */}
-          <meta name="google-site-verification" content="sdJN_v7Gk8CQmhS93tEUrGXCAOGVJlHe8jF67MEbnTE" />
-        </header>
+        <Header siteTitle={data.site.siteMetadata.title} />
         <div>
           <main>{children}</main>
           {/* <!-- Add Google FONTS HERE below this line--> */}
