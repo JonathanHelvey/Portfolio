@@ -587,6 +587,10 @@ p {
   font-size: 20px;
 }
 
+.headshot {
+  margin-top: 5vh;
+}
+
 .index-container {
   display: flex;
   padding-left: 4vw; // remove when I hadd marquee.
@@ -596,7 +600,7 @@ p {
   display: flex;
   margin-left: 180px;
   margin-right: 180px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 @media (max-width: 1000px) {
@@ -605,6 +609,7 @@ p {
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
+    align-items: center;
   }
 }
 
