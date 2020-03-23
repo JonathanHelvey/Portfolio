@@ -419,9 +419,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <div>
-        <TechStack />
-      </div>
+      <TechStack />
       <div>
         <div>
           <div className="info2">

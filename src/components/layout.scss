@@ -572,6 +572,8 @@ p {
 }
 .tech-container {
   margin: 0px;
+  width: 100vw;
+  height: auto;
   background: white;
   border-top: gainsboro solid;
 }
@@ -587,9 +589,7 @@ p {
 
 .index-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  padding-left: 4vw; // remove when I hadd marquee.
 }
 
 .index-con3 {
@@ -1564,3 +1564,33 @@ p {
     display: none;
   }
 }
+
+
+/* Make it a marquee */
+// .marquee {
+//   margin: 0 auto;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   box-sizing: border-box;
+// }
+
+// .marquee span {
+//   display: inline-flex;
+//   // padding-left: 100%;
+//   text-indent: 0;
+//   animation: marquee 25s linear infinite;
+// }
+// .marquee span:hover {
+//   animation-play-state: paused;
+// }
+
+// /* Make it move */
+// @keyframes marquee {
+//   0% {
+//     transform: translate(0, 0);
+//   }
+//   100% {
+//     transform: translate(-100%, 0);
+//   }
+// }
+
