@@ -561,21 +561,45 @@ p {
 }
 
 .tech-title {
+  background: white;
+  border-top: gainsboro solid;
+  width: 100vw;
+  height: 4vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Playfair Display", serif;
   text-decoration: underline;
-  padding: 20px;
-  margin: 30px;
+  padding: 30px;
   margin-top: 60px;
 }
+
+.experience-container {
+  height: 10vh;
+}
+
 .tech-container {
   margin: 0px;
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: auto;
   background: white;
-  border-top: gainsboro solid;
+}
+
+.tech-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: auto;
+}
+
+// Fix to fix tech icons to phone later.
+@media (max-width: 800px) {
+  .experience-container {
+    display: none;
+  }
 }
 
 .titles {
@@ -595,8 +619,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  padding-left: 4vw; // remove when I hadd marquee.
+  
 }
 
 .index-con3 {
@@ -604,6 +627,7 @@ p {
   margin-left: 180px;
   margin-right: 180px;
   align-items: flex-start;
+  
 }
 
 @media (max-width: 1000px) {
@@ -625,6 +649,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .my-buttons-container {
@@ -633,6 +658,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   background: white;
+  padding: 10px;
 }
 
 .my-info-container {
@@ -642,6 +668,7 @@ p {
   justify-content: center;
   background: white;
   border-bottom: gainsboro solid;
+  padding-top: 5vh;
 }
 
 .info2 {
@@ -1575,30 +1602,31 @@ p {
 
 
 /* Make it a marquee */
-// .marquee {
-//   margin: 0 auto;
-//   white-space: nowrap;
-//   overflow: hidden;
-//   box-sizing: border-box;
-// }
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
 
-// .marquee span {
-//   display: inline-flex;
-//   // padding-left: 100%;
-//   text-indent: 0;
-//   animation: marquee 25s linear infinite;
-// }
+.marquee span {
+  display: inline-flex;
+  // padding-left: 100%;
+  text-indent: 0;
+  animation: marquee 30s linear infinite;
+}
+
 // .marquee span:hover {
 //   animation-play-state: paused;
 // }
 
-// /* Make it move */
-// @keyframes marquee {
-//   0% {
-//     transform: translate(0, 0);
-//   }
-//   100% {
-//     transform: translate(-100%, 0);
-//   }
-// }
+/* Make it move */
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
 
