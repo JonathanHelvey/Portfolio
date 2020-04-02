@@ -101,6 +101,7 @@ const particlesOptions = {
   retina_detect: true,
 };
 
+// TODO: Clean up!!!
 const IndexPage = () => (
   <Layout>
     <Particles className="particles" params={particlesOptions} />

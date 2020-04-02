@@ -69,6 +69,7 @@ const MyInfo = () => (
       </div>
       <br />
     </div>
+    {/* TODO: Add Footer Component */}
     <div className="my-buttons-container">
       <Link className="hire-me-button" to="/contact/">
         <button type="button" className="hire-me-button">Let's Work Together!</button>
