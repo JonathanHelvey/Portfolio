@@ -4,7 +4,8 @@ const TechStack = () => (
   <div className="experience-container">
     <h2 className="tech-title">Experience</h2>
     <div className="tech-container">
-      <div className="tech-container2">
+      {/* <div className="tech-container2"> */}
+      <div className="marquee-background">
         <div className="marquee">
           <span>
             <div className="index-container">

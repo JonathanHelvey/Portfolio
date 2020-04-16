@@ -587,14 +587,6 @@ p {
   background: white;
 }
 
-.tech-container2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60vw;
-  height: auto;
-}
-
 // Fix to fix tech icons to phone later.
 @media (max-width: 800px) {
   .experience-container {
@@ -1540,7 +1532,6 @@ p {
   }
 }
 
-
 /* Make it a marquee */
 .marquee {
   margin: 0 auto;
@@ -1551,9 +1542,16 @@ p {
 
 .marquee span {
   display: inline-flex;
-  // padding-left: 100%;
   text-indent: 0;
-  animation: marquee 30s linear infinite;
+  opacity: .8;
+  animation: marquee 60s linear infinite;
+}
+
+.marquee-background {
+  background: linear-gradient(to left, #333, transparent 50%, #eee 55%, #333);
+  z-index: 2;
+  width: 50vw;
+  border-radius: 1em;
 }
 
 // .marquee span:hover {
