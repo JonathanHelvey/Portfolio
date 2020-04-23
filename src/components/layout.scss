@@ -630,16 +630,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
 }
 
 .my-buttons-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   background: white;
-  padding: 10px;
+  margin: 6vh;
 }
 
 .my-info-container {
@@ -1111,54 +1108,39 @@ p {
   color: white;
   background: black;
   border: none;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
   font-family: "Playfair Display", serif;
   font-display: black;
-  margin: 2%;
   display: flex;
-  font-size: 22px;
+  font-size: 28px;
   text-decoration: none;
   position: relative;
+  box-shadow: 0 30px 45px rgba(0,0,0,0.25);
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
 }
-.hire-me-button a {
+
+.link {
   cursor: pointer;
-  border-radius: 8px;
-  padding: 20px;
-  color: white;
-  background: black;
-  border: none;
-  font-family: "Playfair Display", serif;
-  font-display: black;
-  font-size: 22px;
-  margin: 2%;
-  display: flex;
   text-decoration: none;
-  position: relative;
 }
 
 .hire-me-button:hover {
   background-color: gainsboro;
   color: #333;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 }
 
 @media (max-width: 600px) {
-  .hire-me-button a {
-    //font-size: 16px;
-    padding-bottom: 1px;
-    padding-top: 1px;
-    padding-left: 1px;
-    padding-right: 1px;
-    margin: 0;
-  }
-}
-@media (max-width: 600px) {
   .hire-me-button {
     //font-size: 16px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-top: 12px;
     margin: 0;
   }
 }

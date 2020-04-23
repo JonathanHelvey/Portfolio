@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import HeadShot from './data/headShot';
 import TechStack from './techStack';
 
@@ -70,12 +69,6 @@ const MyInfo = () => (
         </ul>
       </div>
       <br />
-    </div>
-    {/* TODO: Add Footer Component */}
-    <div className="my-buttons-container">
-      <Link className="hire-me-button" to="/contact/">
-        <button type="button" className="hire-me-button">Let's Work Together!</button>
-      </Link>
     </div>
   </div>
 );

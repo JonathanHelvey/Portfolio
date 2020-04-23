@@ -1,5 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
+import { Link } from 'gatsby';
 import Particles from 'react-particles-js';
 import { Spring, config } from 'react-spring/renderprops';
 
@@ -17,7 +18,6 @@ import PopCard from '../components/popCard';
 import EdCard from '../components/edCard';
 import GuessCard from '../components/guessCard';
 import MyInfo from '../components/myinfo';
-import TechStack from '../components/techStack';
 import IntroCard from '../components/introCard';
 import ColorGen from '../components/colorGen';
 import TourCard from '../components/tourCard';
@@ -427,7 +427,13 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
+      {/* TODO: Add Footer Component */}
       <div className="index-con4">
+        <div className="my-buttons-container">
+          <Link className="link" to="/contact/">
+            <button type="button" className="hire-me-button">Let's Work Together!</button>
+          </Link>
+        </div>
         <SocialMedia />
       </div>
     </div>
