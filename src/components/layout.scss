@@ -561,10 +561,18 @@ p {
 }
 
 .tech-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Playfair Display", serif;
-  text-decoration: underline;
-  padding: 6vh;
-  text-align: center;
+  padding: 20px;
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+  margin-left: 37vw;
+  margin-right: 37vw;
+  border-bottom: 1px solid #333;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .tech-container {
@@ -680,24 +688,31 @@ p {
   align-items: center;
   justify-content: center;
   font-family: "Playfair Display", serif;
-  text-decoration: underline;
   padding: 20px;
-  margin-top: 70px;
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  border-bottom: 1px solid #333;
+  font-size: 34px;
+  font-weight: bold;
 }
 
 .about-me-title {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Playfair Display", serif;
-  text-decoration: underline;
-  padding: 6vh;
-  margin-top: 6vh;
+  padding: 20px;
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+  margin-left: 37vw;
+  margin-right: 37vw;
+  border-bottom: 1px solid #333;
+  font-size: 28px;
+  font-weight: bold;
 }
-@media (max-width: 800px) {
-  .about-me-title {
-    padding: 0px;
-    margin: 10px;
-  }
-}
+
 .project-title2 {
   margin-top: 10px;
   display: flex;
@@ -1518,10 +1533,11 @@ p {
   border-radius: 1em;
 }
 
-// .marquee span:hover {
-//   animation-play-state: paused;
-// }
-
+@media screen and (max-width: 600px) {
+  .marquee-background {
+    width: 80vw;
+  }
+}
 /* Make it move */
 @keyframes marquee {
   0% {

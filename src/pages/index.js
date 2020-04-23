@@ -122,7 +122,7 @@ const IndexPage = () => (
       <SocialMedia />
       <div id="projects" />
       <div className="wrapper">
-        <h1 className="project-title">Projects</h1>
+        <h2 className="project-title">Projects</h2>
         <div className="cols">
           <div
             className="col"
