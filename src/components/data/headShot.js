@@ -26,7 +26,7 @@ const HeadShotImage = () => (
         }
       }
     `}
-    render={(data) => <Img fixed={data.placeholderImage.childImageSharp.fixed} />}
+    render={(data) => <Img fixed={data.placeholderImage.childImageSharp.fixed} className="image" />}
   />
 );
 export default HeadShotImage;
