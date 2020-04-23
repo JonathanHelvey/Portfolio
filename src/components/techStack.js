@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TechStack = () => (
-  <div className="experience-container">
+  <div>
     <h2 className="tech-title">Experience</h2>
     <div className="tech-container">
       {/* <div className="tech-container2"> */}

@@ -561,21 +561,10 @@ p {
 }
 
 .tech-title {
-  background: white;
-  border-top: gainsboro solid;
-  width: 100vw;
-  height: 4vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: "Playfair Display", serif;
   text-decoration: underline;
-  padding: 30px;
-  margin-top: 60px;
-}
-
-.experience-container {
-  height: 10vh;
+  padding: 6vh;
+  text-align: center;
 }
 
 .tech-container {
@@ -616,8 +605,8 @@ p {
 
 .index-con3 {
   display: flex;
-  margin-left: 180px;
-  margin-right: 180px;
+  margin-left: 18vw;
+  margin-right: 18vw;
   align-items: flex-start;
   
 }
@@ -654,15 +643,10 @@ p {
 }
 
 .my-info-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
   background: white;
+  border-top: gainsboro solid;
   border-bottom: gainsboro solid;
-  padding-top: 5vh;
-  padding-left: 8vw;
-  padding-right: 8vw;
+  margin-top: 8vh;
 }
 
 .info2 {
@@ -705,13 +689,11 @@ p {
 }
 
 .about-me-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   font-family: "Playfair Display", serif;
   text-decoration: underline;
-  padding: 30px;
-  margin: 40px;
+  padding: 6vh;
+  margin-top: 6vh;
 }
 @media (max-width: 800px) {
   .about-me-title {
@@ -1536,6 +1518,8 @@ p {
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
+  box-shadow: 0 30px 45px rgba(0,0,0,0.25);
+  border-radius: 2em;
 }
 
 .marquee span {

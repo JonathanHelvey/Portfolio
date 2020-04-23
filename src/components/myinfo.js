@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import HeadShot from './data/headShot';
+import TechStack from './techStack';
 
 const MyInfo = () => (
   <div id="tech">
     <div className="my-info-container">
+      <TechStack />
       <h2 className="about-me-title">About Me</h2>
       <div className="index-con3">
         <div className="headshot">

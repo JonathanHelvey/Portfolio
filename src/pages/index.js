@@ -420,7 +420,6 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <TechStack />
       <div>
         <div>
           <div className="info2">
