@@ -28,7 +28,7 @@ const MyInfo = () => (
             <b> Strong problem solver </b>
              who enjoys creating web designs that
             interact with the user in a fun and satisfying way. The browser is
-            my canvas and I enjoy manipulating the dom into a beautiful
+            my canvas and I enjoy manipulating the DOM into a beautiful
             interactive portrait.
           </p>
           <br />
