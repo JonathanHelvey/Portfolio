@@ -23,10 +23,10 @@ const MyInfo = () => (
             <strong style={{ color: 'red' }}>r</strong>
             <strong style={{ color: 'green' }}>t</strong>
             <strong style={{ color: 'purple' }}>s </strong>
-             and have decided to
+            and have decided to
             bring that creativity to software development. I am a
             <b> Strong problem solver </b>
-             who enjoys creating web designs that
+            who enjoys creating web designs that
             interact with the user in a fun and satisfying way. The browser is
             my canvas and I enjoy manipulating the DOM into a beautiful
             interactive portrait.
