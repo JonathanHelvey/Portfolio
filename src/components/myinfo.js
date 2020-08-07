@@ -45,7 +45,7 @@ const MyInfo = () => (
             Currently I do freelance work in the Chicago land area.
             Creating web sites for actors and small businesses in
             the
-            <strong> JAM stack (JavaScript, API's, Markup) in Gatsby.js and GraphQL.</strong>
+            <strong> JAM stack (JavaScript, API's, Markup) in Gatsby.js and GraphQL!</strong>
           </p>
           <br />
           <p className="my-details">
