@@ -54,9 +54,8 @@ typings/
 # dotenv environment variables file
 .env
 
-# gatsby files
+# Old Gatsby cache (public/ now holds real static files: keep it tracked)
 .cache/
-public
 
 # Mac files
 .DS_Store
@@ -67,3 +66,10 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# Vite build output
+dist
+.DS_Store
+
+# Local editor/agent config
+.claude/

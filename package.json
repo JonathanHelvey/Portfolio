@@ -1,67 +1,27 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "jonathanhelvey-portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "version": "2.0.0",
+  "description": "Jonathan Helvey's portfolio — React + Vite, pre-rendered to static HTML.",
+  "type": "module",
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=22 <25"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --outDir dist/client && vite build --ssr src/entry-server.jsx --outDir dist/server && node scripts/prerender.js",
+    "preview": "vite preview --outDir dist/client",
+    "audit": "pnpm audit --audit-level=moderate"
+  },
   "dependencies": {
-    "electron": "^7.2.4",
-    "fs": "0.0.1-security",
-    "gatsby": "^2.17.7",
-    "gatsby-image": "^2.2.30",
-    "gatsby-plugin-google-analytics": "^2.2.0",
-    "gatsby-plugin-manifest": "^2.2.26",
-    "gatsby-plugin-offline": "^2.2.10",
-    "gatsby-plugin-react-helmet": "^3.1.13",
-    "gatsby-plugin-robots-txt": "^1.5.0",
-    "gatsby-plugin-sass": "^2.1.27",
-    "gatsby-plugin-sharp": "^2.2.36",
-    "gatsby-plugin-sitemap": "^2.3.0",
-    "gatsby-plugin-transition-link": "^1.14.2",
-    "gatsby-plugin-typography": "^2.3.15",
-    "gatsby-source-filesystem": "^2.1.35",
-    "gatsby-transformer-remark": "^2.6.32",
-    "gatsby-transformer-sharp": "^2.3.2",
-    "node-sass": "^4.13.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-helmet": "^5.2.1",
-    "react-particles-js": "^2.7.0",
-    "react-spring": "^8.0.27",
-    "react-typography": "^0.16.19",
-    "smooth-scroll": "^16.1.0",
-    "typography": "^0.16.19",
-    "typography-theme-kirkham": "^0.16.19"
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
   },
   "devDependencies": {
-    "prettier": "^1.18.2",
-    "eslint": "^6.6.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-loader": "^3.0.2",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "gatsby-plugin-eslint": "^2.0.8"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "@fontsource-variable/playfair-display": "5.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "marked": "18.0.14",
+    "vite": "8.3.1"
   }
 }
