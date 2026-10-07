@@ -1,32 +1,57 @@
-### Portfolio
+# Portfolio
 
-www.jonathanhelvey.dev
+https://www.jonathanhelvey.com
 
-**A responsive static portfolio site built in the JAMstack. Builds from JSON and Markdown files queried through Gatsby's GraphQL data layer!**
-
-# Demo
-<img src="portfolio.gif" data-canonical-src="portfolio.gif" width="800" height="600" />
-
-## Created With
-HTML5, CSS3, SASS, React-Spring, React Smooth Scroll, React Particles, React, Gatsby.js and GraphQL.
-
-## Created by
-Jonathan Helvey
+Jonathan Helvey's portfolio. **React 19 + Vite**, with every page pre-rendered to
+static HTML at build time and React taking over in the browser for the interactive
+bits (3D flip cards, time-of-day greeting, hide-on-scroll header).
 
 ## Setup
 
-Commands to get this repo set up for development:
+Needs Node 22–24 (`nvm use`) and pnpm 11 (`corepack enable`).
 
-```
-npm install
-gatsby develop or gatsby build
-open http://localhost:8080/
-open http://localhost:8000/___graphql
+```bash
+pnpm install
+pnpm dev        # http://localhost:5173 (home page only; other pages need a build)
+pnpm build      # → dist/client
+pnpm preview    # http://localhost:4173, with the same security headers as Netlify
 ```
 
-## 💫 Deployed with Netlify
+## Where things live
+
+| What | Where |
+| --- | --- |
+| Projects (cards) | `src/data/projects.js` + screenshots in `src/assets/projects/` |
+| Tech logos / skills | `src/data/tech.js` |
+| Bio | `src/pages/Home.jsx` |
+| Blog posts | `src/posts/*.md` (front matter: title, slug, date, description, published) |
+| Pages & SEO titles | `src/routes.js` |
+| Styles | `src/styles/global.css` |
+| Headers, redirects, build | `netlify.toml` |
+
+`scripts/prerender.js` renders every route in `src/routes.js` to HTML and writes
+`sitemap.xml` and `robots.txt`.
+
+## Security
+
+**Dependencies** (`pnpm-workspace.yaml`):
+
+- `minimumReleaseAge: 10080`: only installs versions that have been public for 7+ days.
+  Hijacked releases are almost always pulled within hours. Exceptions are listed
+  one version at a time in `minimumReleaseAgeExclude`.
+- `trustPolicy: no-downgrade`: rejects a release that lost the publishing provenance
+  earlier versions had.
+- Install scripts are blocked unless allowlisted in `allowBuilds`.
+- Exact versions in `package.json` + committed `pnpm-lock.yaml`.
+- Netlify runs `pnpm audit --audit-level=high` before every build.
+
+**Site** (`netlify.toml`): strict Content-Security-Policy (own files only, no
+inline scripts), HSTS, `X-Frame-Options: DENY`, `nosniff`, Referrer-Policy,
+Permissions-Policy and COOP. No analytics or third-party scripts.
+
+`public/sw.js` removes the offline service worker the old Gatsby site installed
+in returning visitors' browsers. Keep it for a few months after launch.
+
+## Deployed with Netlify
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a47eb81d-17f0-40f3-bcbb-1c080e8a8b8e/deploy-status)](https://app.netlify.com/sites/flamboyant-kalam-eec45d/deploys)
-
-
-
