@@ -32,6 +32,9 @@ pnpm test       # contact-form spam filter tests (Node's built-in runner)
 | Light/dark theme | color tokens at the top of `global.css`, `public/theme.js`, `ThemeToggle.jsx` |
 | Headers, redirects, build | `netlify.toml` |
 
+`scripts/prerender.js` renders every route in `src/routes.js` to HTML and writes
+`sitemap.xml` and `robots.txt`.
+
 ## Contact form
 
 The form posts to `/api/contact`, a Netlify Function that drops spam (honeypot,
@@ -39,9 +42,6 @@ no JavaScript, sent within 3 seconds, too many links, SEO/marketing pitches) and
 forwards real messages to the **contact-verified** Netlify form, declared in
 `public/netlify-forms.html`. Spam still sees the thanks page; the reason is in
 the function logs. Submissions show up under **Forms → contact-verified**.
-
-`scripts/prerender.js` renders every route in `src/routes.js` to HTML and writes
-`sitemap.xml` and `robots.txt`.
 
 ## Security
 
