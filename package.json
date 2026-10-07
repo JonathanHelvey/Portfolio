@@ -13,7 +13,11 @@
     "build": "vite build --outDir dist/client && vite build --ssr src/entry-server.jsx --outDir dist/server && node scripts/prerender.js",
     "preview": "vite preview --outDir dist/client",
     "audit": "pnpm audit --audit-level=moderate",
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "lint": "oxlint --deny-warnings",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "pnpm lint && pnpm format:check && pnpm test"
   },
   "dependencies": {
     "react": "19.3.0",
@@ -23,6 +27,8 @@
     "@fontsource-variable/playfair-display": "5.3.0",
     "@vitejs/plugin-react": "6.1.1",
     "marked": "18.0.14",
+    "oxlint": "1.86.0",
+    "prettier": "3.9.9",
     "vite": "8.3.1"
   }
 }

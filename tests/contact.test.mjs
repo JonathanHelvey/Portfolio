@@ -30,8 +30,8 @@ const legit = {
 };
 
 async function submit(fields, method = 'POST') {
-  const body = method === 'POST' ? new URLSearchParams(fields) : undefined;
-  const response = await handler(new Request(`${SITE}/api/contact`, { method, body }));
+  const init = method === 'POST' ? { method, body: new URLSearchParams(fields) } : { method };
+  const response = await handler(new Request(`${SITE}/api/contact`, init));
   return { status: response.status, location: response.headers.get('Location')?.replace(SITE, '') };
 }
 
@@ -55,7 +55,10 @@ const spam = [
   ['a 2-day-old form', { ...legit, started: secondsAgo(2 * 24 * 60 * 60) }],
   ['a link in the name', { ...legit, name: 'Cheap SEO www.spam.biz' }],
   ['three links', { ...legit, message: 'a http://a.com b http://b.com c http://c.com' }],
-  ['a marketing pitch', { ...legit, message: 'Attract high-quality leads and get more traffic with our SEO services!' }],
+  [
+    'a marketing pitch',
+    { ...legit, message: 'Attract high-quality leads and get more traffic with our SEO services!' },
+  ],
   ['a spam phrase plus a link', { ...legit, message: 'We offer guest posts, see https://spam.biz' }],
 ];
 

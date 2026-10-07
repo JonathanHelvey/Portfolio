@@ -8,7 +8,7 @@
     if (theme === 'light' || theme === 'dark') {
       document.documentElement.dataset.theme = theme;
     }
-  } catch (error) {
+  } catch {
     // Storage blocked (private mode, etc.): fall back to the system setting.
   }
 })();

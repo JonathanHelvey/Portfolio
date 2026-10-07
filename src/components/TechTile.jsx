@@ -1,10 +1,11 @@
 import { TECH } from '../data/tech';
 
-// Logo tile that reveals its name on hover/focus (the old "hvrbox").
-export default function TechTile({ name, size = 'md', focusable = false }) {
+// Logo tile that reveals its name on hover (the old "hvrbox"). The name is
+// also in the DOM for screen readers.
+export default function TechTile({ name, size = 'md' }) {
   const tech = TECH[name] ?? {};
   return (
-    <li className={`tech-tile tech-tile-${size}`} tabIndex={focusable ? 0 : undefined} title={name}>
+    <li className={`tech-tile tech-tile-${size}`} title={name}>
       {tech.logo ? (
         <img src={tech.logo} alt="" loading="lazy" decoding="async" />
       ) : (

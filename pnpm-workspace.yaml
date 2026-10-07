@@ -5,7 +5,7 @@
 minimumReleaseAge: 10080
 # Deliberate, reviewed exceptions only (e.g. a fresh security patch).
 minimumReleaseAgeExclude:
-  - source-map-js@1.2.2  # GHSA-68fv-2mgg-jv7q fix; already vetted in TrendWake
+  - source-map-js@1.2.2 # GHSA-68fv-2mgg-jv7q fix; already vetted in TrendWake
 
 # Refuse a package version that drops the publishing provenance its
 # earlier versions had (a common sign of a stolen maintainer token).

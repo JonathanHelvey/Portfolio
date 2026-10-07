@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm audit --audit-level=high && pnpm test && pnpm build"
+  command = "pnpm audit --audit-level=high && pnpm check && pnpm build"
   publish = "dist/client"
 
 [build.environment]

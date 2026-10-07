@@ -20,17 +20,17 @@ pnpm test       # contact-form spam filter tests (Node's built-in runner)
 
 ## Where things live
 
-| What | Where |
-| --- | --- |
-| Projects (cards) | `src/data/projects.js` + screenshots in `src/assets/projects/` |
-| Tech logos / skills | `src/data/tech.js` |
-| Bio | `src/pages/Home.jsx` |
-| Blog posts | `src/posts/*.md` (front matter: title, slug, date, description, published) |
-| Pages & SEO titles | `src/routes.js` |
-| Styles | `src/styles/global.css` |
-| Contact form spam filter | `netlify/functions/contact.mjs` (tests in `tests/`) |
-| Light/dark theme | color tokens at the top of `global.css`, `public/theme.js`, `ThemeToggle.jsx` |
-| Headers, redirects, build | `netlify.toml` |
+| What                      | Where                                                                         |
+| ------------------------- | ----------------------------------------------------------------------------- |
+| Projects (cards)          | `src/data/projects.js` + screenshots in `src/assets/projects/`                |
+| Tech logos / skills       | `src/data/tech.js`                                                            |
+| Bio                       | `src/pages/Home.jsx`                                                          |
+| Blog posts                | `src/posts/*.md` (front matter: title, slug, date, description, published)    |
+| Pages & SEO titles        | `src/routes.js`                                                               |
+| Styles                    | `src/styles/global.css`                                                       |
+| Contact form spam filter  | `netlify/functions/contact.mjs` (tests in `tests/`)                           |
+| Light/dark theme          | color tokens at the top of `global.css`, `public/theme.js`, `ThemeToggle.jsx` |
+| Headers, redirects, build | `netlify.toml`                                                                |
 
 `scripts/prerender.js` renders every route in `src/routes.js` to HTML and writes
 `sitemap.xml` and `robots.txt`.
