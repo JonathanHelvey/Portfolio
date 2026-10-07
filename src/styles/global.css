@@ -1,51 +1,43 @@
 @import '@fontsource-variable/playfair-display';
 
-/* ---------- Tokens ---------- */
+/* ---------- Tokens ----------
+   Each color is light-dark(light, dark). The theme follows the visitor's
+   system setting unless they pick one with the header toggle, which sets
+   <html data-theme> (see public/theme.js). */
 :root {
-  --bg: #ffffff;
-  --bg-soft: #f4f2f8;
-  --text: #17141f;
-  --muted: #5d5869;
-  --nav-bg: #000000;
+  color-scheme: light dark;
+  --bg: light-dark(#ffffff, #0e0219);
+  --bg-soft: light-dark(#f4f2f8, #170828);
+  --text: light-dark(#17141f, #ece8f5);
+  --muted: light-dark(#5d5869, #a9a2bb);
+  --nav-bg: light-dark(#000000, #07010d);
   --nav-text: #ffffff;
-  --card: #1b1a20;
+  --card: light-dark(#1b1a20, #1c1030);
   --card-text: #f5f3fa;
-  --card-muted: #c9c4d6;
-  --card-back: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-  --card-back-text: #101018;
-  --hex: #1b1e34;
-  --hex-opacity: 0.12;
-  --accent: #6d28d9;
-  --accent-2: #2563eb;
-  --accent-3: #db2777;
+  --card-muted: light-dark(#c9c4d6, #c4bcd8);
+  --card-back: linear-gradient(45deg, light-dark(#cedce7, #3b2a5c) 0%, light-dark(#596a72, #120221) 100%);
+  --card-back-text: light-dark(#101018, #f5f3fa);
+  --hex: light-dark(rgb(27 30 52 / 0.12), rgb(185 166 232 / 0.07));
+  --accent: light-dark(#6d28d9, #a78bfa);
+  --accent-2: light-dark(#2563eb, #60a5fa);
+  --accent-3: light-dark(#db2777, #f472b6);
+  --red: light-dark(#dc2626, #f87171);
+  --green: light-dark(#16a34a, #4ade80);
+  --purple: light-dark(#9333ea, #c084fc);
   --ring: #53a7ea;
-  --shadow: 0 10px 30px rgb(17 12 34 / 0.18);
+  --shadow: 0 10px 30px light-dark(rgb(17 12 34 / 0.18), rgb(0 0 0 / 0.45));
   --radius: 14px;
   --font-display: 'Playfair Display Variable', Georgia, serif;
   --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --ease-flip: cubic-bezier(0.4, 0.2, 0.2, 1);
-  color-scheme: light dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0e0219;
-    --bg-soft: #170828;
-    --text: #ece8f5;
-    --muted: #a9a2bb;
-    --nav-bg: #07010d;
-    --card: #1c1030;
-    --card-text: #f5f3fa;
-    --card-muted: #c4bcd8;
-    --card-back: linear-gradient(45deg, #3b2a5c 0%, #120221 100%);
-    --card-back-text: #f5f3fa;
-    --hex: #b9a6e8;
-    --hex-opacity: 0.07;
-    --accent: #a78bfa;
-    --accent-2: #60a5fa;
-    --accent-3: #f472b6;
-    --shadow: 0 10px 30px rgb(0 0 0 / 0.45);
-  }
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
 }
 
 /* Lets the card border gradient spin smoothly. */
@@ -76,6 +68,9 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 h1,
@@ -156,6 +151,10 @@ main {
   letter-spacing: 0.04em;
 }
 
+.navbar nav {
+  margin-left: auto;
+}
+
 .nav-links {
   display: flex;
   gap: clamp(0.75rem, 3vw, 2rem);
@@ -195,9 +194,85 @@ main {
 }
 
 @media (max-width: 480px) {
+  .navbar {
+    gap: 0.6rem;
+    padding: 0 0.75rem;
+  }
+
+  .brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    gap: 0.6rem;
+  }
+
   .nav-links a {
-    font-size: 0.8rem;
-    letter-spacing: 0.04em;
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+  }
+
+  .theme-toggle {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand {
+    display: none;
+  }
+}
+
+/* ---------- Theme toggle ---------- */
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 0.25);
+  border-radius: 50%;
+  background: transparent;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    transform 0.4s ease,
+    border-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  border-color: rgb(255 255 255 / 0.7);
+  transform: rotate(25deg);
+}
+
+.theme-icon {
+  grid-area: 1 / 1;
+}
+
+/* Show the icon for the theme you'd switch TO. */
+.theme-icon-sun {
+  display: none;
+}
+
+:root[data-theme='dark'] .theme-icon-sun {
+  display: block;
+}
+
+:root[data-theme='dark'] .theme-icon-moon {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .theme-icon-sun {
+    display: block;
+  }
+
+  :root:not([data-theme='light']) .theme-icon-moon {
+    display: none;
   }
 }
 
@@ -215,19 +290,60 @@ main {
   width: var(--size);
   aspect-ratio: 1 / 0.866;
   background: var(--hex);
-  opacity: var(--hex-opacity);
   clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
   animation: drift var(--duration) ease-in-out infinite alternate;
   animation-delay: var(--delay);
 }
 
-.hex-1 { --size: 180px; --duration: 26s; --delay: 0s; top: 18%; left: 6%; }
-.hex-2 { --size: 140px; --duration: 31s; --delay: -6s; top: 14%; right: 12%; }
-.hex-3 { --size: 200px; --duration: 35s; --delay: -12s; top: 16%; right: 6%; }
-.hex-4 { --size: 90px; --duration: 22s; --delay: -3s; top: 48%; right: 2%; }
-.hex-5 { --size: 160px; --duration: 29s; --delay: -9s; top: 72%; left: 18%; }
-.hex-6 { --size: 70px; --duration: 24s; --delay: -15s; top: 60%; left: 2%; }
-.hex-7 { --size: 120px; --duration: 33s; --delay: -20s; bottom: 4%; right: 14%; }
+.hex-1 {
+  --size: 180px;
+  --duration: 26s;
+  --delay: 0s;
+  top: 18%;
+  left: 6%;
+}
+.hex-2 {
+  --size: 140px;
+  --duration: 31s;
+  --delay: -6s;
+  top: 14%;
+  right: 12%;
+}
+.hex-3 {
+  --size: 200px;
+  --duration: 35s;
+  --delay: -12s;
+  top: 16%;
+  right: 6%;
+}
+.hex-4 {
+  --size: 90px;
+  --duration: 22s;
+  --delay: -3s;
+  top: 48%;
+  right: 2%;
+}
+.hex-5 {
+  --size: 160px;
+  --duration: 29s;
+  --delay: -9s;
+  top: 72%;
+  left: 18%;
+}
+.hex-6 {
+  --size: 70px;
+  --duration: 24s;
+  --delay: -15s;
+  top: 60%;
+  left: 2%;
+}
+.hex-7 {
+  --size: 120px;
+  --duration: 33s;
+  --delay: -20s;
+  bottom: 4%;
+  right: 14%;
+}
 
 @keyframes drift {
   0% {
@@ -332,7 +448,15 @@ main {
   font-size: clamp(2.8rem, 9vw, 6rem);
   font-weight: 800;
   letter-spacing: -0.01em;
-  background: linear-gradient(100deg, var(--text) 0%, var(--text) 35%, var(--accent) 45%, var(--accent-3) 55%, var(--text) 65%, var(--text) 100%);
+  background: linear-gradient(
+    100deg,
+    var(--text) 0%,
+    var(--text) 35%,
+    var(--accent) 45%,
+    var(--accent-3) 55%,
+    var(--text) 65%,
+    var(--text) 100%
+  );
   background-size: 300% 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -774,14 +898,12 @@ a.project-shot:hover img {
   transition: opacity 0.35s ease;
 }
 
-.tech-tile:hover,
-.tech-tile:focus-visible {
+.tech-tile:hover {
   transform: translateY(-4px) rotate(-3deg) scale(1.06);
   box-shadow: 0 10px 22px rgb(83 167 234 / 0.4);
 }
 
-.tech-tile:hover .tech-label,
-.tech-tile:focus-visible .tech-label {
+.tech-tile:hover .tech-label {
   opacity: 1;
 }
 
@@ -808,7 +930,7 @@ a.project-shot:hover img {
 }
 
 .accent {
-  color: #dc2626;
+  color: var(--red);
 }
 
 .arts span {
@@ -817,10 +939,18 @@ a.project-shot:hover img {
   transition: transform 0.3s ease;
 }
 
-.arts span:nth-child(1) { color: #2563eb; }
-.arts span:nth-child(2) { color: #dc2626; }
-.arts span:nth-child(3) { color: #16a34a; }
-.arts span:nth-child(4) { color: #9333ea; }
+.arts span:nth-child(1) {
+  color: var(--accent-2);
+}
+.arts span:nth-child(2) {
+  color: var(--red);
+}
+.arts span:nth-child(3) {
+  color: var(--green);
+}
+.arts span:nth-child(4) {
+  color: var(--purple);
+}
 
 .arts:hover span {
   transform: translateY(-4px) rotate(-8deg);
@@ -828,14 +958,6 @@ a.project-shot:hover img {
 
 .arts:hover span:nth-child(even) {
   transform: translateY(3px) rotate(8deg);
-}
-
-@media (prefers-color-scheme: dark) {
-  .accent { color: #f87171; }
-  .arts span:nth-child(1) { color: #60a5fa; }
-  .arts span:nth-child(2) { color: #f87171; }
-  .arts span:nth-child(3) { color: #4ade80; }
-  .arts span:nth-child(4) { color: #c084fc; }
 }
 
 /* ---------- Call to action ---------- */
@@ -972,6 +1094,15 @@ a.project-shot:hover img {
 
 .contact-form .button {
   justify-self: start;
+}
+
+.form-error {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--red) 12%, transparent);
+  color: var(--red);
+  font-weight: 600;
 }
 
 .honeypot {

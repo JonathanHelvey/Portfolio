@@ -38,8 +38,7 @@ export const PROJECTS = [
     id: 'popnspots',
     title: "Pop'n Spots",
     image: popnspots,
-    description:
-      'Desktop and mobile city guide. See how busy a location is before you go out!',
+    description: 'Desktop and mobile city guide. See how busy a location is before you go out!',
     tech: ['React', 'Redux', 'Firebase', 'JavaScript', 'CSS3', 'HTML5'],
     demo: 'https://bluebubbles-998d5.firebaseapp.com/',
     source: 'https://github.com/capstone-bluebubbles/Pop-n-Spots',
@@ -67,8 +66,7 @@ export const PROJECTS = [
     id: 'tour',
     title: 'Tour',
     image: tour,
-    description:
-      'Android app showing the most obscure places around Chicago. Built with React Native and Expo.',
+    description: 'Android app showing the most obscure places around Chicago. Built with React Native and Expo.',
     tech: ['React Native', 'Expo', 'Firebase', 'JavaScript'],
     demo: null,
     source: 'https://github.com/JonathanHelvey/Tour',
@@ -86,8 +84,7 @@ export const PROJECTS = [
     id: 'color-generator',
     title: 'Background Color Generator',
     image: colorGenerator,
-    description:
-      'Pick the right gradient colors for your website. Built with vanilla JavaScript and CSS3.',
+    description: 'Pick the right gradient colors for your website. Built with vanilla JavaScript and CSS3.',
     tech: ['JavaScript', 'CSS3', 'HTML5'],
     demo: 'https://jonathanhelvey.github.io/Background-Color-Generator/',
     source: 'https://github.com/JonathanHelvey/Background-Color-Generator',

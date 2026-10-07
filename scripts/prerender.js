@@ -10,7 +10,10 @@ const template = fs.readFileSync(path.join(clientDir, 'index.html'), 'utf8');
 const { render, ROUTES, SITE } = await import(pathToFileURL(path.join(root, 'dist/server/entry-server.js')).href);
 
 const escape = (value) =>
-  String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
+  String(value).replace(
+    /[&<>"']/g,
+    (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]
+  );
 
 function head(route) {
   const url = `${SITE.url}${route.path === '/404' ? '/' : route.path}`;

@@ -39,8 +39,8 @@ export default function Home() {
         <div className="about reveal">
           <div className="about-text">
             <p>
-              Hi, I&apos;m <strong>Jonathan Helvey</strong>, a <strong className="accent">software engineer</strong>{' '}
-              who loves building interactive, animated, responsive web apps. I come from a background in the{' '}
+              Hi, I&apos;m <strong>Jonathan Helvey</strong>, a <strong className="accent">software engineer</strong> who
+              loves building interactive, animated, responsive web apps. I come from a background in the{' '}
               <span className="arts">
                 <span>a</span>
                 <span>r</span>
@@ -54,16 +54,16 @@ export default function Home() {
               applications and the APIs behind them.
             </p>
             <p>
-              On my own time I build <a href="https://trendwake.com/">TrendWake</a>, a trading-ideas platform I
-              designed and run end to end: the React front end, the PHP/Symfony API, PostgreSQL, payments,
-              infrastructure and deploys.
+              On my own time I build <a href="https://trendwake.com/">TrendWake</a>, a trading-ideas platform I designed
+              and run end to end: the React front end, the PHP/Symfony API, PostgreSQL, payments, infrastructure and
+              deploys.
             </p>
             <p>
               <strong>I build with AI every day.</strong> AI coding agents like Claude Code are part of my daily
-              workflow for planning, building, reviewing and testing. I treat them like a very fast pair programmer:
-              I set the direction, review every change and own what ships. I also build AI into products. TrendWake
-              has LLM-powered trade reviews and market summaries, plus an MCP server that lets people connect their own
-              AI assistants to their account.
+              workflow for planning, building, reviewing and testing. I treat them like a very fast pair programmer: I
+              set the direction, review every change and own what ships. I also build AI into products. TrendWake has
+              LLM-powered trade reviews and market summaries, plus an MCP server that lets people connect their own AI
+              assistants to their account.
             </p>
             <p>
               Before that I worked at agnoStack, a startup building an omni-channel plugin for Zendesk, where I helped

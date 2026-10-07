@@ -1,31 +1,29 @@
-import { useEffect, useState } from 'react';
+import { useSyncExternalStore } from 'react';
 
-function greetingFor(hour) {
-  if (hour < 12) return { emoji: '🌅', label: 'sunrise', text: 'Good Morning!' };
-  if (hour < 18) return { emoji: '☀️', label: 'sun', text: 'Good Afternoon!' };
-  return { emoji: '🌙', label: 'moon', text: 'Good Evening!' };
+const GREETINGS = {
+  hello: { emoji: '👋', text: 'Hello!' },
+  morning: { emoji: '🌅', text: 'Good Morning!' },
+  afternoon: { emoji: '☀️', text: 'Good Afternoon!' },
+  evening: { emoji: '🌙', text: 'Good Evening!' },
+};
+
+function timeOfDay() {
+  const hour = new Date().getHours();
+  if (hour < 12) return 'morning';
+  if (hour < 18) return 'afternoon';
+  return 'evening';
 }
 
-const HELLO = { emoji: '👋', label: 'waving hand', text: 'Hello!' };
+const subscribe = () => () => {};
 
-// The pre-rendered HTML can't know the visitor's clock, so it says "Hello!"
-// and swaps in the time-of-day greeting once the page is running.
+// The pre-rendered HTML can't know the visitor's clock, so the server
+// snapshot says "Hello!" and React swaps in the time of day after hydrating.
 export default function Greeting() {
-  const [greeting, setGreeting] = useState(HELLO);
-
-  useEffect(() => {
-    setGreeting(greetingFor(new Date().getHours()));
-  }, []);
+  const greeting = GREETINGS[useSyncExternalStore(subscribe, timeOfDay, () => 'hello')];
 
   return (
     <p className="greeting">
-      <span role="img" aria-label={greeting.label}>
-        {greeting.emoji}
-      </span>{' '}
-      {greeting.text}{' '}
-      <span role="img" aria-hidden="true">
-        {greeting.emoji}
-      </span>
+      <span aria-hidden="true">{greeting.emoji}</span> {greeting.text} <span aria-hidden="true">{greeting.emoji}</span>
     </p>
   );
 }

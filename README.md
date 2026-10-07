@@ -15,22 +15,33 @@ pnpm install
 pnpm dev        # http://localhost:5173 (home page only; other pages need a build)
 pnpm build      # → dist/client
 pnpm preview    # http://localhost:4173, with the same security headers as Netlify
+pnpm test       # contact-form spam filter tests (Node's built-in runner)
 ```
 
 ## Where things live
 
-| What | Where |
-| --- | --- |
-| Projects (cards) | `src/data/projects.js` + screenshots in `src/assets/projects/` |
-| Tech logos / skills | `src/data/tech.js` |
-| Bio | `src/pages/Home.jsx` |
-| Blog posts | `src/posts/*.md` (front matter: title, slug, date, description, published) |
-| Pages & SEO titles | `src/routes.js` |
-| Styles | `src/styles/global.css` |
-| Headers, redirects, build | `netlify.toml` |
+| What                      | Where                                                                         |
+| ------------------------- | ----------------------------------------------------------------------------- |
+| Projects (cards)          | `src/data/projects.js` + screenshots in `src/assets/projects/`                |
+| Tech logos / skills       | `src/data/tech.js`                                                            |
+| Bio                       | `src/pages/Home.jsx`                                                          |
+| Blog posts                | `src/posts/*.md` (front matter: title, slug, date, description, published)    |
+| Pages & SEO titles        | `src/routes.js`                                                               |
+| Styles                    | `src/styles/global.css`                                                       |
+| Contact form spam filter  | `netlify/functions/contact.mjs` (tests in `tests/`)                           |
+| Light/dark theme          | color tokens at the top of `global.css`, `public/theme.js`, `ThemeToggle.jsx` |
+| Headers, redirects, build | `netlify.toml`                                                                |
 
 `scripts/prerender.js` renders every route in `src/routes.js` to HTML and writes
 `sitemap.xml` and `robots.txt`.
+
+## Contact form
+
+The form posts to `/api/contact`, a Netlify Function that drops spam (honeypot,
+no JavaScript, sent within 3 seconds, too many links, SEO/marketing pitches) and
+forwards real messages to the **contact-verified** Netlify form, declared in
+`public/netlify-forms.html`. Spam still sees the thanks page; the reason is in
+the function logs. Submissions show up under **Forms → contact-verified**.
 
 ## Security
 
@@ -43,7 +54,7 @@ pnpm preview    # http://localhost:4173, with the same security headers as Netli
   earlier versions had.
 - Install scripts are blocked unless allowlisted in `allowBuilds`.
 - Exact versions in `package.json` + committed `pnpm-lock.yaml`.
-- Netlify runs `pnpm audit --audit-level=high` before every build.
+- Netlify runs `pnpm audit --audit-level=high` and `pnpm test` before every build.
 
 **Site** (`netlify.toml`): strict Content-Security-Policy (own files only, no
 inline scripts), HSTS, `X-Frame-Options: DENY`, `nosniff`, Referrer-Policy,

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!--
+      Registers the "contact-verified" form with Netlify Forms (Netlify finds
+      forms by scanning deployed HTML). Visitors never see this page: the
+      contact page posts to /api/contact (netlify/functions/contact.mjs),
+      which filters spam and forwards clean messages to this form.
+    -->
+    <form name="contact-verified" netlify netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" />
+      <input name="company" />
+      <textarea name="message"></textarea>
+    </form>
+  </body>
+</html>

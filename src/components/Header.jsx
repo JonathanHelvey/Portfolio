@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import ThemeToggle from './ThemeToggle';
 
 const LINKS = [
   { href: '/#projects', label: 'Projects' },
@@ -47,6 +48,7 @@ export default function Header() {
           ))}
         </ul>
       </nav>
+      <ThemeToggle />
     </header>
   );
 }
