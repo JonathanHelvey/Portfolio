@@ -2,19 +2,17 @@
 title: "When my AI features went silent (and nothing errored)"
 slug: "when-my-ai-features-went-silent"
 date: "2026-10-08"
-description: "An LLM provider retired the model my app used. Every AI feature quietly went blank, and my error handling is why nobody noticed. What I changed."
-published: false
+description: "Groq retired the model my app used. Every AI feature quietly went blank, and my error handling is why nobody noticed. What I changed."
+published: true
 ---
 
-<!-- DRAFT: review before setting published: true. -->
-
 TrendWake, the trading-ideas platform I build, has a handful of AI features:
-trade reviews, market summaries and a coach you can ask questions. They all run
-through one small client that calls an LLM provider.
+LLM trade reviews, market summaries, and a coach you can ask questions. They
+all run through one small client that calls Groq.
 
-In August 2026 the provider retired the model that client was pinned to. From
-that moment, every request failed. And every AI feature on the site quietly
-went blank.
+On 2026-08-16, Groq retired the model that client was pinned to,
+llama-3.3-70b. From that moment, every request to Groq failed. And every AI
+feature on the site quietly went blank.
 
 ## Failing soft, a little too well
 
@@ -23,37 +21,56 @@ it, return nothing, and let the page render without the AI section. That's a
 good instinct. An LLM outage shouldn't take down a dashboard.
 
 But "return nothing" looked exactly like "the model had nothing to say." No
-error page, no alert, no angry users. Just empty boxes where the AI used to be.
+error page, no alert, no angry users. Just empty boxes where the AI used to
+be. The failure mode I'd designed for turned out to be indistinguishable
+from the normal, boring case of an LLM declining to generate anything
+useful.
 
 ## What actually broke
 
 - **The model name was hard-coded as a default** in the client, with no
-  environment override in production. Swapping models meant a code change and
-  a deploy, not a config flip.
-- **Deprecation notices went to an inbox I wasn't watching.** The provider
-  announced it; I just never saw it.
+  environment override in production. Swapping models meant a code change
+  and a deploy, not a config flip.
 - **"Empty" and "failed" were the same state.** The UI couldn't tell them
-  apart, so neither could I.
+  apart, so neither could I. A blank trade review and a Groq outage rendered
+  identically.
+- **Nothing was watching the failures.** They went to logs, and logs only
+  help if something or someone is looking at them.
 
 ## The fix, and what I'd do differently
 
-The immediate fix was simple: point the client at a current model and deploy.
-The real lessons were about everything around it:
+The immediate fix was mechanical: point the client at openai/gpt-oss-120b
+and deploy. That brought every AI feature back.
 
-<!-- DRAFT: keep only the items you've actually done, and move the rest
-     under a "Next up" heading. -->
+The deeper problem — a retired model requiring a deploy instead of a config
+change — is one I've since fixed, just not on TrendWake yet. My portfolio
+site has a small "AI fit check" feature that also calls Groq, and I built it
+to read its model name from a `GROQ_MODEL` environment variable instead of a
+hard-coded default. The next time a model gets retired there, it's a config
+change, not an emergency deploy. Porting that same pattern to TrendWake is
+the next thing I do with this.
 
-1. **Make the model configuration**, with a sensible code default, so a
-   retired model is an env change instead of an emergency deploy.
-2. **Count failures, don't just log them.** A burst of AI errors should
-   raise an alert instead of disappearing into log files.
-3. **Tell "unavailable" apart from "nothing to show"** in the UI, so a broken
-   AI feature is visible to me (and honest with users).
-4. **Smoke-test AI features daily**: call each one and check for a real
-   answer.
+A few other things I'd like to add, though I haven't built them yet:
+
+1. **Count failures, don't just log them.** A burst of AI errors should
+   raise an alert somewhere I'll actually see it, instead of sitting quietly
+   in log files until I go looking.
+2. **Tell "unavailable" apart from "nothing to show"** in the UI. If a
+   feature's AI call failed, the page should say so, instead of rendering
+   the same blank state as a model that genuinely had nothing useful to
+   generate.
+3. **Smoke-test the AI features daily.** A scheduled check that calls each
+   feature and confirms it got back a real answer would have caught this
+   the day the model was retired, not whenever I happened to look at the
+   site myself.
+
+None of those are hard. I just hadn't needed them before, because I'd never
+had a provider pull a model out from under me.
 
 ## The takeaway
 
 Graceful degradation is only graceful if *someone* finds out it happened.
-When you build on third-party models, assume the model you're using today
-will disappear, and make sure that day is loud.
+My error handling did exactly what I told it to do: it hid the failure so
+well that it also hid itself. When you build on third-party models, assume
+the model you're using today will eventually disappear, and make sure that
+day is loud instead of quiet.
