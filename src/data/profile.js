@@ -34,7 +34,16 @@ export const SKILLS = [
   'CSS3',
 ];
 
+const PRO_SINCE = 2019;
+
 export const EXPERIENCE = [
+  {
+    role: 'Career timeline',
+    details: [
+      'Writing code since 2017: self-taught at first, then the Fullstack Academy bootcamp.',
+      `Working professionally as a software developer since ${PRO_SINCE} (about ${new Date().getFullYear() - PRO_SINCE} years).`,
+    ],
+  },
   {
     role: 'Software engineer on an enterprise team (current role)',
     details: [
