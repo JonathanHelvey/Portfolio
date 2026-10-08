@@ -4,6 +4,7 @@
 //
 // demo: live URL, or null when the hosting is gone (card shows "Demo retired").
 // source: public repo, or null for private/client code.
+// confidential: client work shown without its name, link or real screenshot.
 // draft: shown in local and deploy-preview builds only, hidden in production
 //        and left out of the AI fit check until the details are confirmed.
 export const PROJECTS = [
@@ -19,14 +20,15 @@ export const PROJECTS = [
     sourceNote: 'Private codebase',
   },
   {
-    id: 'upper-limits',
-    title: 'Upper Limits E-commerce',
+    id: 'retail-ecommerce',
+    title: 'Multi-Store Retail E-commerce',
     description:
-      'Lead Full Stack Developer (2020–2024) for a multi-location retailer: custom Magento 2 modules, Elasticsearch product search across thousands of listings, a POS integration, and a 50% performance boost.',
+      "Lead Full Stack Developer (2020–2024) for a multi-location retailer's online store: custom Magento 2 modules, Elasticsearch product search across thousands of listings, a point-of-sale integration, and a 50% performance boost.",
     tech: ['PHP', 'Magento', 'React', 'GraphQL', 'Elasticsearch', 'MySQL'],
-    demo: 'https://upperlimitsinc.com/',
+    demo: null,
     source: null,
-    sourceNote: 'Private client code',
+    confidential: true,
+    sourceNote: 'Private client work',
   },
   {
     id: 'agnostack',

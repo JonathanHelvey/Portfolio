@@ -1,6 +1,6 @@
 import trendwake from '../assets/projects/trendwake.jpg';
 import agnostack from '../assets/projects/agnostack.jpg';
-import upperLimits from '../assets/projects/upper-limits.jpg';
+import retailEcommerce from '../assets/projects/retail-ecommerce.jpg';
 import popnspots from '../assets/projects/popnspots.jpg';
 import actors from '../assets/projects/actors.jpg';
 import faceRecognition from '../assets/projects/face-recognition.jpg';
@@ -13,7 +13,7 @@ import portfolio from '../assets/projects/portfolio.jpg';
 export const PROJECT_IMAGES = {
   trendwake,
   agnostack,
-  'upper-limits': upperLimits,
+  'retail-ecommerce': retailEcommerce,
   popnspots,
   actors,
   'face-recognition': faceRecognition,
