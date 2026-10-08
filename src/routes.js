@@ -25,6 +25,13 @@ export const ROUTES = [
     type: 'article',
   })),
   {
+    path: '/fit/',
+    page: 'fit',
+    title: `AI Fit Check | ${SITE.name}`,
+    description:
+      "Hiring? Paste a job description and get an honest, AI-generated read on how Jonathan Helvey's experience fits.",
+  },
+  {
     path: '/contact/',
     page: 'contact',
     title: `Contact | ${SITE.name}`,

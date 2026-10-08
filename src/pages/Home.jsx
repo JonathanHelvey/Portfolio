@@ -3,7 +3,7 @@ import ProjectCard from '../components/ProjectCard';
 import SocialLinks from '../components/SocialLinks';
 import TechTile from '../components/TechTile';
 import { PROJECTS } from '../data/projects';
-import { SKILLS } from '../data/tech';
+import { SKILLS } from '../data/profile';
 import headshot from '../assets/headshot.jpg';
 
 export default function Home() {
@@ -23,12 +23,15 @@ export default function Home() {
             Let&apos;s work together
           </a>
         </div>
+        <a className="hero-fit-link" href="/fit/">
+          Hiring? Try my AI fit check →
+        </a>
       </section>
 
       <section id="projects" className="section">
         <h2 className="section-title">Projects</h2>
         <div className="projects">
-          {PROJECTS.map((project) => (
+          {PROJECTS.filter((project) => __SHOW_DRAFTS__ || !project.draft).map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
@@ -51,7 +54,7 @@ export default function Home() {
             </p>
             <p>
               By day I&apos;m a software engineer on an enterprise team, building and maintaining production web
-              applications and the APIs behind them.
+              applications, the APIs behind them and search with Elasticsearch.
             </p>
             <p>
               On my own time I build <a href="https://trendwake.com/">TrendWake</a>, a trading-ideas platform I designed
@@ -66,9 +69,11 @@ export default function Home() {
               assistants to their account.
             </p>
             <p>
-              Before that I worked at agnoStack, a startup building an omni-channel plugin for Zendesk, where I helped
-              build the marketing site, internal dashboards and integration APIs. I also freelanced in the Chicago area,
-              building sites for actors and small businesses.
+              Before that I spent four years as Lead Full Stack Developer at Upper Limits, building and speeding up
+              their Magento 2 e-commerce platform, including Elasticsearch product search. Earlier I worked at
+              agnoStack, a startup building an omni-channel plugin for Zendesk, integrating Magento, BigCommerce and
+              Stripe APIs and building internal dashboards. I also freelanced in the Chicago area, building sites for
+              actors and small businesses.
             </p>
             <p>
               I&apos;m a graduate of <strong>Fullstack Academy</strong>, an intensive coding bootcamp covering Node.js,
@@ -87,9 +92,14 @@ export default function Home() {
 
       <section className="section cta reveal">
         <h2>Have a project in mind?</h2>
-        <a className="button button-large" href="/contact/">
-          Let&apos;s work together!
-        </a>
+        <div className="hero-actions">
+          <a className="button button-large" href="/contact/">
+            Let&apos;s work together!
+          </a>
+          <a className="button button-large button-ghost" href="/fit/">
+            Try the AI fit check
+          </a>
+        </div>
       </section>
     </>
   );

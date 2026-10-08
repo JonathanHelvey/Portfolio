@@ -508,6 +508,17 @@ main {
   }
 }
 
+.hero-fit-link {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  animation: fade-up 1.2s ease 1.8s both;
+}
+
+.hero-fit-link:hover {
+  text-decoration: underline;
+}
+
 /* ---------- Social ---------- */
 .social {
   display: flex;
@@ -697,6 +708,14 @@ a.project-shot:hover img {
   color: #fff;
   font-size: 0.75rem;
   backdrop-filter: blur(4px);
+}
+
+.badge-draft {
+  top: 0.75rem;
+  right: 0.75rem;
+  bottom: auto;
+  left: auto;
+  background: #b45309;
 }
 
 .badge-featured {
@@ -1108,6 +1127,196 @@ a.project-shot:hover img {
 .honeypot {
   position: absolute;
   left: -9999px;
+}
+
+/* ---------- AI fit check ---------- */
+.fit-intro {
+  text-align: center;
+  color: var(--muted);
+}
+
+.fit-form {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 2rem;
+}
+
+.fit-form label {
+  font-weight: 600;
+}
+
+.fit-form textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--muted) 50%, transparent);
+  border-radius: 12px;
+  background: var(--bg-soft);
+  color: var(--text);
+  font: inherit;
+  resize: vertical;
+}
+
+.fit-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+.fit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.fit-count {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Three bouncing dots while the model thinks. */
+.fit-loading {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 2rem;
+  color: var(--muted);
+}
+
+.fit-loading span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-3));
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.fit-loading span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.fit-loading span:nth-child(3) {
+  margin-right: 0.5rem;
+  animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-8px);
+    opacity: 1;
+  }
+}
+
+.fit-result {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  box-shadow: var(--shadow);
+  animation: fade-up 0.6s ease both;
+}
+
+.fit-result h2 {
+  margin: 2rem 0 0.75rem;
+  font-size: 1.35rem;
+}
+
+.fit-badge {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.3em 1em;
+  border-radius: 999px;
+  background: var(--muted);
+  color: #fff;
+  font-weight: 700;
+}
+
+.fit-strong {
+  background: linear-gradient(135deg, var(--green), #0d9488);
+}
+
+.fit-good {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+}
+
+.fit-partial {
+  background: linear-gradient(135deg, #d97706, var(--accent-3));
+}
+
+.fit-summary {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.fit-list {
+  display: grid;
+  gap: 0.9rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fit-list li {
+  padding-left: 1.75rem;
+  position: relative;
+}
+
+.fit-list li::before {
+  position: absolute;
+  left: 0;
+  font-weight: 800;
+}
+
+.fit-matches li::before {
+  content: '✓';
+  color: var(--green);
+}
+
+.fit-discuss li::before {
+  content: '→';
+  color: var(--accent-2);
+}
+
+.fit-questions li::before {
+  content: '?';
+  color: var(--accent);
+}
+
+.fit-list p {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+}
+
+.fit-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.fit-projects a {
+  padding: 0.1em 0.7em;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.fit-disclaimer {
+  margin: 2rem 0 1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 /* ---------- Footer ---------- */

@@ -49,5 +49,7 @@ export default defineConfig({
   define: {
     // Same value in the server and client builds, so hydration matches.
     __BUILD_YEAR__: JSON.stringify(new Date().getFullYear()),
+    // Netlify sets CONTEXT=production for the live site; drafts show everywhere else.
+    __SHOW_DRAFTS__: JSON.stringify(process.env.CONTEXT !== 'production'),
   },
 });

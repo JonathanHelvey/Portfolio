@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import TechTile from './TechTile';
+import { PROJECT_IMAGES } from '../data/projectImages';
 
 function ExternalLink({ href, className, children, ...rest }) {
   return (
@@ -19,14 +20,18 @@ export default function ProjectCard({ project }) {
 
   const shot = (
     <>
-      <img src={project.image} alt={`Screenshot of ${project.title}`} loading="lazy" decoding="async" />
+      <img src={PROJECT_IMAGES[project.id]} alt={`Screenshot of ${project.title}`} loading="lazy" decoding="async" />
       {project.featured && <span className="badge badge-featured">Featured</span>}
+      {project.draft && <span className="badge badge-draft">Draft · preview only</span>}
       {retired && <span className="badge">Demo retired · code on GitHub</span>}
     </>
   );
 
   return (
-    <article className={`project reveal${project.featured ? ' project-featured' : ''}${flipped ? ' is-flipped' : ''}`}>
+    <article
+      id={`project-${project.id}`}
+      className={`project reveal${project.featured ? ' project-featured' : ''}${flipped ? ' is-flipped' : ''}`}
+    >
       {shotHref ? (
         <ExternalLink href={shotHref} className="project-shot" aria-label={`Open ${project.title}`}>
           {shot}

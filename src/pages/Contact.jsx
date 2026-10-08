@@ -26,6 +26,7 @@ export default function Contact() {
     <section className="section page contact">
       <h1 className="section-title">Contact Me!</h1>
       <p className="contact-intro">Have a project in mind, or just want to say hi? Send me a message.</p>
+      <p className="contact-intro">Recruiters: my résumé is available on request. Just ask below.</p>
       <SocialLinks />
       <form className="contact-form" name="contact" method="POST" action="/api/contact">
         {error && (

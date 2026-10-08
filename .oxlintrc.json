@@ -11,7 +11,8 @@
     "es2024": true
   },
   "globals": {
-    "__BUILD_YEAR__": "readonly"
+    "__BUILD_YEAR__": "readonly",
+    "__SHOW_DRAFTS__": "readonly"
   },
   "settings": {
     "react": {
