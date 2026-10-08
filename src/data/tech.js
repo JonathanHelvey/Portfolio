@@ -20,8 +20,16 @@ import expo from '../assets/tech/expo.png';
 import knex from '../assets/tech/knex.png';
 import styledComponents from '../assets/tech/styled-components-logo.png';
 import express from '../assets/tech/express.png';
+import php from '../assets/tech/php.svg';
+import vite from '../assets/tech/vite.svg';
+import symfony from '../assets/tech/symfony.svg';
+import stripe from '../assets/tech/stripe.svg';
+import elasticsearch from '../assets/tech/elasticsearch.svg';
+import claude from '../assets/tech/claude.svg';
+import mcp from '../assets/tech/modelcontextprotocol.svg';
 
-// Tech without a logo file renders as a lettered tile (see TechTile).
+// Logo files live in src/assets/tech/. Tech without one renders as a lettered
+// tile (see TechTile). New logos: Simple Icons (CC0), simpleicons.org.
 export const TECH = {
   React: { logo: react },
   'React Native': { logo: react },
@@ -46,40 +54,12 @@ export const TECH = {
   Expo: { logo: expo },
   Knex: { logo: knex },
   'Styled Components': { logo: styledComponents },
-  Vite: { short: 'Vite' },
-  PHP: { short: 'PHP' },
-  Symfony: { short: 'Sf' },
-  Stripe: { short: 'S' },
-  'Claude Code': { short: 'CC' },
+  Vite: { logo: vite },
+  PHP: { logo: php },
+  Symfony: { logo: symfony },
+  Stripe: { logo: stripe },
+  Elasticsearch: { logo: elasticsearch },
+  'Claude Code': { logo: claude },
+  MCP: { logo: mcp },
   'LLM APIs': { short: 'AI' },
-  MCP: { short: 'MCP' },
 };
-
-export const SKILLS = [
-  'JavaScript',
-  'React',
-  'Node.js',
-  'Express',
-  'PostgreSQL',
-  'PHP',
-  'Symfony',
-  'Vite',
-  'Claude Code',
-  'LLM APIs',
-  'MCP',
-  'Redux',
-  'React Router',
-  'GraphQL',
-  'Gatsby',
-  'Firebase',
-  'AWS',
-  'Sequelize',
-  'Sass',
-  'OAuth',
-  'Stripe',
-  'Mocha',
-  'Jasmine',
-  'Git',
-  'HTML5',
-  'CSS3',
-];

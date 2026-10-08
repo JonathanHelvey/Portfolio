@@ -3,7 +3,7 @@ import ProjectCard from '../components/ProjectCard';
 import SocialLinks from '../components/SocialLinks';
 import TechTile from '../components/TechTile';
 import { PROJECTS } from '../data/projects';
-import { SKILLS } from '../data/tech';
+import { SKILLS } from '../data/profile';
 import headshot from '../assets/headshot.jpg';
 
 export default function Home() {
@@ -23,12 +23,15 @@ export default function Home() {
             Let&apos;s work together
           </a>
         </div>
+        <a className="hero-fit-link" href="/fit/">
+          Hiring? Try my AI fit check →
+        </a>
       </section>
 
       <section id="projects" className="section">
         <h2 className="section-title">Projects</h2>
         <div className="projects">
-          {PROJECTS.map((project) => (
+          {PROJECTS.filter((project) => __SHOW_DRAFTS__ || !project.draft).map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
@@ -51,7 +54,7 @@ export default function Home() {
             </p>
             <p>
               By day I&apos;m a software engineer on an enterprise team, building and maintaining production web
-              applications and the APIs behind them.
+              applications, the APIs behind them and search with Elasticsearch.
             </p>
             <p>
               On my own time I build <a href="https://trendwake.com/">TrendWake</a>, a trading-ideas platform I designed
@@ -87,9 +90,14 @@ export default function Home() {
 
       <section className="section cta reveal">
         <h2>Have a project in mind?</h2>
-        <a className="button button-large" href="/contact/">
-          Let&apos;s work together!
-        </a>
+        <div className="hero-actions">
+          <a className="button button-large" href="/contact/">
+            Let&apos;s work together!
+          </a>
+          <a className="button button-large button-ghost" href="/fit/">
+            Try the AI fit check
+          </a>
+        </div>
       </section>
     </>
   );
