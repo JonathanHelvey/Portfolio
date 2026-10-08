@@ -16,7 +16,7 @@ export default function ProjectCard({ project }) {
   const [flipped, setFlipped] = useState(false);
   const frontButton = useRef(null);
   const shotHref = project.demo ?? project.source;
-  const retired = !project.demo && !project.self;
+  const retired = !project.demo && !project.self && !project.confidential;
 
   const shot = (
     <>

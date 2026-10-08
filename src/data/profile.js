@@ -67,13 +67,14 @@ export const EXPERIENCE = [
     ],
   },
   {
-    role: 'Lead Full Stack Developer at Upper Limits (multi-location retailer, 2020–2024)',
+    role: 'Lead Full Stack Developer for a multi-location retailer (2020–2024)',
     details: [
       'Led design, development and maintenance of business-critical e-commerce applications using PHP, React and GraphQL.',
       'Improved application performance by 50% through lazy loading, image optimization and script bundling.',
-      'Engineered custom Magento 2 modules in PHP and JavaScript, including admin product-attribute sorting, a compliance age-verification pop-up and a dynamic blog/content widget.',
+      'Engineered custom Magento 2 modules in PHP and JavaScript, including admin product-attribute sorting and a dynamic blog/content widget.',
       'Integrated Elasticsearch to speed up and improve product search across thousands of listings.',
-      'Integrated third-party systems including a point-of-sale (Magestore POS), and managed and tuned MySQL databases for large datasets.',
+      "The client's name and products are confidential: never guess or name them.",
+      'Integrated third-party systems including a point-of-sale system, and managed and tuned MySQL databases for large datasets.',
     ],
   },
   {
