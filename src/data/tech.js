@@ -27,6 +27,9 @@ import stripe from '../assets/tech/stripe.svg';
 import elasticsearch from '../assets/tech/elasticsearch.svg';
 import claude from '../assets/tech/claude.svg';
 import mcp from '../assets/tech/modelcontextprotocol.svg';
+import mysql from '../assets/tech/mysql.svg';
+import jest from '../assets/tech/jest.svg';
+import gitlab from '../assets/tech/gitlab.svg';
 
 // Logo files live in src/assets/tech/. Tech without one renders as a lettered
 // tile (see TechTile). New logos: Simple Icons (CC0), simpleicons.org.
@@ -61,5 +64,10 @@ export const TECH = {
   Elasticsearch: { logo: elasticsearch },
   'Claude Code': { logo: claude },
   MCP: { logo: mcp },
+  MySQL: { logo: mysql },
+  Jest: { logo: jest },
+  'GitLab CI/CD': { logo: gitlab },
+  Magento: { short: 'M2' },
+  PHPUnit: { short: 'PU' },
   'LLM APIs': { short: 'AI' },
 };

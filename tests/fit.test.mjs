@@ -1,6 +1,7 @@
 import { afterEach, beforeEach, test } from 'node:test';
 import assert from 'node:assert/strict';
 import handler, { MAX_CHARS, PROFILE, SYSTEM_PROMPT, sanitize } from '../netlify/functions/fit.mjs';
+import { PROJECTS } from '../src/data/projects.js';
 
 const SITE = 'https://www.jonathanhelvey.com';
 const JOB = 'Senior engineer. '.repeat(20); // ~340 chars
@@ -59,9 +60,14 @@ test('GROQ_MODEL overrides the model', async () => {
   assert.equal(calls[0].body.reasoning_effort, undefined);
 });
 
-test('the profile leaves out draft projects', () => {
-  assert.ok(PROFILE.includes('trendwake:'));
-  assert.ok(!PROFILE.includes('upper-limits:'));
+test('the profile includes published projects and leaves out drafts', () => {
+  for (const project of PROJECTS) {
+    assert.equal(PROFILE.includes(`- ${project.id}:`), !project.draft, project.id);
+  }
+});
+
+test('the profile never contains contact details', () => {
+  assert.doesNotMatch(PROFILE, /@|\(\d{3}\)|\d{3}[-.\s]\d{3}[-.\s]\d{4}/);
 });
 
 test('refuses other origins', async () => {
@@ -106,7 +112,7 @@ test('sanitize keeps only known fields, caps lengths and drops unknown project i
     matches: Array.from({ length: 10 }, (_, i) => ({
       requirement: `req ${i}`,
       evidence: 'shown in a project',
-      projects: ['trendwake', 'made-up', 'upper-limits'],
+      projects: ['trendwake', 'made-up', 'also-not-real'],
     })),
     gaps: [{ requirement: 'Kubernetes', note: 'not shown' }, { note: 'no requirement' }],
     questions: ['q1', 42, 'q2', 'q3', 'q4'],

@@ -19,23 +19,22 @@ export const PROJECTS = [
     sourceNote: 'Private codebase',
   },
   {
+    id: 'upper-limits',
+    title: 'Upper Limits E-commerce',
+    description:
+      'Lead Full Stack Developer (2020–2024) for a multi-location retailer: custom Magento 2 modules, Elasticsearch product search across thousands of listings, a POS integration, and a 50% performance boost.',
+    tech: ['PHP', 'Magento', 'React', 'GraphQL', 'Elasticsearch', 'MySQL'],
+    demo: 'https://upperlimitsinc.com/',
+    source: null,
+    sourceNote: 'Private client code',
+  },
+  {
     id: 'agnostack',
     title: 'agnoStack Marketing Website',
     description:
       'Company marketing website for an e-commerce plugin startup, built with Gatsby, Styled Components and Zendesk Garden.',
     tech: ['React', 'Gatsby', 'Styled Components', 'AWS', 'JavaScript', 'CSS3'],
     demo: 'https://agnostack.com/',
-    source: null,
-    sourceNote: 'Private client code',
-  },
-  {
-    id: 'upper-limits',
-    title: 'Upper Limits E-commerce',
-    draft: true,
-    // DRAFT: replace with what you built, the platform and the tech.
-    description: 'E-commerce work on the online store for Upper Limits, a multi-location retailer.',
-    tech: ['JavaScript', 'HTML5', 'CSS3'],
-    demo: 'https://upperlimitsinc.com/',
     source: null,
     sourceNote: 'Private client code',
   },
