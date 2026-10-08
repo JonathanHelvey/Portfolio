@@ -55,7 +55,7 @@ ignores it. Remove the flag once the card's details are final.
 ## AI fit check
 
 `/fit/` lets a recruiter paste a job description and get a structured, honest
-read on the fit: matches with project links, gaps and interview questions.
+read on the fit: matches with project links, topics worth talking about, and interview questions.
 `netlify/functions/fit.mjs` sends the job description plus the facts in
 `profile.js` and `projects.js` to Groq and validates the answer.
 

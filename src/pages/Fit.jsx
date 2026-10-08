@@ -70,8 +70,8 @@ export default function Fit() {
     <section className="section page fit">
       <h1 className="section-title">AI Fit Check</h1>
       <p className="fit-intro">
-        Hiring? Paste a job description and get an honest, AI-generated read on how my experience fits, gaps included.
-        It only uses what&apos;s on this site, and nothing you paste is stored.
+        Hiring? Paste a job description and get an honest, AI-generated read on how my experience fits. It only uses
+        what&apos;s on this site, and nothing you paste is stored.
       </p>
 
       <form className="fit-form" onSubmit={onSubmit}>
@@ -147,8 +147,8 @@ export default function Fit() {
 
           {result.gaps.length > 0 && (
             <>
-              <h2>Gaps to discuss</h2>
-              <ul className="fit-list fit-gaps">
+              <h2>Worth talking about</h2>
+              <ul className="fit-list fit-discuss">
                 {result.gaps.map((gap) => (
                   <li key={gap.requirement}>
                     <strong>{gap.requirement}</strong>

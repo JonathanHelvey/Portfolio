@@ -1284,9 +1284,9 @@ a.project-shot:hover img {
   color: var(--green);
 }
 
-.fit-gaps li::before {
-  content: '△';
-  color: #d97706;
+.fit-discuss li::before {
+  content: '→';
+  color: var(--accent-2);
 }
 
 .fit-questions li::before {

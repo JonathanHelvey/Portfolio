@@ -48,8 +48,7 @@ export const EXPERIENCE = [
     details: [
       'Designed and runs the whole product end to end: React + Vite front end, PHP/Symfony API, PostgreSQL, Stripe payments, infrastructure, CI/CD and deploys.',
       'Features include a signal scanner, a strategy lab with backtesting, paper-trading bots, a trade journal and a community feed.',
-      'AI features: LLM-powered trade reviews and market summaries, and an MCP server (with OAuth 2.1) that lets users connect their own AI assistants to their account.',
-      'Security work includes TOTP two-factor auth, passkeys and refresh-token reuse detection.',
+      'AI features: LLM-powered trade reviews and market summaries, and an MCP server that lets users connect their own AI assistants to their account.',
     ],
   },
   {
