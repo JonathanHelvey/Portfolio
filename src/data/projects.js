@@ -4,7 +4,7 @@
 //
 // demo: live URL, or null when the hosting is gone (card shows "Demo retired").
 // source: public repo, or null for private/client code.
-// confidential: client work shown without its name, link or real screenshot.
+// confidential: private work shown without a live link or real screenshot.
 // draft: shown in local and deploy-preview builds only, hidden in production
 //        and left out of the AI fit check until the details are confirmed.
 export const PROJECTS = [
@@ -21,9 +21,9 @@ export const PROJECTS = [
   },
   {
     id: 'retail-ecommerce',
-    title: 'Multi-Store Retail E-commerce',
+    title: 'Upper Limits Midwest E-commerce',
     description:
-      "Lead Full Stack Developer (2020–2024) for a multi-location retailer's online store: custom Magento 2 modules, Elasticsearch product search across thousands of listings, a point-of-sale integration, and a 50% performance boost.",
+      'Lead Full Stack Developer (2020–2024) at Upper Limits Midwest, a glass company with multiple store locations: custom Magento 2 modules, Elasticsearch product search across thousands of listings, a point-of-sale integration, and a 50% performance boost.',
     tech: ['PHP', 'Magento', 'React', 'GraphQL', 'Elasticsearch', 'MySQL'],
     demo: null,
     source: null,
