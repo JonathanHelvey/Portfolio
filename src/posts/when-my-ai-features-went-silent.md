@@ -42,13 +42,12 @@ useful.
 The immediate fix was mechanical: point the client at openai/gpt-oss-120b
 and deploy. That brought every AI feature back.
 
-The deeper problem — a retired model requiring a deploy instead of a config
-change — is one I've since fixed, just not on TrendWake yet. My portfolio
-site has a small "AI fit check" feature that also calls Groq, and I built it
-to read its model name from a `GROQ_MODEL` environment variable instead of a
-hard-coded default. The next time a model gets retired there, it's a config
-change, not an emergency deploy. Porting that same pattern to TrendWake is
-the next thing I do with this.
+The deeper problem was that a retired model required a deploy instead of a
+config change, and I built my next AI feature around it. My portfolio site
+has a small "AI fit check" that also calls Groq, and it reads its model name
+from a `GROQ_MODEL` environment variable instead of a hard-coded default. The
+next time a model gets retired there, it's a config change, not an emergency
+deploy.
 
 A few other things I'd like to add, though I haven't built them yet:
 
