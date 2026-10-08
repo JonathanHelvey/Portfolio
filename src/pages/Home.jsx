@@ -69,11 +69,11 @@ export default function Home() {
               assistants to their account.
             </p>
             <p>
-              Before that I spent four years as Lead Full Stack Developer for a multi-location retailer, building and
-              speeding up its Magento 2 e-commerce platform, including Elasticsearch product search. Earlier I worked at
-              agnoStack, a startup building an omni-channel plugin for Zendesk, integrating Magento, BigCommerce and
-              Stripe APIs and building internal dashboards. I also freelanced in the Chicago area, building sites for
-              actors and small businesses.
+              Before that I spent four years as Lead Full Stack Developer at Upper Limits Midwest, a glass company,
+              building and speeding up its Magento 2 e-commerce platform, including Elasticsearch product search.
+              Earlier I worked at agnoStack, a startup building an omni-channel plugin for Zendesk, integrating Magento,
+              BigCommerce and Stripe APIs and building internal dashboards. I also freelanced in the Chicago area,
+              building sites for actors and small businesses.
             </p>
             <p>
               I&apos;m a graduate of <strong>Fullstack Academy</strong>, an intensive coding bootcamp covering Node.js,
