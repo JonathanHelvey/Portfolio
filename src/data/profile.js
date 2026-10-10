@@ -67,13 +67,13 @@ export const EXPERIENCE = [
     ],
   },
   {
-    role: 'Lead Full Stack Developer at Upper Limits Midwest, a glass company with multiple store locations (2020–2024)',
+    role: 'Lead Full Stack Developer at Upper Limits Midwest, an e-commerce business (2020–2024)',
     details: [
       'Led design, development and maintenance of business-critical e-commerce applications using PHP, React and GraphQL.',
       'Improved application performance by 50% through lazy loading, image optimization and script bundling.',
       'Engineered custom Magento 2 modules in PHP and JavaScript, including admin product-attribute sorting and a dynamic blog/content widget.',
       'Integrated Elasticsearch to speed up and improve product search across thousands of listings.',
-      "Describe this company only as 'a glass company': never guess or describe what it sells.",
+      'Describe this company only as an e-commerce business: never guess or describe what it sells.',
       'Integrated third-party systems including a point-of-sale system, and managed and tuned MySQL databases for large datasets.',
     ],
   },

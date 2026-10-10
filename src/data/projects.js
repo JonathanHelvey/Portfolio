@@ -23,7 +23,7 @@ export const PROJECTS = [
     id: 'retail-ecommerce',
     title: 'Upper Limits Midwest E-commerce',
     description:
-      'Lead Full Stack Developer (2020–2024) at Upper Limits Midwest, a glass company with multiple store locations: custom Magento 2 modules, Elasticsearch product search across thousands of listings, a point-of-sale integration, and a 50% performance boost.',
+      'Lead Full Stack Developer (2020–2024) at Upper Limits Midwest: built and scaled its e-commerce site with custom Magento 2 modules, Elasticsearch product search across thousands of listings, a point-of-sale integration, and a 50% performance boost.',
     tech: ['PHP', 'Magento', 'React', 'GraphQL', 'Elasticsearch', 'MySQL'],
     demo: null,
     source: null,
