@@ -29,13 +29,13 @@ export const ROUTES = [
     page: 'fit',
     title: `AI Fit Check | ${SITE.name}`,
     description:
-      "Hiring? Paste a job description and get an honest, AI-generated read on how Jonathan Helvey's experience fits.",
+      "Paste a project or role description and get an honest, AI-generated read on how Jonathan Helvey's experience fits.",
   },
   {
     path: '/contact/',
     page: 'contact',
     title: `Contact | ${SITE.name}`,
-    description: "Have a project in mind? Let's work together.",
+    description: 'Have a project or side gig in mind? Get in touch.',
   },
   {
     path: '/thanks/',

@@ -20,11 +20,11 @@ export default function Home() {
             See my work
           </a>
           <a className="button button-ghost" href="/contact/">
-            Let&apos;s work together
+            Get in touch
           </a>
         </div>
         <a className="hero-fit-link" href="/fit/">
-          Hiring? Try my AI fit check →
+          Curious how my skills fit your project? Try the AI fit check →
         </a>
       </section>
 
@@ -91,10 +91,10 @@ export default function Home() {
       </section>
 
       <section className="section cta reveal">
-        <h2>Have a project in mind?</h2>
+        <h2>Have a side project or gig in mind?</h2>
         <div className="hero-actions">
           <a className="button button-large" href="/contact/">
-            Let&apos;s work together!
+            Get in touch
           </a>
           <a className="button button-large button-ghost" href="/fit/">
             Try the AI fit check
